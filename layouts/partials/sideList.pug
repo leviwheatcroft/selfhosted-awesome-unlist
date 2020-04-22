@@ -1,0 +1,8 @@
+mixin sideList(list)
+  .col-md-2
+    each item, key in list
+      .post-preview
+        a(href='tags/' + item.urlSafe)
+          h2.post-title= key
+        if item.count
+          p.post-meta= item.count + " articles"

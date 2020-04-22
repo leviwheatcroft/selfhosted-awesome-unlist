@@ -1,0 +1,51 @@
+{
+  "name": "selfhosted-awesome-unlist",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "author": "Levi Wheatcroft <levi@wheatcroft.com.au>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "buildAssets": "webpack --config webpack.config.js",
+    "buildContent": "DEBUG=metalsmith* node index.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.5.2",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jquery": "^3.5.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "metalsmith": "^2.3.0",
+    "npm-watch": "^0.6.0",
+    "popper.js": "^1.16.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "standard",
+    "installedESLint": true,
+    "plugins": [
+      "standard",
+      "babel"
+    ],
+    "env": {
+      "node": true,
+      "jquery": true
+    }
+  },
+  "browserslist": "> 0.25%, not dead",
+  "nodemonConfig": {
+    "verbose": false
+  }
+}

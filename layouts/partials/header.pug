@@ -1,0 +1,16 @@
+header.intro-header.clearfix(
+  style=`background-image: url('${cover || '/images/default-cover.jpg'}')`
+  )
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .site-heading
+          h1= title || "Articles Tagged " + tag
+          hr.small
+          span.subheading= exerpt
+  if unsplashCover
+    div.attribution
+      | Photo by 
+      a(href=unsplashCover.user.links.html)= unsplashCover.user.name
+      | &nbsp;/&nbsp;
+      a(href='https://unsplash.com') Unsplash

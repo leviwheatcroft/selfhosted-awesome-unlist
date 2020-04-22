@@ -1,0 +1,33 @@
+article
+  .container
+    if status === 'archived'
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          .alert.alert-warning
+            | This post has been archived. It's probably out of date.
+    if video
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          video(
+            controls
+            crossorigin
+            playsinline
+            poster=`${resources}${slug}/${video}-poster.jpg`
+          )
+            source(
+              src=`${resources}${slug}/${video}-480p.m4v`
+              type='video/mp4'
+              size='480'
+            )
+            source(
+              src=`${resources}${slug}/${video}-720p.m4v`
+              type='video/mp4'
+              size='720'
+            )
+            source(
+              src=`${resources}${slug}/${video}-1080p.m4v`
+              type='video/mp4'
+              size='1080'
+            )
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1!= markdown(contents)

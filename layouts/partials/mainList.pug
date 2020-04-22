@@ -1,0 +1,9 @@
+mixin mainList(list)
+  .col-md-8.col-md-offset-1
+    each article in list
+      .post-preview
+        a(href="/articles/" + article.slug)
+          h2.post-title= article.title
+          if article.exerpt
+            h3.post-subtitle= article.exerpt
+        p.post-meta= "Posted on " + article.displayDate
