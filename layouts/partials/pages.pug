@@ -1,9 +1,0 @@
-.col-md-8.col-md-offset-1
-  each article in articles
-    .post-preview
-      a(href=cleanUrl("/" + article.path))
-        h2.post-title= article.title
-        if article.exerpt
-          h3.post-subtitle= article.exerpt
-      p.post-meta= "Posted on " + article.displayDate
-    hr
