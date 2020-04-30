@@ -1,0 +1,152 @@
+@import "tooltip.less";
+
+body {
+  padding-top: 5.2rem;
+}
+.navigation {
+  border-bottom: .1rem solid #d1d1d1;
+  display: block;
+  height: 5.2rem;
+  left: 0;
+  max-width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+  .navigation-title {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 5.2rem;
+    padding: 0;
+    text-decoration: none;
+  }
+  .navigation-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 5rem;
+    .navigation-item {
+      float: left;
+      margin-bottom: 0;
+      margin-left: 2.5rem;
+      position: relative;
+      .navigation-link {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 5.2rem;
+        padding: 0;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+header {
+  .title {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: 'Special Elite', cursive;
+      display: inline;
+    }
+    .subheading {
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: inline;
+    }
+  }
+}
+section .info {
+  display: flex;
+  justify-content: space-between;
+  align-tems: center;
+}
+
+.button {
+  &.button-small {
+    line-height: 2rem;
+    height: 2rem;
+  }
+}
+
+.brief {
+  margin-bottom: 2rem;
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  padding: 2rem;
+  max-height: 24rem;
+  overflow: hidden;
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .spacer {
+      flex: 2 1 auto;
+    }
+    h2 {
+      display: inline;
+      margin: 0;
+    }
+  }
+  .overview {
+
+  }
+}
+.button-slim {
+  height: 3rem;
+  line-height: 3rem;
+}
+
+
+.title {
+  .links {
+    a {
+      display: inline-flex;
+      margin-right: 1rem;
+      align-items: center;
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.info {
+  span, a {
+    display: inline-flex;
+    margin-right: 1rem;
+    align-items: center;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+
+}
+.tag {
+  width: 100%;
+  a {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    span.count {
+      text-align: center;
+      background-color: #9b4dca;
+      color: #ffffff;
+      margin-right: 1rem;
+      border-radius: 1rem;
+      height: 2rem;
+      line-height: 2rem;
+      width: 2rem;
+      display: inline-block;
+    }
+  }
+}

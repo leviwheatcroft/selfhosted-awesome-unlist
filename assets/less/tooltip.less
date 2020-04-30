@@ -1,0 +1,35 @@
+.tooltip {
+  position: relative;
+  &:hover span {
+    opacity: 1;
+    transform: transform(-50%, 0);
+  }
+  span {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    opacity: 0;
+    margin-bottom: 1em;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    border: solid 1px #b0b0b0;
+    border-radius: 3px;
+    // font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    white-space: nowrap;
+    transform: translate(-50%, 1em);
+    transition: all .15s ease-in-out;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: .5em solid transparent;
+      border-bottom-color: #b0b0b0;
+      transform: translate(-50%, 0);
+    }
+  }
+}
