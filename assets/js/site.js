@@ -9,12 +9,3 @@ function docReady (fn) {
     document.addEventListener('DOMContentLoaded', fn)
   }
 }
-
-// docReady(() => {
-//   const briefs = document.querySelectorAll('.brief')
-//   briefs.forEach((brief) => {
-//     console.log(brief.clientHeight, brief.scrollHeight)
-//     if (brief.clientHeight < brief.scrollHeight)
-//       console.log(brief)
-//   })
-// })
