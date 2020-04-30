@@ -1,6 +1,6 @@
 const Metalsmith = require('metalsmith')
 const debug = require('debug')
-const config = require('./config')
+const config = require('config')
 
 const dbg = debug('metalsmith-build')
 
@@ -10,7 +10,7 @@ module.exports = async function buildContent () {
   metalsmith.source('')
   metalsmith.clean(false)
   metalsmith.destination('build')
-  metalsmith.metadata(config.meta)
+  metalsmith.metadata(config.get('meta'))
   try {
     await metalsmith.build()
   } catch (err) {
