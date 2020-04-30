@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 const Metalsmith = require('metalsmith')
 const debug = require('debug')
-const {
-  merge
-} = require('lodash')
 
 const markdown = require('metalsmith-markdown')
 const layouts = require('metalsmith-layouts')
@@ -15,12 +12,25 @@ const feather = require('feather-icons')
 const multimatch = require('multimatch')
 const overview = require('./lib/overview')
 const pkg = require('./package.json')
+const Project = require('./lib/Project')
 
 const dbg = debug('metalsmith-build')
 
 dbg('building')
+// noop this so no files are read
+Metalsmith.prototype.read = async () => {
+  await Project.readAll()
+  const files = {}
+  Object.values(Project.projects).forEach((project) => {
+    const file = project.getMeta()
+    file.contents = project.content
+    const name = `${file.name}.md`
+    files[name] = file
+  })
+  return files
+}
 const metalsmith = Metalsmith('./')
-metalsmith.source('projects')
+// metalsmith.source('projects')
 metalsmith.clean(false)
 metalsmith.destination('build')
 metalsmith.metadata({
@@ -31,12 +41,8 @@ metalsmith.metadata({
   moment,
   feather
 })
-metalsmith.use((files, ms) => {
-  Object.values(files).forEach((file) => {
-    merge(file, file.scraped, file.contributed)
-  })
-  const metadata = ms.metadata()
-  metadata.projectCount = Object.values(files).length
+metalsmith.use(async (files, ms) => {
+  ms.metadata().projectCount = Object.values(files).length
 })
 metalsmith.use(overview())
 metalsmith.use(markdown())
