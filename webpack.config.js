@@ -44,6 +44,10 @@ module.exports = {
             loader: 'css-loader' // translates CSS into CommonJS
           }
         ]
+      },
+      {
+        test: /\.pug$/,
+        use: 'pug-loader'
       }
     ]
   },
