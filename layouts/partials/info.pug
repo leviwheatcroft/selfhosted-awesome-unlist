@@ -1,0 +1,20 @@
+section
+  .container
+    .row
+      .column
+        .info
+          .github
+            span.pushed-at
+              != feather.icons['git-commit'].toSvg()
+              = moment(pushed_at).format('DD MMM YYYY')
+            span.stargazers-count
+              != feather.icons.star.toSvg()
+              = stargazers_count
+            span.issues
+              != feather.icons['alert-circle'].toSvg()
+              = open_issues_count
+          .tags
+            for tag in tags
+              a.button(href=`/tags/${tag.slug}.html`)
+                != feather.icons.tag.toSvg()
+                = tag.name

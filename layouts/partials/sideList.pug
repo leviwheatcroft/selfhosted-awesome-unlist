@@ -1,8 +1,8 @@
 mixin sideList(list)
-  .col-md-2
+  .column.column-25
+    h3 Tags
     each item, key in list
-      .post-preview
-        a(href='tags/' + item.urlSafe)
-          h2.post-title= key
-        if item.count
-          p.post-meta= item.count + " articles"
+      .tag
+        a.button.button-outline.button-slim(href=`/tags/${item.urlSafe}.html`)
+          span.count= item.length
+          = key

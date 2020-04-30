@@ -9,7 +9,8 @@ html
     include /partials/header
     .container
       .row
-        +mainList(pagination.files)
+        .column.column-75
+          include:markdown-it ../README.md
         +sideList(tags)
     include /partials/footer
     include /partials/js

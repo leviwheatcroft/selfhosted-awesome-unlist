@@ -1,4 +1,9 @@
 footer
   .container
     .row
-      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      .column
+        | Total Projects: #{projectCount}
+      .column
+        | Built At: #{moment(buildDate).format('DD MMM YYYY')}
+      .column
+        | Version: #{version}

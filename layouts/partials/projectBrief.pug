@@ -1,0 +1,26 @@
+mixin projectBrief(project)
+  .brief
+    .info
+      a(href=`/${project.name}.html`)
+        h2.project-name= project.name
+      span.spacer
+      if !project.owner || !project.repo
+        span.no-repo.tooltip
+          != feather.icons['help-circle'].toSvg()
+          span No Repo
+      else
+        span.pushed-at.tooltip
+          != feather.icons['git-commit'].toSvg()
+          = moment(project.pushed_at).format('DD MMM YYYY')
+          span Last Commit
+        span.stargazers-count.tooltip
+          != feather.icons.star.toSvg()
+          = project.stargazers_count
+          span Github Stars
+        span.issues.tooltip
+          != feather.icons['alert-circle'].toSvg()
+          = project.open_issues_count
+          span Issues
+    if project.overview
+      .overview!= project.overview
+    brief-expander
