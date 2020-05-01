@@ -1,0 +1,281 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="FeedMixer is a WSGI  micro web service which takes a list of feed URLs and returns a new feed consisting of the most recent n entries from each given feed."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>feedmixer</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/cristoper/feedmixer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>feedmixer</a><a class="button button-outline" href="https://mretc.net/feedmixer/json?f=http://hnrss.org/newest&amp;f=http://americancynic.net/atom.xml&amp;n=1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>Demo</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>04 Apr 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>39</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>2</span></div><div class="tags"><a class="button" href="/tags/python.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Python</a><a class="button" href="/tags/automation.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Automation</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="feedmixer">FeedMixer</h1>
+<p>FeedMixer is a little web service (Python3/WSGI) which takes a list of feed
+URLs and  combines them into a single (Atom, RSS, or JSON) feed. Useful for
+personal news aggregators, &quot;planet&quot;-like websites, etc.</p>
+<h2 id="status">Status</h2>
+<p>Changelog</p>
+<pre><code>
+- v2.3.0_ Replace on-disk cache with in-memory cache. This simplifies application code and administration (don&#39;t have to worry about pruning the cache database)
+- v2.2.0_ Fix handling of RSS feeds with missing pubDates so that they sort to the bottom instead of throwing an exception during sorting
+- v2.1.0_ Fix handling of RSS enclosures and Atom links so that they are included in output (important if you&#39;re trying to aggregate podcasts or similar)
+- v2.0.0_ The JSON output now conforms to `JSON Feed version 1`_. This breaks any client which depends on the previous ad-hoc JSON format. That legacy format will continue to be maintained in the `v1 branch`_, so any clients which don&#39;t want to update to the JSON Feed format should depend on that branch.
+
+- v1.0.0_ Stable API. I&#39;m using it in production for small personal &quot;planet&quot;-like feed aggregators.
+
+.. _v2.3.0: https://github.com/cristoper/feedmixer/tree/v2.3.0
+.. _v2.2.0: https://github.com/cristoper/feedmixer/tree/v2.2.0
+.. _v2.1.0: https://github.com/cristoper/feedmixer/tree/v2.1.0
+.. _v2.0.0: https://github.com/cristoper/feedmixer/tree/v2.0.0
+.. _`JSON FEED version 1`: https://jsonfeed.org/
+.. _`v1 branch`: https://github.com/cristoper/feedmixer/tree/v1
+.. _v1.0.0: https://github.com/cristoper/feedmixer/tree/v1.0.0
+
+
+API
+---
+FeedMixer exposes three endpoints:
+
+- /atom
+- /rss
+- /json
+
+When sent a GET request they return an Atom, an RSS 2.0, or a JSON feed, respectively. The query string of the GET request can contain these fields:
+
+f
+    A url-encoded URL of a feed (any version of Atom or RSS). To include multiple feeds, simply include multiple `f` fields.
+
+n
+    The number of entries to keep from each field (pass 0 to keep all entries, which is the default if no `n` field is provided).
+
+full
+    If set to anything, prefer the full entry `content`; if absent, prefer the shorter entry `summary`.
+
+
+Features
+--------
+
+API
+~~~
+
+- Combine several feeds (just about any version of Atom and RSS should work) into a single feed
+- Optionally return only the `n` most recent items from each input feed
+- Control whether the output feed contains only the summary or the entire content of the input feed items
+- Parser results are memoized so that repeated requests for the same feed can
+  be returned without re-parsing.
+
+Included WSGI app</code></pre><ul>
+<li><p>The provided <code>feedmixer_wsgi.py</code> application uses a session that caches HTTP
+responses so that repeatedly fetching the same sets of feeds can usually be
+responded to quickly by the FeedMixer service.</p>
+<p>The <code>FeedMixer</code> object can be passed a custom <code>requests.session</code> object used
+to make HTTP requests, which allows flexible customization in how requests
+are made if you need that. </p>
+</li>
+</ul>
+<h2 id="non-features">Non-features</h2>
+<p>FeedMixer does not (yet?) do any resource restriction itself:</p>
+<ul>
+<li>Authorization</li>
+<li>Rate limiting</li>
+<li>CORS restriction</li>
+</ul>
+<p>TO protect your installation either configure a front-end http proxy to take
+care of your required restrictions (Nginx is a good choice), or/and use
+suitable WSGI middleware.</p>
+<h2 id="installation">Installation</h2>
+<p>#. Clone this repository:
+   <code>$ git clone https://github.com/cristoper/feedmixer.git</code>
+#. <code>$ cd feedmixer</code>
+#. Recommended: use pipenv_ to create a virtualenv and install dependencies:
+   <code>$ pipenv --three sync</code></p>
+<p>The project consists of three modules:</p>
+<ul>
+<li><code>feedmixer.py</code> - contains the core logic</li>
+<li><code>feedmixer_api.py</code> - contains the Falcon_-based API. Call <code>wsgi_app()</code> to
+get a WSGI-compliant object to host.</li>
+<li><code>feedmixer_wsgi.py</code> - contains an actual WSGI application which can be used
+as-is or as a starting point to create your own custom FeedMixer service.</li>
+</ul>
+<p>.. _falcon: <a href="https://falconframework.org/">https://falconframework.org/</a>
+.. _gunicorn: <a href="http://gunicorn.org/">http://gunicorn.org/</a>
+.. _<code>virtual environment</code>: <a href="https://virtualenv.pypa.io/en/stable/">https://virtualenv.pypa.io/en/stable/</a>
+.. _pipenv: <a href="https://pipenv.readthedocs.io/en/latest/">https://pipenv.readthedocs.io/en/latest/</a></p>
+<p>Run Locally</p>
+<pre><code>
+The feedmixer_wsgi module instantiates the feedmixer WSGI object (with sensible
+defaults and a rotating logfile) as both `api` and `application` (default names
+used by common WSGI servers). To start the service with gunicorn_, for example,
+clone the repository and in the root directory run::
+
+$ pipenv run pip3 install gunicorn
+$ pipenv run gunicorn feedmixer_wsgi
+
+Note that the top-level install directory must be writable by the server
+running the app, because it creates the logfiles (&#39;fm.log&#39; and &#39;fm.log.1&#39;)
+there.
+
+As an example, assuming an instance of the FeedMixer app is running on the localhost on port 8000, let&#39;s fetch the newest entry each from the following Atom and RSS feeds:
+
+- https://catswhisker.xyz/shaarli/?do=atom
+- https://hnrss.org/newest
+
+The constructed URL to GET is:
+
+``http://localhost:8000/atom?f=https://catswhisker.xyz/shaarli/?do=atom&amp;f=https://hnrss.org/newest&amp;n=1``
+
+Entering it into a browser will return an Atom feed with two entries. To GET it from a client programatically, remember to URL-encode the `f` fields::
+
+$ curl &#39;localhost:8000/atom?f=https%3A%2F%2Fcatswhisker.xyz%2Fshaarli%2F%3Fdo%3Datom&amp;f=https%3A%2F%2Fhnrss.org%2Fnewest&amp;n=1&#39;
+
+`HTTPie &lt;https://httpie.org/&gt;`_ is a nice command-line http client that makes testing RESTful services more pleasant::
+
+$ pip3 install httpie
+$ http localhost:8000/json f==http://hnrss.org/newest f==http://catswhisker.xyz/atom.xml n==1
+
+You should see some JSONFeed output (since we are requesting from the `/json` endpoint):
+
+.. code-block:: json
+
+   HTTP/1.1 200 OK
+   Connection: close
+   Date: Thu, 23 Jan 2020 03:53:45 GMT
+   Server: gunicorn/20.0.4
+   content-length: 1296
+   content-type: application/json
+
+   {
+     &quot;version&quot;: &quot;https://jsonfeed.org/version/1&quot;, 
+     &quot;title&quot;: &quot;FeedMixer feed&quot;, 
+     &quot;home_page_url&quot;: &quot;http://localhost:8000/json?f=http%3A%2F%2Fhnrss.org%2Fnewest&amp;f=https%3A%2F%2Fcatswhisker.xyz%2Fatom.xml&amp;n=1&quot;, 
+     &quot;description&quot;: &quot;json feed created by FeedMixer.&quot;, 
+     &quot;items&quot;: [
+       {
+         &quot;title&quot;: &quot;Kyrsten Sinema, the Only Anti-Net Neutrality Dem, Linked to Comcast Super Pac&quot;, 
+         &quot;content_html&quot;: &quot;&lt;p&gt;Article URL: &lt;a href=\&quot;https://prospect.org/politics/kyrsten-sinema-anti-net-neutrality-super-pac-comcast-lobbyist/\&quot;&gt;https://prospect.org/politics/kyrsten-sinema-anti-net-neutrality-super-pac-comcast-lobbyist/&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;Comments URL: &lt;a href=\&quot;https://news.ycombinator.com/item?id=22124592\&quot;&gt;https://news.ycombinator.com/item?id=22124592&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;Points: 1&lt;/p&gt;\n&lt;p&gt;# Comments: 0&lt;/p&gt;&quot;, 
+         &quot;url&quot;: &quot;https://prospect.org/politics/kyrsten-sinema-anti-net-neutrality-super-pac-comcast-lobbyist/&quot;, 
+         &quot;id&quot;: &quot;https://news.ycombinator.com/item?id=22124592&quot;, 
+         &quot;author&quot;: {
+           &quot;name&quot;: &quot;joeyespo&quot;
+         }, 
+         &quot;date_published&quot;: &quot;2020-01-23T03:32:19Z&quot;, 
+         &quot;date_modified&quot;: &quot;2020-01-23T03:32:19Z&quot;
+       }, 
+       {
+         &quot;title&quot;: &quot;FO Roundup December 2019&quot;, 
+         &quot;content_html&quot;: &quot;I&#39;ve started knitting again.&quot;, 
+         &quot;url&quot;: &quot;http://catswhisker.xyz/log/2019/12/3/fo_december/&quot;, 
+         &quot;id&quot;: &quot;tag:catswhisker.xyz,2019-12-04:/log/2019/12/3/fo_december/&quot;, 
+         &quot;author&quot;: {
+           &quot;name&quot;: &quot;A. Cynic&quot;, 
+           &quot;url&quot;: &quot;http://catswhisker.xyz/about/&quot;
+         }, 
+         &quot;date_published&quot;: &quot;2019-12-04T04:48:59Z&quot;, 
+         &quot;date_modified&quot;: &quot;2019-12-04T04:48:59Z&quot;
+       }
+     ]
+   }
+
+Deploy
+~~~~~~
+
+Deploy FeedMixer using any WSGI-compliant server (uswgi, gunicorn, mod_wsgi,
+...). For a production deployment, it is not a bad idea to put an asynchronous
+http proxy (like Nginx) in front of FeedMixer to protect it from too many and
+slow connections (as well as to provide SSL termination, additional caching,
+authoriziation, etc., as required)
+
+Refer to the documentation of the server of your choice.
+
+mod_wsgi
+````````
+
+This is how I&#39;ve deployed FeedMixer with Apache and mod_wsgi_ (on Debian):
+
+#. Create a directory outside of your Apache DocumentRoot in which to install: ``$ sudo mkdir /usr/lib/wsgi-bin``
+#. Install as above (so the cloned repo is at ``/usr/lib/wsgi-bin/feedmixer``)
+#. Give Apache write permissions: ``$ sudo chown :www-data feedmixer; sudo chmod g+w feedmixer``
+#. Configure Apache using something like the snippet below (either in apache2.conf or in a VirtualHost directive):
+
+.. code-block:: apache
+
+    WSGIDaemonProcess feedmixer threads=10 \
+    python-home=/usr/lib/wsgi-bin/feedmixer/venv \
+    python-path=/usr/lib/wsgi-bin/feedmixer \
+    home=/usr/lib/wsgi-bin/feedmixer
+    WSGIProcessGroup feedmixer
+    WSGIApplicationGroup %{GLOBAL}
+    WSGIScriptAlias /feedmixer /usr/lib/wsgi-bin/fm/feedmixer_wsgi.py
+    &lt;Directory &quot;/usr/lib/wsgi-bin/fm&quot;&gt;
+    Require all granted
+    Header set Access-Control-Allow-Origin &quot;*&quot;
+    &lt;/Directory&gt;
+
+The main things to note are the ``python-home`` (set to the virtualenv directory), ``python-path``, and ``home`` options to the ``WSGIDaemonProcess``.
+
+As configured above, Apache will run the WSGI app in a single process
+(recommended), handling concurrent requests on up to 10 threads. It is also
+possible to pass the ``processes=N`` directive to ``WSGIDaemonProcess`` in
+order to run the app in N processes. If ``feedmixer_wsgi.py`` detects that the
+WSGI server is running it in multiple processes, it will log to syslog instead
+of to a file.
+
+Also note the CORS header in the Directory directive which allows the feed to
+be fetched by JavaScript clients from any domain (this requires ``mod_headers``
+to be enabled). Restrict (or remove) as your application requires.
+
+.. _mod_wsgi: https://modwsgi.readthedocs.io/en/develop/
+
+Docker
+~~~~~~
+
+An alternative to using a virtualenv for both building and deploying is to run
+FeedMixer in a Docker container. The included Dockerfile will produce an image
+which runs FeedMixer using gunicorn.
+
+Build the image from the feedmixer directory::
+
+$ docker build . -t feedmixer
+
+Run it in the foreground::
+
+$ docker run -p 8000:8000 feedmixer
+
+Now from another terminal you should be able to connect to FeedMixer on
+localhost port 8000 just as in the example above.
+
+
+Troubleshooting
+---------------
+
+Using the provided `feedmixer_wsgi.py` application, information and errors are
+logged to the file `fm.log` in the directory the application is started from
+(auto rotated with a single old log called `fm.1.log`).
+
+Any errors encountered in fetching and parsing remote feeds are reported in a
+custom HTTP header called `X-fm-errors`.
+
+Hacking
+-------
+
+First install as per instructions above.
+
+Documentation</code></pre><p>Other than this README, the documentation is in the docstrings. To build a
+pretty version (HTML) using Sphinx:</p>
+<ol>
+<li>Install Sphinx dependencies: <code>$ pipenv run pip install -r doc/requirements.txt</code></li>
+<li>Change to <code>doc/</code> directory: <code>$ cd doc</code></li>
+<li>Build: <code>$ pipenv run make html</code></li>
+<li>View: <code>$ x-www-browser _build/html/index.html</code></li>
+</ol>
+<p>Tests</p>
+<pre><code>
+Tests are in the `test` directory and Python will find and run them with::
+
+$ pipenv run python3 -m unittest
+
+Typechecking</code></pre><p>To check types using mypy_::</p>
+<p>$ MYPYPATH=stub/ mypy --ignore-missing-imports -p feedmixer</p>
+<p>Not everything is stubbed out, but can be useful for catching bugs after changing <code>feedparser.py</code></p>
+<p>.. _mypy: <a href="http://mypy-lang.org/">http://mypy-lang.org/</a></p>
+<h2 id="get-help">Get help</h2>
+<p>Feel free to open an issue on Github for help: <a href="https://github.com/cristoper/feedmixer/issues">https://github.com/cristoper/feedmixer/issues</a></p>
+<h2 id="support-the-project">Support the project</h2>
+<p>If this package was useful to you, please consider supporting my work on this
+and other open-source projects by making a small (like a tip) one-time
+donation: <code>donate via PayPal &lt;https://www.paypal.me/cristoper/5&gt;</code>_</p>
+<p>If you&#39;re looking to contract a Python developer, I might be able to help.
+Contact me at <a href="mailto:chris.burkhardt@orangenoiseproduction.com">chris.burkhardt@orangenoiseproduction.com</a></p>
+<h2 id="license">License</h2>
+<p>The project is licensed under the WTFPL_ license, without warranty of any kind.</p>
+<p>.. _WTFPL: <a href="http://www.wtfpl.net/about/">http://www.wtfpl.net/about/</a></p>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Static server that hosts Firefox Account sign up, sign in, email verification, etc. flows."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>fxa</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/mozilla/fxa"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Firefox Content Server</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>02 May 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>185</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>1013</span></div><div class="tags"><a class="button" href="/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>JavaScript</a><a class="button" href="/tags/bookmarks-and-link-sharing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Bookmarks and Link Sharing</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><p><a href="https://pullreminders.com?ref=badge"><img src="https://pullreminders.com/badge.svg" alt="pullreminders"></a></p>
+<h2 id="firefox-accounts">Firefox Accounts</h2>
+<p>The Firefox Accounts (fxa) monorepo</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<p><a href="#getting-started">Getting Started</a><br><a href="#contributing">Contributing</a><br><a href="#dependencies">Dependencies</a><br><a href="#secrets">Secrets</a><br><a href="#firefox-custom-profile">Firefox Custom Profile</a><br><a href="#functional-tests">Functional Tests</a><br><a href="#node-debugging">Node debugging</a><br><a href="#android-debugging">Android debugging</a><br><a href="#fxa-email-service">FxA Email Service</a><br><a href="#firefox-for-android">Firefox for Android</a><br><a href="#firefox-for-ios">Firefox for iOS</a><br><a href="#running-with-maildev">Running with MailDev</a><br><a href="#other-tasks">Other tasks</a><br><a href="#documentation">Documentation</a></p>
+<hr>
+<h3 id="getting-started">Getting Started</h3>
+<ol>
+<li><p><strong>Manually install the system <a href="#dependencies">dependencies</a> for OS X or Ubuntu.</strong> Note that <a href="https://docs.microsoft.com/windows/wsl/">WSL</a> is required for development work on Windows.</p>
+</li>
+<li><p>Clone this repository.</p>
+<pre><code class="language-sh">git clone https://github.com/mozilla/fxa.git</code></pre>
+</li>
+<li><p>Run:</p>
+<pre><code class="language-sh">cd fxa
+npm install
+npm start</code></pre>
+</li>
+</ol>
+<p>Note this starts up all required services, including Redis, MySQL, and Memcached. It is recommended that you don&#39;t run these services yourself, or occupy any of the <a href="https://github.com/mozilla/fxa/blob/master/mysql_servers.json">server ports</a>. Doing so may result in errors.</p>
+<ol start="4">
+<li>Visit <a href="http://localhost:3030/">localhost:3030</a>.</li>
+</ol>
+<p>Use the <a href="https://github.com/Unitech/PM2#main-features">PM2 tool</a> to stop and start the servers, and read server logs.</p>
+<p>To start all servers:</p>
+<ul>
+<li><code>npm start</code></li>
+</ul>
+<p>The most common commands are:</p>
+<ul>
+<li><p><code>npm stop</code> <strong>- stop all servers.</strong></p>
+</li>
+<li><p><code>./pm2 status</code> - display running servers.</p>
+</li>
+<li><p><code>./pm2 logs</code> - logs for all servers (note: this must be used to verify accounts).</p>
+</li>
+<li><p><code>./pm2 logs auth</code> - display logs for service <code>auth</code>.</p>
+</li>
+<li><p><code>./pm2 stop content</code> - stop <code>content</code> service.</p>
+</li>
+<li><p><code>./pm2 restart mysql</code> - restart <code>mysql</code> process.</p>
+</li>
+<li><p>More commands in the <a href="https://github.com/Unitech/PM2#main-features">PM2 Readme</a>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="contributing">Contributing</h3>
+<p>See the separate <a href="https://github.com/mozilla/fxa/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> to learn how to contribute.</p>
+<h3 id="workflow">Workflow</h3>
+<blockquote>
+<p>This is an example workflow for <strong>fxa</strong>.</p>
+</blockquote>
+<p>After installing <strong>fxa</strong> run <code>npm start</code>. Use <code>./pm2 status</code> command to check the status of the servers:</p>
+<p><img src="http://i.imgur.com/eqL8FiZ.png" alt=""></p>
+<p>To avoid wasting computer resources while not working on FxA make sure to stop the servers using <code>npm stop</code>.
+Once you are back working on FxA just use the <code>npm start</code> command to bring the servers back up.</p>
+<h4 id="verifying-email-and-viewing-logs">Verifying email and viewing logs</h4>
+<p>Use the <code>./pm2 logs</code> command to get the logs of all servers. You may also use <code>./pm2 logs [id]</code> to just see the logs for that particular server.</p>
+<p>When you signup for an account using the form on <code>localhost:3030/signup</code> the &quot;inbox&quot; logs will print out the verification code that you need to copy paste into your browser to verify your account locally:</p>
+<p><img src="https://i.imgur.com/cdh9Xrl.png" alt=""></p>
+<p>If you get an <code>error</code> status for any of the servers please verify that you installed all required dependencies. Otherwise file an issue on this repository or <a href="https://chat.mozilla.org/#/room/#fxa:mozilla.org">connect with the team on Firefox Accounts Riot</a>.</p>
+<hr>
+<hr>
+<hr>
+<h3 id="dependencies">Dependencies</h3>
+<blockquote>
+<p>Required developer dependencies:
+<a href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>,
+<a href="http://nodejs.org/">node.js <strong>12+</strong> with npm 6</a>,
+<a href="https://www.python.org/">Python 2.6+</a>,
+<a href="https://www.java.com/en/download/">Java 8+</a>,
+<a href="https://doc.rust-lang.org/1.5.0/book/nightly-rust.html">Rust nightly+</a>,
+<a href="https://gmplib.org/">libgmp</a>,
+<a href="http://www.graphicsmagick.org/">graphicsmagick</a>,
+<a href="https://docs.docker.com/">docker</a>,
+<a href="https://cloud.google.com/sdk/">gcloud CLI</a></p>
+</blockquote>
+<h5 id="os-x-with-brew">OS X (with <a href="http://brew.sh/">Brew</a>):</h5>
+<p><a href="https://developer.apple.com/xcode/">Xcode and OS X Command Line Tools are required</a>, install it and verify that command line tools installed:</p>
+<pre><code>xcode-select --install</code></pre><p>then:</p>
+<pre><code>sudo easy_install pip &amp;&amp; sudo pip install virtualenv</code></pre><p><a href="https://download.docker.com/mac/stable/Docker.dmg">Install Docker for Mac</a> | <a href="https://docs.docker.com/docker-for-mac/install/">Docs</a></p>
+<h5 id="ubuntu">Ubuntu:</h5>
+<pre><code>sudo apt-get install build-essential git libgmp3-dev graphicsmagick  python-virtualenv python-dev pkg-config libssl-dev curl openjdk-11-jre firefox</code></pre><p>Follow the <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Docker CE instructions to install Docker</a>.</p>
+<p>Docker commands require sudo, to avoid it, follow steps below:</p>
+<ol>
+<li>Add the docker group if it doesn&#39;t already exist</li>
+</ol>
+<pre><code>sudo groupadd docker</code></pre><ol start="2">
+<li>Add the connected user $USER to the docker group</li>
+</ol>
+<pre><code>sudo gpasswd -a $USER docker</code></pre><ol start="3">
+<li>Restart the docker daemon</li>
+</ol>
+<pre><code>sudo service docker restart</code></pre><h4 id="installing-nodejs">Installing Node.js</h4>
+<p>We currently use Node 12.
+See <a href="https://nodejs.org">https://nodejs.org</a></p>
+<p>Alternatively, the <a href="https://github.com/nvm-sh/nvm">Node Version Manager</a> makes working with different versions of Node easy.</p>
+<pre><code>nvm install 12
+nvm alias default 12</code></pre><h4 id="installing-java">Installing Java</h4>
+<blockquote>
+<p>Java is used to run Selenium functional tests</p>
+</blockquote>
+<h5 id="os-x">OS X:</h5>
+<p>Download from <a href="https://www.java.com/en/download/">java.com/en/download/</a></p>
+<h4 id="installing-rust">Installing Rust</h4>
+<blockquote>
+<p>Rust Nightly is used for the fxa-email-service</p>
+</blockquote>
+<h5 id="ubuntu-and-os-x">Ubuntu and OS X</h5>
+<pre><code>curl https://sh.rustup.rs -sSf | sh</code></pre><p>Once the installer begins:</p>
+<ol>
+<li>Select &quot;2) Customize installation&quot;</li>
+<li>Leave &quot;Default host triple&quot; blank, hit &quot;enter&quot;</li>
+<li>Type &quot;nightly&quot; for &quot;Default toolchain&quot;</li>
+<li>Type &quot;y&quot; for &quot;Modify PATH variable?&quot;</li>
+<li>Select &quot;1) Proceed with installation&quot;</li>
+</ol>
+<hr>
+<h3 id="secrets">Secrets</h3>
+<p>When developing locally you may need to set up some secrets in order to effectively work with certain servers. These secrets are managed at the package level.</p>
+<p>Check out the Secrets section in the following READMEs:</p>
+<ul>
+<li><a href="https://github.com/mozilla/fxa/tree/master/packages/fxa-auth-server#secrets">fxa-auth-server</a></li>
+<li><a href="https://github.com/mozilla/fxa/tree/master/packages/fxa-payments-server#secrets">fxa-payments-server</a></li>
+</ul>
+<hr>
+<h3 id="firefox-custom-profile">Firefox Custom Profile</h3>
+<p><strong>Use <code>npm start firefox</code> to start Firefox with local server configurations.</strong>
+Available options:</p>
+<ul>
+<li><code>FXA_ENV=local</code> or <code>latest</code> or <code>stable</code> or <code>stage</code> (NOTE: <code>local</code> is default).</li>
+<li><code>FXA_E10S=true</code> - add this flag to turn on E10S. (NOTE: <code>false</code> by default).</li>
+<li><code>FXA_DESKTOP_CONTEXT</code> - <code>context=</code> value. (NOTE: <code>fx_desktop_v2</code> is default).</li>
+<li><code>FIREFOX_BIN=/Applications/FirefoxNightly.app/Contents/MacOS/firefox-bin npm start</code></li>
+<li><code>FIREFOX_DEBUGGER=true</code> - open <a href="https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox">Browser Toolbox</a> on start (NOTE: <code>false</code> by default for speed).</li>
+</ul>
+<hr>
+<h3 id="functional-tests">Functional Tests</h3>
+<p><strong>The following requires <a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk">the JDK</a> and tests the local servers only.</strong></p>
+<h2 id="run-the-following-commands-from-the-fxa-content-server-directory">run the following commands from the fxa-content-server directory</h2>
+<p>To run all functional tests:</p>
+<pre><code>npm run test-functional</code></pre><p>To run a specific test or tests whose name matches part of a search string:</p>
+<pre><code>npm run test-functional -- --grep=&quot;Test name&quot;</code></pre><p>--where &#39;Test name&#39; is not the file name but the description/name of the test(s).</p>
+<hr>
+<h3 id="node-debugging">Node debugging</h3>
+<p>It&#39;s possible to debug a running node process using a variety of debuggers (see the <a href="https://nodejs.org/en/docs/guides/debugging-getting-started/">node debugging docs</a> for details).</p>
+<p>We have also extensively documented working with the <a href="https://mozilla.github.io/ecosystem-platform/docs/fxa-engineering/vscode-development">FxA code-base using VS Code</a>.</p>
+<h4 id="debugging-a-server">Debugging a server</h4>
+<p><code>npm start</code> runs some of the services with the debugger enabled by default.</p>
+<ol>
+<li>Start the whole server as usual (<code>npm install &amp;&amp; npm start</code> from top-level in the monorepo)</li>
+<li>To see which debug port each service is listening on check <code>.vscode/launch.json</code> or the <code>pm2.config.js</code> file of the package you&#39;re interested in.</li>
+<li>Connect to the process to debug it:<ul>
+<li>Using Google Chrome, go to <code>chrome://inspect</code>, then click the process to connect to devtools.<ul>
+<li>you may need to add a new target in the &quot;Configure...&quot; menu with the correct debug port</li>
+</ul>
+</li>
+<li>VSCode requires setting up a <code>.vscode/launch.json</code> file; see the <a href="https://code.visualstudio.com/docs/nodejs/nodejs-debugging">VSCode docs</a> for details.</li>
+</ul>
+</li>
+</ol>
+<h5 id="default-debug-ports">Default Debug Ports</h5>
+<p>If you&#39;re using <code>npm start</code>, the following ports are used for <code>--inspect</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9130</td>
+<td>content-server</td>
+</tr>
+<tr>
+<td>9140</td>
+<td>admin-panel</td>
+</tr>
+<tr>
+<td>9150</td>
+<td>admin-server</td>
+</tr>
+<tr>
+<td>9160</td>
+<td>auth-server</td>
+</tr>
+<tr>
+<td>9170</td>
+<td>payments-server</td>
+</tr>
+<tr>
+<td>9180</td>
+<td>event-broker</td>
+</tr>
+<tr>
+<td>9190</td>
+<td>support-panel</td>
+</tr>
+<tr>
+<td>9200</td>
+<td>graphql-api</td>
+</tr>
+</tbody></table>
+<h4 id="debugging-tests">Debugging tests</h4>
+<p>The node debugger can also be attached to a running test process. Firefox Accounts uses a variety of test frameworks, so the steps vary for the different servers. The <code>--inspect</code> argument is used in the examples below, but <code>--inspect-brk</code> can also be used to pause the process as soon as it starts.</p>
+<h5 id="mocha-tests-fxa-shared">mocha tests (fxa-shared)</h5>
+<p>For mocha, pass the <code>--timeout 0</code> option, otherwise the test will fail if you step through it and exceed the default timeout (currently 2 seconds on <code>fxa-shared</code>):</p>
+<p><code>node --inspect ./node_modules/.bin/mocha --timeout 0 path/to/file</code></p>
+<p>In <code>fxa-shared</code>, this incantation works for some directories, but not yet others.</p>
+<h5 id="jest-tests-fxa-payments-server">jest tests (fxa-payments-server)</h5>
+<p>For jest, pass the <code>--runInBand</code> argument, so it doesn&#39;t fork off the test runner to a separate process that isn&#39;t available to the inspector:</p>
+<p><code>node --inspect ./node_modules/.bin/jest --runInBand --config server/jest.config.js filematcher</code></p>
+<p>where <code>filematcher</code> is a regex that matches against test file paths. If you omit <code>filematcher</code>, Jest will run all tests (but you have to hit Enter a second time to trigger the test run).</p>
+<hr>
+<h3 id="android-debugging">Android debugging</h3>
+<p>The following technique works with any Android application and can also be used for Firefox for Android.</p>
+<p>Simply forward the following ports from the host machine to the Android device:</p>
+<pre><code>npm run adb-reverse</code></pre><p>or</p>
+<pre><code>adb reverse tcp:3030 tcp:3030 # Content server
+adb reverse tcp:9000 tcp:9000 # Auth server
+adb reverse tcp:9010 tcp:9010 # OAuth server
+adb reverse tcp:1111 tcp:1111 # Profile server
+adb reverse tcp:5000 tcp:5000 # Sync server</code></pre><p>Then run <code>npm start</code> and get to work!</p>
+<hr>
+<h3 id="fxa-email-service">FxA Email Service</h3>
+<blockquote>
+<p>Skip this if you are not working on the <a href="packages/fxa-email-service">fxa-email-service</a>.</p>
+</blockquote>
+<p>The pm2 scripts run the <code>latest</code> docker version of the email service by default. If you want to
+start making changes to the email service then do the following:</p>
+<ol>
+<li>Stop the email-service using <code>./pm2 stop &lt;email_service_id&gt;</code></li>
+<li>Build the service: <code>cd packages/fxa-email-service; cargo build --bin fxa_email_send</code></li>
+<li>Run the service: <code>cd packages/fxa-email-service; ./scripts/run_send.sh</code></li>
+</ol>
+<hr>
+<h3 id="firefox-for-ios">Firefox for iOS</h3>
+<blockquote>
+<p>Skip this if you are not working on Firefox for iOS and FxA.</p>
+</blockquote>
+<p>You can test sync locally in Firefox iOS using the XCode simulator.
+<a href="https://github.com/mozilla/firefox-ios">Follow the steps at github.com/mozilla/firefox-ios and setup <em>firefox-ios</em> </a> build locally.
+Currently there is no way to dynamically switch servers in Firefox for iOS, to use <strong>local</strong> servers you need to run the script below:</p>
+<pre><code>FIREFOX_IOS_HOME=&lt;path_to_firefox_ios_project&gt; npm run config-fxios</code></pre><p>After the script you need to rebuild <em>firefox-ios</em>.</p>
+<hr>
+<h3 id="running-with-maildev">Running with MailDev</h3>
+<p>If you want to inspect emails, you can run fxa with <a href="https://www.npmjs.com/package/maildev">MailDev</a>.</p>
+<h4 id="install">Install</h4>
+<pre><code class="language-bash">npm install maildev -g</code></pre>
+<h4 id="run">Run</h4>
+<pre><code class="language-bash">npm start
+./pm2 stop inbox</code></pre>
+<p>Once services have started, you can start MailDev on port 9999. You might have to start MailDev with sudo permissions.</p>
+<pre><code class="language-bash">sudo maildev -s 9999</code></pre>
+<p>All emails sent can be viewed from <a href="http://localhost:1080">http://localhost:1080</a>.</p>
+<hr>
+<h3 id="documentation">Documentation</h3>
+<p>The <a href="https://mozilla.github.io/ecosystem-platform/">Firefox Ecosystem Platform</a> serves as a documentation hub for Firefox Accounts, Services, Synced Client Integrations, and Subscription Platform.</p>
+<p>In addition to the ecosystem docs, each package has it&#39;s own README.md and <code>docs/</code> directory with info specific to that project.</p>
+<ul>
+<li>123done <a href="./packages/123done/README.md">README</a></li>
+<li>browserid-verifier <a href="./packages/browserid-verifier/README.md">README</a></li>
+<li>fortress <a href="./packages/fortress/README.md">README</a></li>
+<li>fxa-auth-db-mysql <a href="./packages/fxa-auth-db-mysql/README.md">README</a> / <a href="./packages/fxa-auth-db-mysql/docs">docs/</a></li>
+<li>fxa-auth-server <a href="./packages/fxa-auth-server/README.md">README</a> / <a href="./packages/fxa-auth-server/docs">docs/</a></li>
+<li>fxa-content-server <a href="./packages/fxa-content-server/README.md">README</a> / <a href="./packages/fxa-content-server/docs">docs/</a></li>
+<li>fxa-email-event-proxy <a href="./packages/fxa-email-event-proxy/README.md">README</a></li>
+<li>fxa-email-service <a href="./packages/fxa-email-service/README.md">README</a> / <a href="./packages/fxa-email-service/docs">docs/</a></li>
+<li>fxa-event-broker <a href="./packages/fxa-event-broker/README.md">README</a> / <a href="./packages/fxa-event-broker/docs">docs/</a></li>
+<li>fxa-geodb <a href="./packages/fxa-geodb/README.md">README</a></li>
+<li>fxa-js-client <a href="./packages/fxa-js-client/README.md">README</a></li>
+<li>fxa-payments-server <a href="./packages/fxa-payments-server/README.md">README</a></li>
+<li>fxa-profile-server <a href="./packages/fxa-profile-server/README.md">README</a> / <a href="./packages/fxa-profile-server/docs">docs/</a></li>
+<li>fxa-shared <a href="./packages/fxa-shared/README.md">README</a></li>
+<li>fxa-support-panel <a href="./packages/fxa-support-panel/README.md">README</a></li>
+</ul>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

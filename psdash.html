@@ -1,0 +1,187 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="*  A linux system information web dashboard using psut ils and flask."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>psdash</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/Jahaja/psdash"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>psdash</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>26 Jul 2017</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>2285</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>10</span></div><div class="tags"><a class="button" href="/tags/python.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Python</a><a class="button" href="/tags/monitoring.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Monitoring</a><a class="button" href="/tags/sysadmin.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>sysadmin</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="psdash">psdash</h1>
+<p><a href="https://travis-ci.org/Jahaja/psdash"><img src="https://travis-ci.org/Jahaja/psdash.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/r/Jahaja/psdash?branch=master"><img src="https://coveralls.io/repos/Jahaja/psdash/badge.png?branch=master" alt="Coverage Status"></a></p>
+<p>psdash is a system information web dashboard for linux using data mainly served by <a href="https://github.com/giampaolo/psutil">psutil</a> - hence the name.</p>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li><p><strong>Overview</strong><br>
+Dashboard overview of the system displaying data on cpu, disks, network, users, memory, swap and network.</p>
+</li>
+<li><p><strong>Processes</strong><br>
+  List processes (<code>top</code> like) and view detailed process information about each process.</p>
+<p>  Apart from a detailed process overview this is also available for each process:</p>
+<ul>
+<li>Open files</li>
+<li>Open connections</li>
+<li>Memory maps</li>
+<li>Child processes</li>
+<li>Resource limits</li>
+</ul>
+</li>
+<li><p><strong>Disks</strong><br>
+  List info on all disks and partitions.</p>
+</li>
+<li><p><strong>Network</strong><br>
+  List info on all network interfaces and the current throughput.
+  System-wide open connections listing with filtering. Somewhat like <code>netstat</code>.</p>
+</li>
+<li><p><strong>Logs</strong><br>
+  Tail and search logs.
+  The logs are added by patterns (like <code>/var/log/*.log</code>) which are checked periodically to account for new or deleted files.</p>
+</li>
+<li><p><strong>Multi-node/Cluster</strong>
+  Support for multiple agent nodes that is either specified by a config or will register themselves on start-up to a common psdash node that runs the web interface.</p>
+</li>
+<li><p><strong>All data is updated automatically, no need to refresh</strong></p>
+</li>
+</ul>
+<p>The GUI is pretty much a modified bootstrap example as I&#39;m no designer at all.
+If you got a feel for design and like to improve the UI parts of psdash, please create a pull request with your changes.
+It would be much appreciated as there&#39;s much room for improvements.</p>
+<h2 id="installation">Installation</h2>
+<p>Make sure your system is able to build Python C extensions. On Debian derivatives such as Ubuntu this should translate to installing the <code>build-essential</code> and <code>python-dev</code> packages using <code>apt-get</code>:</p>
+<p><code># apt-get install build-essential python-dev</code></p>
+<p>And on RHEL (Fedora, CentOS etc.) distributions:</p>
+<pre><code># yum groupinstall &quot;Development Tools&quot;
+# yum install python-devel</code></pre><p>Installation using pip:<br>
+<code>$ pip install psdash</code></p>
+<p>Since pip <a href="https://github.com/pypa/pip/issues/1423">1.5.1</a> you are forced to add <code>--allow-external argparse</code> since the latest argparse is hosted on google code.</p>
+<p>Installation from source:<br>
+<code>$ python setup.py install</code></p>
+<h2 id="getting-started">Getting started</h2>
+<p>Starting psdash:<br>
+<code>$ psdash</code></p>
+<p>Starting a psdash agent:<br>
+<code>$ psdash -a --register-to [http|https]://[host]:[port] --register-as my-agent-node</code></p>
+<p>This will start psdash in <em>agent mode</em> and try to register the node to the main psdash node pointed to by the <code>--register-to</code> option.
+An agent node will setup an RPC server rather than a webserver at the host and port specified by <code>-p/--port</code> and <code>-b/--bind</code> respectively.
+The main psdash node (serving HTTP) will present a list of registered nodes that are available to switch between.</p>
+<p>Available command-line arguments:</p>
+<pre><code>$ psdash --help
+usage: psdash [-h] [-l path] [-b host] [-p port] [-d] [-a]
+              [--register-to host:port] [--register-as name]
+
+psdash [version] - system information web dashboard
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l path, --log path   log files to make available for psdash. Patterns (e.g.
+                        /var/log/**/*.log) are supported. This option can be
+                        used multiple times.
+  -b host, --bind host  host to bind to. Defaults to 0.0.0.0 (all interfaces).
+  -p port, --port port  port to listen on. Defaults to 5000.
+  -d, --debug           enables debug mode.
+  -a, --agent           Enables agent mode. This launches a RPC server, using
+                        zerorpc, on given bind host and port.
+  --register-to host:port
+                        The psdash node running in web mode to register this
+                        agent to on start up. e.g 10.0.1.22:5000
+  --register-as name    The name to register as. (This will default to the
+                        node&#39;s hostname)</code></pre><h2 id="configuration">Configuration</h2>
+<p>psdash uses the configuration handling offered by Flask.
+The configuration file pointed to by the environment varible <code>PSDASH_CONFIG</code> will be read on startup.<br>
+e.g: <code>$ PSDASH_CONFIG=/home/user/config.py psdash</code></p>
+<p>In addition to the <a href="http://flask.pocoo.org/docs/config/#builtin-configuration-values">built-in configuration values that comes with Flask</a> there&#39;s a number of psdash specific ones as well:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>PSDASH_AUTH_USERNAME</code></td>
+<td>When this value and <code>PSDASH_AUTH_PASSWORD</code> is set, Basic Authentication will be enabled with the provided credentials. The username of the basic authentication</td>
+</tr>
+<tr>
+<td><code>PSDASH_AUTH_PASSWORD</code></td>
+<td>The password of the basic authentication</td>
+</tr>
+<tr>
+<td><code>PSDASH_ALLOWED_REMOTE_ADDRESSES</code></td>
+<td>If this is set, only provided ip addresses will be allowed to access psdash. Addresses is separated by a comma. e.g: <code>PSDASH_ALLOWED_REMOTE_ADDRESSES = &quot;10.0.0.2, 192.29.20.2&quot;</code></td>
+</tr>
+<tr>
+<td><code>PSDASH_URL_PREFIX</code></td>
+<td>This can be used to make psdash serve from a non-root location. e.g: <code>PSDASH_URL_PREFIX = &quot;/psdash&quot;</code> would make psdash serve it&#39;s pages from /psdash</td>
+</tr>
+<tr>
+<td><code>PSDASH_LOG_LEVEL</code></td>
+<td>The log level set for psdash (passed in to <code>logging.basicConfig</code>). <em>Defaults to <code>logging.INFO</code></em>.</td>
+</tr>
+<tr>
+<td><code>PSDASH_LOG_LEVEL</code></td>
+<td>The log format set for psdash (passed in to <code>logging.basicConfig</code>). *Defaults to `%(levelname)s</td>
+</tr>
+<tr>
+<td><code>PSDASH_NODES</code></td>
+<td>A list of psDash agent nodes (a dict per node) to register on startup. e.g <code>[{&#39;name&#39;: &#39;mywebnode&#39;, &#39;host&#39;: &#39;10.0.0.2&#39;, &#39;port&#39;: 5000}]</code></td>
+</tr>
+<tr>
+<td><code>PSDASH_NET_IO_COUNTER_INTERVAL</code></td>
+<td>The interval in seconds to update the counters used for calculating network traffic. <em>Defaults to 3</em>.</td>
+</tr>
+<tr>
+<td><code>PSDASH_LOGS_INTERVAL</code></td>
+<td>The interval in seconds to reapply the log patterns to make sure that file-system changes are applied (log files being created or removed). <em>Defaults to 60</em>.</td>
+</tr>
+<tr>
+<td><code>PSDASH_REGISTER_INTERVAL</code></td>
+<td>The interval in seconds to register the agent to the host psdash node. This is done periodically to be able to determine if any node has gone away and at what time. <em>Defaults to 60</em></td>
+</tr>
+<tr>
+<td><code>PSDASH_LOGS</code></td>
+<td>Log patterns to apply at startup. e.g <code>[&#39;/var/log/*.log&#39;]</code>. To override this option using the command-line use the <code>-l/--log</code> arg option.</td>
+</tr>
+<tr>
+<td><code>PSDASH_REGISTER_TO</code></td>
+<td>When running in agent mode, this is used to set which psdash node to register the agent node to. e.g <code>http://10.0.20.2:5000</code>.</td>
+</tr>
+<tr>
+<td><code>PSDASH_REGISTER_AS</code></td>
+<td>When running in agent mode, this is used to set the name to register as to the host psdash node specified by <code>PSDASH_REGISTER_TO</code>.</td>
+</tr>
+<tr>
+<td><code>PSDASH_HTTPS_KEYFILE</code></td>
+<td>Path to the SSL key file to use to enable starting the psdash webserver in HTTPS mode. e.g <code>/home/user/private.key</code></td>
+</tr>
+<tr>
+<td><code>PSDASH_HTTPS_CERTFILE</code></td>
+<td>Path to the SSL certificate file to use to enable starting the psdash webserver in HTTPS mode. e.g <code>/home/user/certificate.crt</code></td>
+</tr>
+<tr>
+<td><code>PSDASH_ENVIRON_WHITELIST</code></td>
+<td>If set, only the env vars in this list will be displayed with value. e.g <code>[&#39;HOME&#39;]</code></td>
+</tr>
+</tbody></table>
+<h2 id="screenshots">Screenshots</h2>
+<p>Overview:
+<img src="docs/screenshots/overview.png" alt="Overview">
+Listing processes:
+<img src="docs/screenshots/processes.png" alt="Processes">
+Overview of a process:
+<img src="docs/screenshots/process_overview.png" alt="Process overview">
+Connections of a process:
+<img src="docs/screenshots/process_connections.png" alt="Process connections">
+Environment of a process:
+<img src="docs/screenshots/process_environment.png" alt="Process environment">
+Network:
+<img src="docs/screenshots/network.png" alt="Network">
+Disks:
+<img src="docs/screenshots/disks.png" alt="Network">
+Tailing a log:
+<img src="docs/screenshots/log.png" alt="Log">
+Searching a log:
+<img src="docs/screenshots/log_search.png" alt="Log search"></p>
+<h2 id="license">License</h2>
+<p>Released under CC0 (Public Domain Dedication).</p>
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</a></p>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

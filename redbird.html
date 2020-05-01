@@ -1,0 +1,445 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A modern reverse proxy for node that includes cluster, HTTP2, LetsEncrypt, and Docker support."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>redbird</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/OptimalBits/redbird"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Redbird</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>30 Mar 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>4123</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>107</span></div><div class="tags"><a class="button" href="/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>JavaScript</a><a class="button" href="/tags/proxy.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Proxy</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="redbird-reverse-proxy">Redbird Reverse Proxy</h1>
+<h2 id="with-built-in-cluster-http2-letsencrypt-and-docker-support">With built-in Cluster, HTTP2, <a href="https://letsencrypt.org/">LetsEncrypt</a> and <a href="https://www.docker.com/">Docker</a> support</h2>
+<p><img src="http://cliparts.co/cliparts/6cr/o9d/6cro9dRzi.jpg" alt="redbird"></p>
+<p>It should be easy and robust to handle dynamic virtual hosts, load balancing, proxying web sockets and SSL encryption.</p>
+<p>With Redbird you get a complete library to build dynamic reverse proxies with the speed and robustness of http-proxy.</p>
+<p>This light-weight package includes everything you need for easy reverse routing of your applications.
+Great for routing many applications from different domains in one single host, handling SSL with ease, etc.</p>
+<p>Developed by <a href="http://twitter.com/manast">manast</a></p>
+<p><a href="http://travis-ci.org/OptimalBits/redbird"><img src="https://secure.travis-ci.org/OptimalBits/redbird.png?branch=master" alt="BuildStatus"></a>
+<a href="http://badge.fury.io/js/redbird"><img src="https://badge.fury.io/js/redbird.svg" alt="NPM version"></a></p>
+<h2 id="super-hot">SUPER HOT</h2>
+<p>Support for HTTP2. You can now enable HTTP2 just by setting the HTTP2 flag to true. Keep in mind that HTTP2 requires
+SSL/TLS certificates. Thankfully we also support LetsEncrypt so this becomes easy as pie.</p>
+<h2 id="hot">HOT</h2>
+<p>We have now support for automatic generation of SSL certificates using <a href="#letsencrypt">LetsEncrypt</a>. Zero config setup for your
+TLS protected services that just works.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Flexible and easy routing</li>
+<li>Websockets</li>
+<li>Seamless SSL Support (HTTPS -&gt; HTTP proxy)</li>
+<li>Automatic HTTP to HTTPS redirects</li>
+<li>Automatic TLS Certificates generation and renewal</li>
+<li>Load balancer</li>
+<li>Register and unregister routes programmatically without restart (allows zero downtime deployments)</li>
+<li>Docker support for automatic registration of running containers</li>
+<li>Cluster support that enables automatic multi-process</li>
+<li>Based on top of rock-solid node-http-proxy and battle tested on production in many sites</li>
+<li>Optional logging based on bunyan</li>
+</ul>
+<h2 id="install">Install</h2>
+<pre><code class="language-sh">npm install redbird</code></pre>
+<h2 id="example">Example</h2>
+<p>You can programmatically register or unregister routes dynamically even if the proxy is already running:</p>
+<pre><code class="language-js">var proxy = require(&#39;redbird&#39;)({port: 80});
+
+// OPTIONAL: Setup your proxy but disable the X-Forwarded-For header
+var proxy = require(&#39;redbird&#39;)({port: 80, xfwd: false});
+
+// Route to any global ip
+proxy.register(&quot;optimalbits.com&quot;, &quot;http://167.23.42.67:8000&quot;);
+
+// Route to any local ip, for example from docker containers.
+proxy.register(&quot;example.com&quot;, &quot;http://172.17.42.1:8001&quot;);
+
+// Route from hostnames as well as paths
+proxy.register(&quot;example.com/static&quot;, &quot;http://172.17.42.1:8002&quot;);
+proxy.register(&quot;example.com/media&quot;, &quot;http://172.17.42.1:8003&quot;);
+
+// Subdomains, paths, everything just works as expected
+proxy.register(&quot;abc.example.com&quot;, &quot;http://172.17.42.4:8080&quot;);
+proxy.register(&quot;abc.example.com/media&quot;, &quot;http://172.17.42.5:8080&quot;);
+
+// Route to any href including a target path
+proxy.register(&quot;foobar.example.com&quot;, &quot;http://172.17.42.6:8080/foobar&quot;);
+
+// You can also enable load balancing by registering the same hostname with different
+// target hosts. The requests will be evenly balanced using a Round-Robin scheme.
+proxy.register(&quot;balance.me&quot;, &quot;http://172.17.40.6:8080&quot;);
+proxy.register(&quot;balance.me&quot;, &quot;http://172.17.41.6:8080&quot;);
+proxy.register(&quot;balance.me&quot;, &quot;http://172.17.42.6:8080&quot;);
+proxy.register(&quot;balance.me&quot;, &quot;http://172.17.43.6:8080&quot;);
+
+
+// LetsEncrypt support
+// With Redbird you can get zero conf and automatic SSL certificates for your domains
+redbird.register(&#39;example.com&#39;, &#39;http://172.60.80.2:8082&#39;, {
+  ssl: {
+    letsencrypt: {
+      email: &#39;john@example.com&#39;, // Domain owner/admin email
+      production: true, // WARNING: Only use this flag when the proxy is verified to work correctly to avoid being banned!
+    }
+  }
+});
+
+//
+// LetsEncrypt requires a minimal web server for handling the challenges, this is by default on port 3000
+// it can be configured when initiating the proxy. This web server is only used by Redbird internally so most of the time
+// you  do not need to do anything special other than avoid having other web services in the same host running
+// on the same port.
+
+//
+// HTTP2 Support using LetsEncrypt for the certificates
+//
+var proxy = require(&#39;redbird&#39;)({
+  port: 80, // http port is needed for LetsEncrypt challenge during request / renewal. Also enables automatic http-&gt;https redirection for registered https routes.
+  letsencrypt: {
+    path: __dirname + &#39;/certs&#39;,
+    port: 9999 // LetsEncrypt minimal web server port for handling challenges. Routed 80-&gt;9999, no need to open 9999 in firewall. Default 3000 if not defined.
+  },
+  ssl: {
+    http2: true,
+    port: 443, // SSL port used to serve registered https routes with LetsEncrypt certificate.
+  }
+});
+</code></pre>
+<h2 id="about-https">About HTTPS</h2>
+<p>The HTTPS proxy supports virtual hosts by using SNI (which most modern browsers support: IE7 and above).
+The proxying is performed by hostname, so you must use the same SSL certificates for a given hostname independently of its paths.</p>
+<h3 id="letsencrypt">LetsEncrypt</h3>
+<p>Some important considerations when using LetsEncrypt. You need to agree to LetsEncrypt <a href="https://letsencrypt.org/documents/LE-SA-v1.0.1-July-27-2015.pdf">terms of service</a>. When using
+LetsEncrypt, the obtained certificates will be copied to disk to the specified path. Its your responsibility to backup, or save persistently when applicable. Keep in mind that
+these certificates needs to be handled with care so that they cannot be accessed by malicious users. The certificates will be renewed every
+2 months automatically forever.</p>
+<h2 id="https-example">HTTPS Example</h2>
+<p>(NOTE: This is a legacy example not needed when using LetsEncrypt)</p>
+<p>Conceptually HTTPS is easy, but it is also easy to struggle getting it right. With Redbird its straightforward, check this complete example:</p>
+<p>1) Generate a localhost development SSL certificate:</p>
+<pre><code class="language-sh">/certs $ openssl genrsa -out dev-key.pem 1024
+/certs $ openssl req -new -key dev-key.pem -out dev-csr.pem
+
+// IMPORTANT: Do not forget to fill the field! Common Name (e.g. server FQDN or YOUR name) []:localhost
+
+/certs $ openssl x509 -req -in dev-csr.pem -signkey dev-key.pem -out dev-cert.pem
+</code></pre>
+<p>Note: For production sites you need to buy valid SSL certificates from a trusted authority.</p>
+<p>2) Create a simple redbird based proxy:</p>
+<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
+    port: 8080,
+
+    // Specify filenames to default SSL certificates (in case SNI is not supported by the
+    // user&#39;s browser)
+    ssl: {
+        port: 8443,
+        key: &quot;certs/dev-key.pem&quot;,
+        cert: &quot;certs/dev-cert.pem&quot;,
+    }
+});
+
+// Since we will only have one https host, we dont need to specify additional certificates.
+redbird.register(&#39;localhost&#39;, &#39;http://localhost:8082&#39;, {ssl: true});</code></pre>
+<p>3) Test it:</p>
+<p>Point your browser to <code>localhost:8000</code> and you will see how it automatically redirects to your https server and proxies you to
+your target server.</p>
+<p>You can define many virtual hosts, each with its own SSL certificate. And if you do not define any, they will use the default one
+as in the example above:</p>
+<pre><code class="language-js">redbird.register(&#39;example.com&#39;, &#39;http://172.60.80.2:8082&#39;, {
+    ssl: {
+        key: &quot;../certs/example.key&quot;,
+        cert: &quot;../certs/example.crt&quot;,
+        ca: &quot;../certs/example.ca&quot;
+    }
+});
+
+redbird.register(&#39;foobar.com&#39;, &#39;http://172.60.80.3:8082&#39;, {
+    ssl: {
+        key: &quot;../certs/foobar.key&quot;,
+        cert: &quot;../certs/foobar.crt&quot;,
+    }
+});</code></pre>
+<p>You can also specify https hosts as targets and also specify if you want the connection to the target host to be secure (default is true).</p>
+<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
+    port: 80,
+    secure: false,
+    ssl: {
+        port: 443,
+        key: &quot;../certs/default.key&quot;,
+        cert: &quot;../certs/default.crt&quot;,
+    }
+});
+redbird.register(&#39;tutorial.com&#39;, &#39;https://172.60.80.2:8083&#39;, {
+    ssl: {
+        key: &quot;../certs/tutorial.key&quot;,
+        cert: &quot;../certs/tutorial.crt&quot;,
+    }
+});
+</code></pre>
+<p>Edge case scenario: you have an HTTPS server with two IP addresses assigned to it and your clients use old software without SNI support. In this case, both IP addresses will receive the same fallback certificate. I.e. some of the domains will get a wrong certificate. To handle this case you can create two HTTPS servers each one bound to its own IP address and serving the appropriate certificate.</p>
+<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
+    port: 8080,
+
+    // Specify filenames to default SSL certificates (in case SNI is not supported by the
+    // user&#39;s browser)
+    ssl: [
+        {
+            port: 443,
+            ip: &#39;123.45.67.10&#39;,  // assigned to tutorial.com
+            key: &#39;certs/tutorial.key&#39;,
+            cert: &#39;certs/tutorial.crt&#39;,
+        },
+        {
+            port: 443,
+            ip: &#39;123.45.67.11&#39;, // assigned to my-other-domain.com
+            key: &#39;certs/my-other-domain.key&#39;,
+            cert: &#39;certs/my-other-domain.crt&#39;,
+        }
+    ]
+});
+
+// These certificates will be served if SNI is supported
+redbird.register(&#39;tutorial.com&#39;, &#39;http://192.168.0.10:8001&#39;, {
+    ssl: {
+        key: &#39;certs/tutorial.key&#39;,
+        cert: &#39;certs/tutorial.crt&#39;,
+    }
+});
+redbird.register(&#39;my-other-domain.com&#39;, &#39;http://192.168.0.12:8001&#39;, {
+    ssl: {
+        key: &#39;certs/my-other-domain.key&#39;,
+        cert: &#39;certs/my-other-domain.crt&#39;,
+    }
+});</code></pre>
+<h2 id="docker-support">Docker support</h2>
+<p>If you use docker, you can tell Redbird to automatically register routes based on image
+names. You register your image name and then every time a container starts from that image,
+it gets registered, and unregistered if the container is stopped. If you run more than one
+container from the same image, Redbird will load balance following a round-robin algorithm:</p>
+<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
+  port: 8080,
+});
+
+var docker = require(&#39;redbird&#39;).docker;
+docker(redbird).register(&quot;old.api.com&quot;, &#39;company/api:v1.0.0&#39;);
+docker(redbird).register(&quot;stable.api.com&quot;, &#39;company/api:v2.*&#39;);
+docker(redbird).register(&quot;preview.api.com&quot;, &#39;company/api:v[3-9].*&#39;);</code></pre>
+<h2 id="etcd-backend">etcd backend</h2>
+<p>Redbird can use <a href="https://github.com/stianeikeland/node-etcd">node-etcd</a> to automatically create proxy records from an etcd cluster. Configuration
+is accomplished by passing an array of <a href="https://github.com/stianeikeland/node-etcd#constructor-options">options</a>, plus the hosts and path variables,
+which define which etcd cluster hosts, and which directory within those hosts, that Redbird should poll for updates.</p>
+<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
+  port:8080
+});
+
+var options = {
+  hosts: [&#39;localhost:2379&#39;], // REQUIRED - you must define array of cluster hosts
+    path: [&#39;redbird&#39;], // OPTIONAL - path to etcd keys
+    ... // OPTIONAL - pass in node-etcd connection options
+}
+require(&#39;redbird&#39;).etcd(redbird,options);</code></pre>
+<p>etcd records can be created in one of two ways, either as a target destination pair:
+<code>/redbird/example.com            &quot;8.8.8.8&quot;</code>
+or by passing a JSON object containing multiple hosts, and Redbird options:</p>
+<pre><code>/redbird/derek.com                { &quot;hosts&quot; : [&quot;10.10.10.10&quot;, &quot;11.11.11.11&quot;]}
+/redbird/johnathan.com    { &quot;ssl&quot; : true }
+/redbird/jeff.com         { &quot;docker&quot; : &quot;alpine/alpine:latest&quot; }</code></pre><h2 id="cluster-support">Cluster support</h2>
+<p>Redbird supports automatic node cluster generation. To use, just specify the number
+of processes that you want Redbird to use in the options object. Redbird will automatically
+restart any thread that crashes, increasing reliability.</p>
+<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
+    port: 8080,
+  cluster: 4
+});</code></pre>
+<h2 id="ntlm-support">NTLM support</h2>
+<p>If you need NTLM support, you can tell Redbird to add the required header handler. This
+registers a response handler which makes sure the NTLM auth header is properly split into
+two entries from http-proxy.</p>
+<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
+  port: 8080,
+  ntlm: true
+});</code></pre>
+<h2 id="custom-resolvers">Custom Resolvers</h2>
+<p>With custom resolvers, you can decide how the proxy server handles request. Custom resolvers allow you to extend Redbird considerably. With custom resolvers, you can perform the following:</p>
+<ul>
+<li>Do path-based routing.</li>
+<li>Do headers based routing.</li>
+<li>Do wildcard domain routing.</li>
+<li>Use variable upstream servers based on availability, for example in conjunction with Etcd or any other service discovery platform.</li>
+<li>And more.</li>
+</ul>
+<p>Resolvers should be:</p>
+<ol>
+<li>Be invokable function. The <code>this</code> context of such function is the Redbird Proxy object. The resolver function takes in two parameters : <code>host</code> and <code>url</code></li>
+<li>Have a priority, resolvers with higher priorities are called before those of lower priorities. The default resolver, has a priority of 0.</li>
+<li>A resolver should return a route object or a string when matches it matches the parameters passed in. If string is returned, then it must be a valid upstream URL, if object, then the object must conform to the following:</li>
+</ol>
+<pre><code>  {
+     url: string or array of string [required], when array, the urls will be load-balanced across.
+     path: path prefix for route, [optional], defaults to &#39;/&#39;,
+     opts: {} // Redbird target options, see Redbird.register() [optional],
+  }</code></pre><h3 id="defining-resolvers">Defining Resolvers</h3>
+<p>Resolvers can be defined when initializing the proxy object with the <code>resolvers</code> parameter. An example is below:</p>
+<pre><code class="language-javascript"> // for every URL path that starts with /api/, send request to upstream API service
+ var customResolver1 = function(host, url, req) {
+   if(/^\/api\//.test(url)){
+      return &#39;http://127.0.0.1:8888&#39;;
+   }
+ };
+
+ // assign high priority
+ customResolver1.priority = 100;
+
+ var proxy = new require(&#39;redbird&#39;)({
+    port: 8080,
+    resolvers: [
+    customResolver1,
+    // uses the same priority as default resolver, so will be called after default resolver
+    function(host, url, req) {
+      if(/\.example\.com/.test(host)){
+        return &#39;http://127.0.0.1:9999&#39;
+      }
+    }]
+ })
+</code></pre>
+<h3 id="adding-and-removing-resolvers-at-runtime">Adding and Removing Resolvers at Runtime.</h3>
+<p>You can add or remove resolvers at runtime, this is useful in situations where your upstream is tied to a service discovery service system.</p>
+<pre><code class="language-javascript">var topPriority = function(host, url, req) {
+  return /app\.example\.com/.test(host) ? {
+    // load balanced
+    url: [
+    &#39;http://127.0.0.1:8000&#39;,
+    &#39;http://128.0.1.1:9999&#39;
+   ]
+  } : null;
+};
+
+topPriority.priority = 200;
+proxy.addResolver(topPriority);
+
+
+// remove top priority after 10 minutes,
+setTimeout(function() {
+  proxy.removeResolver(topPriority);
+}, 600000);</code></pre>
+<h2 id="replacing-the-default-httphttps-server-modules">Replacing the default HTTP/HTTPS server modules</h2>
+<p>By passing <code>serverModule: module</code> or <code>ssl: {serverModule : module}</code> you can override the default http/https
+servers used to listen for connections with another module.</p>
+<p>One application for this is to enable support for PROXY protocol: This is useful if you want to use a module like
+<a href="https://github.com/findhit/proxywrap">findhit-proxywrap</a> to enable support for the
+<a href="http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt">PROXY protocol</a>.</p>
+<p>PROXY protocol is used in tools like HA-Proxy, and can be optionally enabled in Amazon ELB load balancers to pass the
+original client IP when proxying TCP connections (similar to an X-Forwarded-For header, but for raw TCP). This is useful
+if you want to run redbird on AWS behind an ELB load balancer, but have redbird terminate any HTTPS connections so you
+can have SNI/Let&#39;s Encrypt/HTTP2support. With this in place Redbird will see the client&#39;s IP address rather
+than the load-balancer&#39;s, and pass this through in an X-Forwarded-For header.</p>
+<pre><code class="language-javascript">//Options for proxywrap. This means the proxy will also respond to regular HTTP requests without PROXY information as well.
+proxy_opts = {strict: false};
+proxyWrap = require(&#39;findhit-proxywrap&#39;);
+var opts = {
+    port: process.env.HTTP_PORT,
+    serverModule: proxyWrap.proxy( require(&#39;http&#39;), proxy_opts),
+    ssl: {
+        //Do this if you want http2:
+        http2: true,
+        serverModule: proxyWrap.proxy(require(&#39;spdy&#39;).server, proxy_opts),
+        //Do this if you only want regular https
+        // serverModule: proxyWrap.proxy( require(&#39;http&#39;), proxy_opts),
+        port: process.env.HTTPS_PORT,
+    }
+}
+
+// Create the proxy
+var proxy = require(&#39;redbird&#39;)(opts);</code></pre>
+<h2 id="roadmap">Roadmap</h2>
+<ul>
+<li>Statistics (number of connections, load, response times, etc)</li>
+<li>CORS support.</li>
+<li>Rate limiter.</li>
+<li>Simple IP Filtering.</li>
+<li>Automatic routing via Redis.</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<p><a href="#redbird">constructor</a>
+<a href="#register">register</a>
+<a href="#unregister">unregister</a>
+<a href="#notFound">notFound</a>
+<a href="#close">close</a></p>
+<a name="redbird"/>
+
+<h3 id="redbirdopts">Redbird(opts)</h3>
+<p>This is the Proxy constructor. Creates a new Proxy and starts listening to
+the given port.</p>
+<p><strong>Arguments</strong></p>
+<pre><code>    opts {Object} Options to pass to the proxy:
+    {
+        port: {Number} // port number that the proxy will listen to.
+        ssl: { // Optional SSL proxying.
+            port: {Number} // SSL port the proxy will listen to.
+            // Default certificates
+            key: keyPath,
+            cert: certPath,
+            ca: caPath // Optional.
+            redirectPort: port, // optional https port number to be redirected if entering using http.
+            http2: false, //Optional, setting to true enables http2/spdy support
+            serverModule : require(&#39;https&#39;) // Optional, override the https server module used to listen for https or http2 connections.  Default is require(&#39;https&#39;) or require(&#39;spdy&#39;)
+        }
+        bunyan: {Object} Bunyan options. Check [bunyan](https://github.com/trentm/node-bunyan) for info.
+        If you want to disable bunyan, just set this option to false. Keep in mind that
+        having logs enabled incours in a performance penalty of about one order of magnitude per request.
+        resolvers: {Function | Array}  a list of custom resolvers. Can be a single function or an array of functions. See more details about resolvers above.
+        serverModule : {Module} Optional - Override the http server module used to listen for http connections.  Default is require(&#39;http&#39;)
+    }</code></pre><hr>
+<a name="register"/>
+
+<h4 id="redbirdregistersrc-target-opts">Redbird::register(src, target, opts)</h4>
+<p>Register a new route. As soon as this method is called, the proxy will
+start routing the sources to the given targets.</p>
+<p><strong>Arguments</strong></p>
+<pre><code class="language-javascript">    src {String} {String|URL} A string or a url parsed by node url module.
+        Note that port is ignored, since the proxy just listens to one port.
+
+    target {String|URL} A string or a url parsed by node url module.
+    opts {Object} route options:
+    examples:
+    {ssl : true} // Will use default ssl certificates.
+    {ssl: {
+        redirect: true, // False to disable HTTPS autoredirect to this route.
+        key: keyPath,
+        cert: certPath,
+        ca: caPath, // optional
+        secureOptions: constants.SSL_OP_NO_TLSv1 //optional, see below
+        }
+    }
+    {onRequest: (req, res, target) =&gt; {
+      // called before forwarding is occurred, you can modify req.headers for example
+      // return undefined to forward to default target
+    }}</code></pre>
+<blockquote>
+<p><em>Note: if you need to use <strong>ssl.secureOptions</strong>, to disable older, insecure TLS versions, import crypto/constants first:</em></p>
+</blockquote>
+<blockquote>
+<p><code>const { constants } = require(&#39;crypto&#39;)</code></p>
+</blockquote>
+<hr>
+<a name="unregister"/>
+
+<h4 id="redbirdunregistersrc-target">Redbird.unregister(src, [target])</h4>
+<p> Unregisters a route. After calling this method, the given route will not
+ be proxied anymore.</p>
+<p><strong>Arguments</strong></p>
+<pre><code class="language-javascript">    src {String|URL} A string or a url parsed by node url module.
+    target {String|URL} A string or a url parsed by node url module. If not
+    specified, it will unregister all routes for the given source.</code></pre>
+<hr>
+<a name="notFound"/>
+
+<h4 id="redbirdnotfoundcallback">Redbird.notFound(callback)</h4>
+<p> Gives Redbird a callback function with two parameters, the HTTP request
+ and response objects, respectively, which will be called when a proxy route is
+ not found. The default is</p>
+<pre><code class="language-javascript">    function(req, res){
+      res.statusCode = 404;
+      res.write(&#39;Not Found&#39;);
+      res.end();
+    };</code></pre>
+<p>.</p>
+<p><strong>Arguments</strong></p>
+<pre><code class="language-javascript">    src {Function(req, res)} The callback which will be called with the HTTP
+      request and response objects when a proxy route is not found.</code></pre>
+<hr>
+<a name="close"/>
+
+<h4 id="redbirdclose">Redbird.close()</h4>
+<p> Close the proxy stopping all the incoming connections.</p>
+<hr>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

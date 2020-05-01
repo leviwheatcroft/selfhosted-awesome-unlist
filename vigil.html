@@ -1,0 +1,302 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="*   Microservices Status Page. Monitors a distributed infrastructure and sends alerts to Slack. Written in Rust."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>vigil</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/valeriansaliou/vigil"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>vigil</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>22 Apr 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>574</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>16</span></div><div class="tags"><a class="button" href="/tags/rust.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Rust</a><a class="button" href="/tags/status-pages.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Status Pages</a><a class="button" href="/tags/sysadmin.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>sysadmin</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="vigil">Vigil</h1>
+<p><a href="https://travis-ci.org/valeriansaliou/vigil"><img src="https://travis-ci.org/valeriansaliou/vigil.svg?branch=master" alt="Build Status"></a> <a href="https://deps.rs/repo/github/valeriansaliou/vigil"><img src="https://deps.rs/repo/github/valeriansaliou/vigil/status.svg" alt="Dependency Status"></a> <a href="https://www.buymeacoffee.com/valeriansaliou"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee"></a></p>
+<p><strong>Microservices Status Page. Monitors a distributed infrastructure and sends alerts (Slack, SMS, etc.).</strong></p>
+<p>Vigil is an open-source Status Page you can host on your infrastructure, used to monitor all your servers and apps, and visible to your users (on a domain of your choice, eg. <code>status.example.com</code>).</p>
+<p>It is useful in microservices contexts to monitor both apps and backends. If a node goes down in your infrastructure, you receive a status change notification in a Slack channel, Email, Twilio SMS or/and XMPP.</p>
+<p><em>Tested at Rust version: <code>rustc 1.44.0-nightly (dbf8b6bf1 2020-04-19)</code></em></p>
+<p><strong>🇭🇺 Crafted in Budapest, Hungary.</strong></p>
+<p><strong>👉 See a live demo of Vigil on <a href="https://status.crisp.chat/">Crisp Status Page</a>.</strong></p>
+<p><strong>:newspaper: The Vigil project was announced in <a href="https://journal.valeriansaliou.name/announcing-vigil-how-we-monitor-crisp-at-scale/">a post on my personal journal</a>.</strong></p>
+<p><a href="https://status.crisp.chat/"><img src="https://valeriansaliou.github.io/vigil/images/vigil.png" alt="Vigil"></a></p>
+<h2 id="who-uses-it">Who uses it?</h2>
+<table>
+<tr>
+<td align="center"><a href="https://crisp.chat/"><img src="https://valeriansaliou.github.io/vigil/images/crisp-icon.png" height="64" /></a></td>
+<td align="center"><a href="https://www.meilisearch.com/"><img src="https://valeriansaliou.github.io/vigil/images/meili-icon.png" height="64" /></a></td>
+<td align="center"><a href="https://miragespace.com/"><img src="https://valeriansaliou.github.io/vigil/images/miragespace-icon.png" height="64" /></a></td>
+<td align="center"><a href="https://www.redsmin.com/"><img src="https://valeriansaliou.github.io/vigil/images/redsmin-icon.png" height="64" /></a></td>
+<td align="center"><a href="https://www.image-charts.com/"><img src="https://valeriansaliou.github.io/vigil/images/imagecharts-icon.png" height="64" /></a></td>
+</tr>
+<tr>
+<td align="center">Crisp</td>
+<td align="center">Meili</td>
+<td align="center">miragespace</td>
+<td align="center">Redsmin</td>
+<td align="center">Image-Charts</td>
+</tr>
+</table>
+
+<p><em>👋 You use Vigil and you want to be listed there? <a href="https://valeriansaliou.name/">Contact me</a>.</em></p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Monitors your infrastructure services automatically</strong></li>
+<li><strong>Notifies you when a service gets down</strong> or gets back up via a configured channel:<ul>
+<li>Email</li>
+<li>Twilio (SMS)</li>
+<li>Slack</li>
+<li>Telegram</li>
+<li>Pushover</li>
+<li>XMPP</li>
+<li>Webhook</li>
+</ul>
+</li>
+<li><strong>Generates a status page</strong>, that you can host on your domain for your public users (eg. <code>https://status.example.com</code>)</li>
+</ul>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>Vigil monitors all your infrastructure services. You first need to configure target services to be monitored, and then Vigil does the rest for you.</p>
+<p><strong>There are two kinds of services Vigil can monitor:</strong></p>
+<ul>
+<li><strong>HTTP / TCP / ICMP services</strong>: Vigil frequently probes an HTTP, TCP or ICMP target and checks for reachability</li>
+<li><strong>Application services</strong>: Install the Vigil Reporter library eg. on your NodeJS app and get reports when your app gets down, as well as when the host server system is overloaded</li>
+</ul>
+<p>It is recommended to configure Vigil or Vigil Reporter to send frequent probe checks, as to ensure you are quickly notified when a service gets down (thus to reduce unexpected downtime on your services).</p>
+<h2 id="hosted-alternative-to-vigil">Hosted alternative to Vigil</h2>
+<p><strong>Vigil needs to be hosted on your own systems, and maintained on your end. If you do not feel like managing yet another service, <a href="https://crisp.chat/en/status/">you may use Crisp Status instead</a>.</strong></p>
+<p>Crisp Status is a direct port of Vigil to the Crisp customer support platform.</p>
+<p>Crisp Status hosts your status page on Crisp systems, and is able to do what Vigil does (and even more!). Crisp Status is integrated to other <a href="https://crisp.chat/en/">Crisp</a> products (eg. <a href="https://crisp.chat/en/livechat/">Crisp Chatbox</a> &amp; <a href="https://crisp.chat/en/knowledge/">Crisp Helpdesk</a>). It warns your users over chatbox and helpdesk if your status page reports as <code>dead</code> for an extended period of time.</p>
+<p><em>As an example of a status page running Crisp Status, check out <a href="https://status.enrich.email/en/">Enrich Status Page</a>.</em></p>
+<h2 id="how-to-use-it">How to use it?</h2>
+<h3 id="installation">Installation</h3>
+<p>Vigil is built in Rust. To install it, either download a version from the <a href="https://github.com/valeriansaliou/vigil/releases">Vigil releases</a> page, use <code>cargo install</code> or pull the source code from <code>master</code>.</p>
+<p><strong>Install from Cargo:</strong></p>
+<p>If you prefer managing <code>vigil</code> via Rust&#39;s Cargo, install it directly via <code>cargo install</code>:</p>
+<pre><code class="language-bash">cargo install vigil-server</code></pre>
+<p>Ensure that your <code>$PATH</code> is properly configured to source the Crates binaries, and then run Vigil using the <code>vigil</code> command.</p>
+<p><strong>Install from source:</strong></p>
+<p>The last option is to pull the source code from Git and compile Vigil via <code>cargo</code>:</p>
+<pre><code class="language-bash">cargo build --release</code></pre>
+<p>You can find the built binaries in the <code>./target/release</code> directory.</p>
+<p><em>Install <code>libssl-dev</code> (ie. OpenSSL headers) and <code>libstrophe-dev</code> (ie. XMPP library headers; only if you need the XMPP notifier) before you compile Vigil. SSL dependencies are required for the HTTPS probes and email notifications.</em></p>
+<p><strong>Install from Docker Hub:</strong></p>
+<p>You might find it convenient to run Vigil via Docker. You can find the pre-built Vigil image on Docker Hub as <a href="https://hub.docker.com/r/valeriansaliou/vigil/">valeriansaliou/vigil</a>.</p>
+<blockquote>
+<p>Pre-built Docker version may not be the latest version of Vigil available.</p>
+</blockquote>
+<p>First, pull the <code>valeriansaliou/vigil</code> image:</p>
+<pre><code class="language-bash">docker pull valeriansaliou/vigil:v1.16.0</code></pre>
+<p>Then, seed it a configuration file and run it (replace <code>/path/to/your/vigil/config.cfg</code> with the path to your configuration file):</p>
+<pre><code class="language-bash">docker run -p 8080:8080 -v /path/to/your/vigil/config.cfg:/etc/vigil.cfg valeriansaliou/vigil:v1.16.0</code></pre>
+<p>In the configuration file, ensure that:</p>
+<ul>
+<li><code>server.inet</code> is set to <code>0.0.0.0:8080</code> (this lets Vigil be reached from outside the container)</li>
+<li><code>assets.path</code> is set to <code>./res/assets/</code> (this refers to an internal path in the container, as the assets are contained there)</li>
+</ul>
+<p>Vigil will be reachable from <code>http://localhost:8080</code>.</p>
+<h3 id="configuration">Configuration</h3>
+<p>Use the sample <a href="https://github.com/valeriansaliou/vigil/blob/master/config.cfg">config.cfg</a> configuration file and adjust it to your own environment.</p>
+<p><strong>Available configuration options are commented below, with allowed values:</strong></p>
+<p><strong>[server]</strong></p>
+<ul>
+<li><code>log_level</code> (type: <em>string</em>, allowed: <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code>, default: <code>error</code>) — Verbosity of logging, set it to <code>error</code> in production</li>
+<li><code>inet</code> (type: <em>string</em>, allowed: IPv4 / IPv6 + port, default: <code>[::1]:8080</code>) — Host and TCP port the Vigil public status page should listen on</li>
+<li><code>workers</code> (type: <em>integer</em>, allowed: any number, default: <code>4</code>) — Number of workers for the Vigil public status page to run on</li>
+<li><code>reporter_token</code> (type: <em>string</em>, allowed: secret token, default: no default) — Reporter secret token (ie. secret password)</li>
+</ul>
+<p><strong>[assets]</strong></p>
+<ul>
+<li><code>path</code> (type: <em>string</em>, allowed: UNIX path, default: <code>./res/assets/</code>) — Path to Vigil assets directory</li>
+</ul>
+<p><strong>[branding]</strong></p>
+<ul>
+<li><code>page_title</code> (type: <em>string</em>, allowed: any string, default: <code>Status Page</code>) — Status page title</li>
+<li><code>page_url</code> (type: <em>string</em>, allowed: URL, no default) — Status page URL</li>
+<li><code>company_name</code> (type: <em>string</em>, allowed: any string, no default) — Company name (ie. your company)</li>
+<li><code>icon_color</code> (type: <em>string</em>, allowed: hexadecimal color code, no default) — Icon color (ie. your icon background color)</li>
+<li><code>icon_url</code> (type: <em>string</em>, allowed: URL, no default) — Icon URL, the icon should be your squared logo, used as status page favicon (PNG format recommended)</li>
+<li><code>logo_color</code> (type: <em>string</em>, allowed: hexadecimal color code, no default) — Logo color (ie. your logo primary color)</li>
+<li><code>logo_url</code> (type: <em>string</em>, allowed: URL, no default) — Logo URL, the logo should be your full-width logo, used as status page header logo (SVG format recommended)</li>
+<li><code>website_url</code> (type: <em>string</em>, allowed: URL, no default) — Website URL to be used in status page header</li>
+<li><code>support_url</code> (type: <em>string</em>, allowed: URL, no default) — Support URL to be used in status page header (ie. where users can contact you if something is wrong)</li>
+<li><code>custom_html</code> (type: <em>string</em>, allowed: HTML, default: empty) — Custom HTML to include in status page <code>head</code> (optional)</li>
+</ul>
+<p><strong>[metrics]</strong></p>
+<ul>
+<li><code>poll_interval</code> (type: <em>integer</em>, allowed: seconds, default: <code>120</code>) — Interval for which to probe nodes in <code>poll</code> mode</li>
+<li><code>poll_retry</code> (type: <em>integer</em>, allowed: seconds, default: <code>2</code>) — Interval after which to try probe for a second time nodes in <code>poll</code> mode (only when the first check fails)</li>
+<li><code>poll_http_status_healthy_above</code> (type: <em>integer</em>, allowed: HTTP status code, default: <code>200</code>) — HTTP status above which <code>poll</code> checks to HTTP replicas reports as <code>healthy</code></li>
+<li><code>poll_http_status_healthy_below</code> (type: <em>integer</em>, allowed: HTTP status code, default: <code>400</code>) — HTTP status under which <code>poll</code> checks to HTTP replicas reports as <code>healthy</code></li>
+<li><code>poll_delay_dead</code> (type: <em>integer</em>, allowed: seconds, default: <code>30</code>) — Delay after which a node in <code>poll</code> mode is to be considered <code>dead</code> (ie. check response delay)</li>
+<li><code>poll_delay_sick</code> (type: <em>integer</em>, allowed: seconds, default: <code>10</code>) — Delay after which a node in <code>poll</code> mode is to be considered <code>sick</code> (ie. check response delay)</li>
+<li><code>push_delay_dead</code> (type: <em>integer</em>, allowed: seconds, default: <code>20</code>) — Delay after which a node in <code>push</code> mode is to be considered <code>dead</code> (ie. time after which the node did not report)</li>
+<li><code>push_system_cpu_sick_above</code> (type: <em>float</em>, allowed: system CPU loads, default: <code>0.90</code>) — System load indice for CPU above which to consider a node in <code>push</code> mode <code>sick</code> (ie. UNIX system load)</li>
+<li><code>push_system_ram_sick_above</code> (type: <em>float</em>, allowed: system RAM loads, default: <code>0.90</code>) — System load indice for RAM above which to consider a node in <code>push</code> mode <code>sick</code> (ie. percent RAM used)</li>
+</ul>
+<p><strong>[plugins]</strong></p>
+<p><strong>[plugins.rabbitmq]</strong></p>
+<ul>
+<li><code>api_url</code> (type: <em>string</em>, allowed: URL, no default) — RabbitMQ API URL (ie. <code>http://127.0.0.1:15672</code>)</li>
+<li><code>auth_username</code> (type: <em>string</em>, allowed: username, no default) — RabbitMQ API authentication username</li>
+<li><code>auth_password</code> (type: <em>string</em>, allowed: password, no default) — RabbitMQ API authentication password</li>
+<li><code>virtualhost</code> (type: <em>string</em>, allowed: virtual host, no default) — RabbitMQ virtual host hosting the queues to be monitored</li>
+<li><code>queue_ready_healthy_below</code> (type: <em>integer</em>, allowed: any number, no default) — Maximum number of payloads in RabbitMQ queue with status <code>ready</code> to consider node <code>healthy</code>.</li>
+<li><code>queue_nack_healthy_below</code> (type: <em>integer</em>, allowed: any number, no default) — Maximum number of payloads in RabbitMQ queue with status <code>nack</code> to consider node <code>healthy</code>.</li>
+<li><code>queue_ready_dead_above</code> (type: <em>integer</em>, allowed: any number, no default) — Threshold on the number of payloads in RabbitMQ queue with status <code>ready</code> above which node should be considered <code>dead</code> (stalled queue).</li>
+<li><code>queue_nack_dead_above</code> (type: <em>integer</em>, allowed: any number, no default) — Threshold on the number of payloads in RabbitMQ queue with status <code>nack</code> above which node should be considered <code>dead</code> (stalled queue).</li>
+<li><code>queue_loaded_retry_delay</code> (type: <em>integer</em>, allowed: milliseconds, no default) — Re-check queue if it reports as loaded after delay; this avoids false-positives if your systems usually take a bit of time to process pending queue payloads (if any)</li>
+</ul>
+<p><strong>[notify]</strong></p>
+<ul>
+<li><code>startup_notification</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>true</code>) — Whether to send startup notification or not (stating that systems are <code>healthy</code>)</li>
+<li><code>reminder_interval</code> (type: <em>integer</em>, allowed: seconds, no default) — Interval at which downtime reminder notifications should be sent (if any)</li>
+</ul>
+<p><strong>[notify.email]</strong></p>
+<ul>
+<li><code>to</code> (type: <em>string</em>, allowed: email address, no default) — Email address to which to send emails</li>
+<li><code>from</code> (type: <em>string</em>, allowed: email address, no default) — Email address from which to send emails</li>
+<li><code>smtp_host</code> (type: <em>string</em>, allowed: hostname, IPv4, IPv6, default: <code>localhost</code>) — SMTP host to connect to</li>
+<li><code>smtp_port</code> (type: <em>integer</em>, allowed: TCP port, default: <code>587</code>) — SMTP TCP port to connect to</li>
+<li><code>smtp_username</code> (type: <em>string</em>, allowed: any string, no default) — SMTP username to use for authentication (if any)</li>
+<li><code>smtp_password</code> (type: <em>string</em>, allowed: any string, no default) — SMTP password to use for authentication (if any)</li>
+<li><code>smtp_encrypt</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>true</code>) — Whether to encrypt SMTP connection with <code>STARTTLS</code> or not</li>
+<li><code>reminders_only</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to send emails only for downtime reminders or everytime</li>
+</ul>
+<p><strong>[notify.twilio]</strong></p>
+<ul>
+<li><code>to</code> (type: <em>array[string]</em>, allowed: phone numbers, no default) — List of phone numbers to which to send text messages</li>
+<li><code>service_sid</code> (type: <em>string</em>, allowed: any string, no default) — Twilio service identifier (ie. <code>Service Sid</code>)</li>
+<li><code>account_sid</code> (type: <em>string</em>, allowed: any string, no default) — Twilio account identifier (ie. <code>Account Sid</code>)</li>
+<li><code>auth_token</code> (type: <em>string</em>, allowed: any string, no default) — Twilio authentication token (ie. <code>Auth Token</code>)</li>
+<li><code>reminders_only</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to send text messages only for downtime reminders or everytime</li>
+</ul>
+<p><strong>[notify.slack]</strong></p>
+<ul>
+<li><code>hook_url</code> (type: <em>string</em>, allowed: URL, no default) — Slack hook URL (ie. <code>https://hooks.slack.com/[..]</code>)</li>
+<li><code>mention_channel</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to mention channel when sending Slack messages (using <em>@channel</em>, which is handy to receive a high-priority notification)</li>
+<li><code>reminders_only</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to send Slack messages only for downtime reminders or everytime</li>
+</ul>
+<p><strong>[notify.telegram]</strong></p>
+<ul>
+<li><code>bot_token</code> (type: <em>string</em>, allowed: any strings, no default) — <a href="https://core.telegram.org/bots/api#authorizing-your-bot">Telegram bot token</a></li>
+<li><code>chat_id</code> (type: <em>string</em>, allowed: any strings, no default) — Chat identifier where you want Vigil to send messages. Can be group chat identifier (eg. <code>&quot;@foo&quot;</code>) or user chat identifier (eg. <code>&quot;123456789&quot;</code>)</li>
+</ul>
+<p><strong>[notify.pushover]</strong></p>
+<ul>
+<li><code>app_token</code> (type: <em>string</em>, allowed: any string, no default) — Pushover application token (you need to create a dedicated Pushover application to get one)</li>
+<li><code>user_keys</code> (type: <em>array[string]</em>, allowed: any strings, no default) — List of Pushover user keys (ie. the keys of your Pushover target users for notifications)</li>
+<li><code>reminders_only</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to send Pushover notifications only for downtime reminders or everytime</li>
+</ul>
+<p><strong>[notify.xmpp]</strong></p>
+<p><strong>Notice: the XMPP notifier requires <code>libstrophe</code> (<code>libstrophe-dev</code> package on Debian) to be available when compiling Vigil, with the feature <code>notifier-xmpp</code> enabled upon Cargo build.</strong></p>
+<ul>
+<li><code>to</code> (type: <em>string</em>, allowed: Jabber ID, no default) — Jabber ID (JID) to which to send messages</li>
+<li><code>from</code> (type: <em>string</em>, allowed: Jabber ID, no default) — Jabber ID (JID) from which to send messages</li>
+<li><code>xmpp_password</code> (type: <em>string</em>, allowed: any string, no default) — XMPP account password to use for authentication</li>
+<li><code>reminders_only</code> (type: <em>boolean</em>, allowed: <code>true</code>, <code>false</code>, default: <code>false</code>) — Whether to send messages only for downtime reminders or everytime</li>
+</ul>
+<p><strong>[notify.webhook]</strong></p>
+<ul>
+<li><code>hook_url</code> (type: <em>string</em>, allowed: URL, no default) — Web Hook URL (eg. <code>https://domain.com/webhooks/[..]</code>)</li>
+</ul>
+<p><strong>[probe]</strong></p>
+<p><strong>[[probe.service]]</strong></p>
+<ul>
+<li><code>id</code> (type: <em>string</em>, allowed: any unique lowercase string, no default) — Unique identifier of the probed service (not visible on the status page)</li>
+<li><code>label</code> (type: <em>string</em>, allowed: any string, no default) — Name of the probed service (visible on the status page)</li>
+</ul>
+<p><strong>[[probe.service.node]]</strong></p>
+<ul>
+<li><code>id</code> (type: <em>string</em>, allowed: any unique lowercase string, no default) — Unique identifier of the probed service node (not visible on the status page)</li>
+<li><code>label</code> (type: <em>string</em>, allowed: any string, no default) — Name of the probed service node (visible on the status page)</li>
+<li><code>mode</code> (type: <em>string</em>, allowed: <code>poll</code>, <code>push</code>, no default) — Probe mode for this node (ie. <code>poll</code> is direct HTTP, TCP or ICMP poll to the URLs set in <code>replicas</code>, while <code>push</code> is for Vigil Reporter nodes)</li>
+<li><code>replicas</code> (type: <em>array[string]</em>, allowed: TCP, ICMP or HTTP URLs, default: empty) — Node replica URLs to be probed (only used if <code>mode</code> is <code>poll</code>)</li>
+<li><code>http_body_healthy_match</code> (type: <em>string</em>, allowed: regular expressions, no default) — HTTP response body for which to report node replica as <code>healthy</code> (if the body does not match, the replica will be reported as <code>dead</code>, even if the status code check passes; the check uses a <code>GET</code> rather than the usual <code>HEAD</code> if this option is set)</li>
+<li><code>rabbitmq_queue</code> (type: <em>string</em>, allowed: RabbitMQ queue names, no default) — RabbitMQ queue associated to node, which to check against for pending payloads via RabbitMQ API (this helps monitor unacked payloads accumulating in the queue)</li>
+</ul>
+<h3 id="run-vigil">Run Vigil</h3>
+<p>Vigil can be run as such:</p>
+<p><code>./vigil -c /path/to/config.cfg</code></p>
+<h2 id="usage-recommendations">Usage recommendations</h2>
+<p><strong>Consider the following recommendations when using Vigil:</strong></p>
+<ul>
+<li><strong>Vigil should be hosted on a safe, separate server.</strong> This server should run on a different physical machine and network than your monitored infrastructure servers.</li>
+<li><strong>Make sure to whitelist the Vigil server public IP (both IPv4 and IPv6)</strong> on your monitored HTTP services; this applies if you use a bot protection service that challenges bot IPs, eg. Distil Networks or Cloudflare. Vigil will see the HTTP service as down if a bot challenge is raised.</li>
+</ul>
+<h2 id="what-status-variants-look-like">What status variants look like?</h2>
+<p>Vigil has 3 status variants, either <code>healthy</code> (no issue ongoing), <code>sick</code> (services under high load) or <code>dead</code> (outage):</p>
+<h3 id="healthy-status-variant">Healthy status variant</h3>
+<p><img src="https://valeriansaliou.github.io/vigil/images/status-healthy.png" alt="Status Healthy"></p>
+<h3 id="sick-status-variant">Sick status variant</h3>
+<p><img src="https://valeriansaliou.github.io/vigil/images/status-sick.png" alt="Status Sick"></p>
+<h3 id="dead-status-variant">Dead status variant</h3>
+<p><img src="https://valeriansaliou.github.io/vigil/images/status-dead.png" alt="Status Dead"></p>
+<h2 id="what-do-alerts-look-like">What do alerts look like?</h2>
+<p>When a monitored backend or app goes down in your infrastructure, Vigil can let you know by Slack, Twilio SMS, Email and XMPP:</p>
+<p><img src="https://valeriansaliou.github.io/vigil/images/alert-slack.png" alt="Vigil alert in Slack"></p>
+<p>You can also get nice realtime <code>down</code> and <code>up</code> alerts on your eg. iPhone and Apple Watch:</p>
+<p align="center">
+  <img src="https://valeriansaliou.github.io/vigil/images/alert-slack-iphone.png" height="400" alt="Vigil down alert on iPhone (Slack)" />
+  <img src="https://valeriansaliou.github.io/vigil/images/alert-slack-watch.jpg" height="400" alt="Vigil up alert on Apple Watch (Slack)" />
+  <img src="https://valeriansaliou.github.io/vigil/images/alert-twilio-iphone.png" height="400" alt="Vigil alerts on iPhone (Twilio SMS)" />
+<p>
+
+<h2 id="what-do-webhook-payloads-look-like">What do Webhook payloads look like?</h2>
+<p>If you are using the Webhook notifier in Vigil, you will receive a JSON-formatted payload with alert details upon any status change; plus reminders if <code>notify.reminder_interval</code> is configured.</p>
+<p><strong>Here is an example of a Webhook payload:</strong></p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;changed&quot;,
+  &quot;status&quot;: &quot;dead&quot;,
+  &quot;time&quot;: &quot;08:58:28 UTC+0200&quot;,
+
+  &quot;replicas&quot;: [
+    &quot;web:core:tcp://edge-3.pool.net.crisp.chat:80&quot;
+  ],
+
+  &quot;page&quot;: {
+    &quot;title&quot;: &quot;Crisp Status&quot;,
+    &quot;url&quot;: &quot;https://status.crisp.chat/&quot;
+  }
+}</code></pre>
+<p>Webhook notifications can be tested with eg. <a href="https://webhook.site/">Webhook.site</a>, before you integrate them to your custom endpoint.</p>
+<p><em>You can use those Webhook payloads to create custom notifiers to anywhere. For instance, if you are using Microsoft Teams but not Slack, you may write a tiny PHP script that receives Webhooks from Vigil and forwards a notification to Microsoft Teams. This can be handy; while Vigil only implements convenience notifiers for some selected channels, the Webhook notifier allows you to extend beyond that.</em></p>
+<h2 id="how-can-i-integrate-vigil-reporter-in-my-code">How can I integrate Vigil Reporter in my code?</h2>
+<p>Vigil Reporter is used to actively submit health information to Vigil from your apps. Apps are best monitored via application probes, which are able to report detailed system information such as CPU and RAM load. This lets Vigil show if an application host system is under high load.</p>
+<h3 id="vigil-reporter-libraries">Vigil Reporter Libraries</h3>
+<ul>
+<li><strong>NodeJS</strong>: <strong><a href="https://www.npmjs.com/package/vigil-reporter">node-vigil-reporter</a></strong></li>
+<li><strong>Golang</strong>: <strong><a href="https://github.com/valeriansaliou/go-vigil-reporter">go-vigil-reporter</a></strong></li>
+<li><strong>Rust</strong>: <strong><a href="https://crates.io/crates/vigil-reporter">rs-vigil-reporter</a></strong></li>
+</ul>
+<p>👉 Cannot find the library for your programming language? Build your own and be referenced here! (<a href="https://valeriansaliou.name/">contact me</a>)</p>
+<h3 id="manual-reporting">Manual reporting</h3>
+<p>In case you need to manually report node metrics to the Vigil endpoint, use the following HTTP configuration (adjust it to yours):</p>
+<p><strong>Endpoint URL:</strong></p>
+<p><code>HTTP POST https://status.example.com/reporter/&lt;probe_id&gt;/&lt;node_id&gt;/</code></p>
+<p>Where:</p>
+<ul>
+<li><code>node_id</code>: The parent node of the reporting replica</li>
+<li><code>probe_id</code>: The parent probe of the node</li>
+</ul>
+<p><strong>Request headers:</strong></p>
+<ul>
+<li>Add an <code>Authorization</code> header with a <code>Basic</code> authentication where the password is your configured <code>reporter_token</code>.</li>
+<li>Set the <code>Content-Type</code> to <code>application/json; charset=utf-8</code>, and ensure you submit the request data as UTF-8.</li>
+</ul>
+<p><strong>Request data:</strong></p>
+<p>Adjust the request data to your replica context and send it as <code>HTTP POST</code>:</p>
+<pre><code class="language-json">{
+  &quot;replica&quot;: &quot;&lt;replica_id&gt;&quot;,
+  &quot;interval&quot;: 30,
+
+  &quot;load&quot;: {
+    &quot;cpu&quot;: 0.30,
+    &quot;ram&quot;: 0.80
+  }
+}</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>replica</code>: The replica unique identifier (eg. the server LAN IP)</li>
+<li><code>interval</code>: The push interval (in seconds)</li>
+<li><code>load.cpu</code>: The general CPU load, from <code>0.00</code> to <code>1.00</code> (can be more than <code>1.00</code> if the CPU is overloaded)</li>
+<li><code>load.ram</code>: The general RAM load, from <code>0.00</code> to <code>1.00</code></li>
+</ul>
+<h2 id="children_crossing-troubleshoot-issues">:children_crossing: Troubleshoot Issues</h2>
+<h3 id="icmp-replicas-always-report-as-dead">ICMP replicas always report as <code>dead</code></h3>
+<p>On Linux systems, non-priviledge users cannot create raw sockets, which Vigil ICMP probing system requires. It means that, by default, all ICMP probe attempts will fail silently, as if the host being probed was always down.</p>
+<p>This can easily be fixed by allowing Vigil to create raw sockets:</p>
+<pre><code class="language-bash">setcap &#39;cap_net_raw+ep&#39; /bin/vigil</code></pre>
+<p><em>Note that HTTP and TCP probes do not require those raw socket capabilities.</em></p>
+<h2 id="fire-report-a-vulnerability">:fire: Report A Vulnerability</h2>
+<p>If you find a vulnerability in Vigil, you are more than welcome to report it directly to <a href="https://github.com/valeriansaliou">@valeriansaliou</a> by sending an encrypted email to <a href="mailto:valerian@valeriansaliou.name">valerian@valeriansaliou.name</a>. Do not report vulnerabilities in public GitHub issues, as they may be exploited by malicious people to target production servers running an unpatched Vigil server.</p>
+<p><strong>:warning: You must encrypt your email using <a href="https://github.com/valeriansaliou">@valeriansaliou</a> GPG public key: <a href="https://valeriansaliou.name/files/keys/valeriansaliou.gpg.pub.asc">:key:valeriansaliou.gpg.pub.asc</a>.</strong></p>
+<p><strong>:gift: Based on the severity of the vulnerability, I may offer a $100 (US) bounty to whomever reported it.</strong></p>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

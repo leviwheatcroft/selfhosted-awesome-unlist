@@ -1,0 +1,1279 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A lightweight and simple comment engine, which doesn't spy on users. It can be embedded into blogs, articles or any other place where readers add comments."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>remark42</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://remark42.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>remark42</a><a class="button button-outline" href="https://remark42.com/demo/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>Demo</a><a class="button button-outline" href="https://github.com/umputun/remark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Source Code</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>28 Apr 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>1462</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>53</span></div><div class="tags"><a class="button" href="/tags/go.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Go</a><a class="button" href="/tags/communication-systems.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Communication systems</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="remark42-build-status-go-report-card-coverage-status">remark42 <a href="https://github.com/umputun/remark/actions"><img src="https://github.com/umputun/remark/workflows/build/badge.svg" alt="Build Status"></a> <a href="https://goreportcard.com/report/github.com/umputun/remark"><img src="https://goreportcard.com/badge/github.com/umputun/remark" alt="Go Report Card"></a> <a href="https://coveralls.io/github/umputun/remark?branch=master"><img src="https://coveralls.io/repos/github/umputun/remark/badge.svg?branch=master" alt="Coverage Status"></a></h1>
+<p>Remark42 is a self-hosted, lightweight, and simple (yet functional) comment engine, which doesn&#39;t spy on users. It can be embedded into blogs, articles or any other place where readers add comments.</p>
+<ul>
+<li>Social login via Google, Twitter, Facebook, GitHub and Yandex</li>
+<li>Login via email</li>
+<li>Optional anonymous access</li>
+<li>Multi-level nested comments with both tree and plain presentations</li>
+<li>Import from Disqus and WordPress</li>
+<li>Markdown support with friendly formatter toolbar</li>
+<li>Moderator can remove comments and block users</li>
+<li>Voting, pinning and verification system</li>
+<li>Sortable comments</li>
+<li>Images upload with drag-and-drop</li>
+<li>Extractor for recent comments, cross-post</li>
+<li>RSS for all comments and each post</li>
+<li>Telegram and email notifications</li>
+<li>Export data to json with automatic backups</li>
+<li>No external databases, everything embedded in a single data file</li>
+<li>Fully dockerized and can be deployed in a single command</li>
+<li>Self-contained executable can be deployed directly to Linux, Windows and MacOS</li>
+<li>Clean, lightweight and customizable UI with white and dark themes</li>
+<li>Multi-site mode from a single instance</li>
+<li>Integration with automatic ssl (direct and via <a href="https://github.com/umputun/nginx-le">nginx-le</a>)</li>
+<li><a href="#privacy">Privacy focused</a></li>
+</ul>
+<p><a href="https://remark42.com/demo/">Demo site</a> available with all authentication methods, including email auth and anonymous access.</p>
+<details><summary>Screenshots</summary>
+
+<p>Comments example:
+<img src="https://github.com/umputun/remark/blob/master/screenshots/comments.png" alt=""></p>
+<p>For admin screenshots see <a href="https://github.com/umputun/remark/wiki/Admin-UI">Admin UI wiki</a></p>
+</details>
+
+
+<p>#</p>
+<ul>
+<li><a href="#install">Install</a><ul>
+<li><a href="#backend">Backend</a><ul>
+<li><a href="#with-docker">With Docker</a></li>
+<li><a href="#without-docker">Without Docker</a></li>
+<li><a href="#parameters">Parameters</a><ul>
+<li><a href="#required-parameters">Required parameters</a></li>
+</ul>
+</li>
+<li><a href="#quick-installation-test">Quick installation test</a></li>
+<li><a href="#register-oauth2-providers">Register oauth2 providers</a><ul>
+<li><a href="#google-auth-provider">Google Auth Provider</a></li>
+<li><a href="#github-auth-provider">GitHub Auth Provider</a></li>
+<li><a href="#facebook-auth-provider">Facebook Auth Provider</a></li>
+<li><a href="#twitter-auth-provider">Twitter Auth Provider</a></li>
+<li><a href="#yandex-auth-provider">Yandex Auth Provider</a></li>
+</ul>
+</li>
+<li><a href="#initial-import-from-disqus">Initial import from Disqus</a></li>
+<li><a href="#initial-import-from-wordpress">Initial import from WordPress</a></li>
+<li><a href="#backup-and-restore">Backup and restore</a><ul>
+<li><a href="#automatic-backups">Automatic backups</a></li>
+<li><a href="#manual-backup">Manual backup</a></li>
+<li><a href="#restore-from-backup">Restore from backup</a></li>
+<li><a href="#backup-format">Backup format</a></li>
+</ul>
+</li>
+<li><a href="#admin-users">Admin users</a></li>
+</ul>
+</li>
+<li><a href="#setup-on-your-website">Setup on your website</a><ul>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#last-comments">Last comments</a></li>
+<li><a href="#counter">Counter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#build-from-the-source">Build from the source</a></li>
+<li><a href="#development">Development</a><ul>
+<li><a href="#backend-development">Backend development</a></li>
+<li><a href="#frontend-development">Frontend development</a><ul>
+<li><a href="#build">Build</a></li>
+<li><a href="#devserver">Devserver</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#api">API</a><ul>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#commenting">Commenting</a></li>
+<li><a href="#rss-feeds">RSS feeds</a></li>
+<li><a href="#admin">Admin</a></li>
+</ul>
+</li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#technical-details">Technical details</a></li>
+</ul>
+<h2 id="install">Install</h2>
+<h3 id="backend">Backend</h3>
+<h4 id="with-docker">With Docker</h4>
+<p><em>this is the recommended way to run remark42</em></p>
+<ul>
+<li>copy provided <code>docker-compose.yml</code> and customize for your needs</li>
+<li>make sure you <strong>don&#39;t keep</strong> <code>ADMIN_PASSWD=something...</code> for any non-development deployments</li>
+<li>pull prepared images from the DockerHub and start - <code>docker-compose pull &amp;&amp; docker-compose up -d</code></li>
+<li>alternatively compile from the sources - <code>docker-compose build &amp;&amp; docker-compose up -d</code></li>
+</ul>
+<h4 id="without-docker">Without Docker</h4>
+<ul>
+<li>download archive for <a href="https://github.com/umputun/remark/releases">stable release</a> or <a href="https://remark42.com/downloads">development version</a></li>
+<li>unpack with <code>gunzip</code> (Linux, macOS) or with <code>zip</code> (Windows)</li>
+<li>run as <code>remark42.{os}-{arch} server {parameters...}</code>, i.e. <code>remark42.linux-amd64 server --secret=12345 --url=http://127.0.0.1:8080</code></li>
+<li>alternatively compile from the sources - <code>make OS=[linux|darwin|windows] ARCH=[amd64,386,arm64,arm]</code></li>
+</ul>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Command line</th>
+<th>Environment</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>url</td>
+<td>REMARK_URL</td>
+<td></td>
+<td>url to remark42 server, <em>required</em></td>
+</tr>
+<tr>
+<td>secret</td>
+<td>SECRET</td>
+<td></td>
+<td>secret key, <em>required</em></td>
+</tr>
+<tr>
+<td>site</td>
+<td>SITE</td>
+<td><code>remark</code></td>
+<td>site name(s), <em>multi</em></td>
+</tr>
+<tr>
+<td>store.type</td>
+<td>STORE_TYPE</td>
+<td><code>bolt</code></td>
+<td>type of storage, <code>bolt</code> or <code>rpc</code></td>
+</tr>
+<tr>
+<td>store.bolt.path</td>
+<td>STORE_BOLT_PATH</td>
+<td><code>./var</code></td>
+<td>path to data directory</td>
+</tr>
+<tr>
+<td>store.bolt.timeout</td>
+<td>STORE_BOLT_TIMEOUT</td>
+<td><code>30s</code></td>
+<td>boltdb access timeout</td>
+</tr>
+<tr>
+<td>admin.shared.id</td>
+<td>ADMIN_SHARED_ID</td>
+<td></td>
+<td>admin names (list of user ids), <em>multi</em></td>
+</tr>
+<tr>
+<td>admin.shared.email</td>
+<td>ADMIN_SHARED_EMAIL</td>
+<td><code>admin@${REMARK_URL}</code></td>
+<td>admin email</td>
+</tr>
+<tr>
+<td>backup</td>
+<td>BACKUP_PATH</td>
+<td><code>./var/backup</code></td>
+<td>backups location</td>
+</tr>
+<tr>
+<td>max-back</td>
+<td>MAX_BACKUP_FILES</td>
+<td><code>10</code></td>
+<td>max backup files to keep</td>
+</tr>
+<tr>
+<td>cache.max.items</td>
+<td>CACHE_MAX_ITEMS</td>
+<td><code>1000</code></td>
+<td>max number of cached items, <code>0</code> - unlimited</td>
+</tr>
+<tr>
+<td>cache.max.value</td>
+<td>CACHE_MAX_VALUE</td>
+<td><code>65536</code></td>
+<td>max size of cached value, <code>0</code> - unlimited</td>
+</tr>
+<tr>
+<td>cache.max.size</td>
+<td>CACHE_MAX_SIZE</td>
+<td><code>50000000</code></td>
+<td>max size of all cached values, <code>0</code> - unlimited</td>
+</tr>
+<tr>
+<td>avatar.type</td>
+<td>AVATAR_TYPE</td>
+<td><code>fs</code></td>
+<td>type of avatar storage, <code>fs</code>, <code>bolt</code>, or <code>uri</code></td>
+</tr>
+<tr>
+<td>avatar.fs.path</td>
+<td>AVATAR_FS_PATH</td>
+<td><code>./var/avatars</code></td>
+<td>avatars location for <code>fs</code> store</td>
+</tr>
+<tr>
+<td>avatar.bolt.file</td>
+<td>AVATAR_BOLT_FILE</td>
+<td><code>./var/avatars.db</code></td>
+<td>file name for  <code>bolt</code> store</td>
+</tr>
+<tr>
+<td>avatar.uri</td>
+<td>AVATAR_URI</td>
+<td><code>./var/avatars</code></td>
+<td>avatar store uri</td>
+</tr>
+<tr>
+<td>avatar.rsz-lmt</td>
+<td>AVATAR_RSZ_LMT</td>
+<td><code>0</code> (disabled)</td>
+<td>max image size for resizing avatars on save</td>
+</tr>
+<tr>
+<td>image.type</td>
+<td>IMAGE_TYPE</td>
+<td><code>fs</code></td>
+<td>type of image storage, <code>fs</code>, <code>bolt</code></td>
+</tr>
+<tr>
+<td>image.max-size</td>
+<td>IMAGE_MAX_SIZE</td>
+<td><code>5000000</code></td>
+<td>max size of image file</td>
+</tr>
+<tr>
+<td>image.fs.path</td>
+<td>IMAGE_FS_PATH</td>
+<td><code>./var/pictures</code></td>
+<td>permanent location of images</td>
+</tr>
+<tr>
+<td>image.fs.staging</td>
+<td>IMAGE_FS_STAGING</td>
+<td><code>./var/pictures.staging</code></td>
+<td>staging location of images</td>
+</tr>
+<tr>
+<td>image.fs.partitions</td>
+<td>IMAGE_FS_PARTITIONS</td>
+<td><code>100</code></td>
+<td>number of image partitions</td>
+</tr>
+<tr>
+<td>image.bolt.file</td>
+<td>IMAGE_BOLT_FILE</td>
+<td><code>/var/pictures.db</code></td>
+<td>images bolt file location</td>
+</tr>
+<tr>
+<td>image.resize-width</td>
+<td>IMAGE_RESIZE_WIDTH</td>
+<td><code>2400</code></td>
+<td>width of resized image</td>
+</tr>
+<tr>
+<td>image.resize-height</td>
+<td>IMAGE_RESIZE_HEIGHT</td>
+<td><code>900</code></td>
+<td>height of resized image</td>
+</tr>
+<tr>
+<td>auth.ttl.jwt</td>
+<td>AUTH_TTL_JWT</td>
+<td><code>5m</code></td>
+<td>jwt TTL</td>
+</tr>
+<tr>
+<td>auth.ttl.cookie</td>
+<td>AUTH_TTL_COOKIE</td>
+<td><code>200h</code></td>
+<td>cookie TTL</td>
+</tr>
+<tr>
+<td>auth.google.cid</td>
+<td>AUTH_GOOGLE_CID</td>
+<td></td>
+<td>Google OAuth client ID</td>
+</tr>
+<tr>
+<td>auth.google.csec</td>
+<td>AUTH_GOOGLE_CSEC</td>
+<td></td>
+<td>Google OAuth client secret</td>
+</tr>
+<tr>
+<td>auth.facebook.cid</td>
+<td>AUTH_FACEBOOK_CID</td>
+<td></td>
+<td>Facebook OAuth client ID</td>
+</tr>
+<tr>
+<td>auth.facebook.csec</td>
+<td>AUTH_FACEBOOK_CSEC</td>
+<td></td>
+<td>Facebook OAuth client secret</td>
+</tr>
+<tr>
+<td>auth.github.cid</td>
+<td>AUTH_GITHUB_CID</td>
+<td></td>
+<td>Github OAuth client ID</td>
+</tr>
+<tr>
+<td>auth.github.csec</td>
+<td>AUTH_GITHUB_CSEC</td>
+<td></td>
+<td>Github OAuth client secret</td>
+</tr>
+<tr>
+<td>auth.twitter.cid</td>
+<td>AUTH_TWITTER_CID</td>
+<td></td>
+<td>Twitter Consumer API Key</td>
+</tr>
+<tr>
+<td>auth.twitter.csec</td>
+<td>AUTH_TWITTER_CSEC</td>
+<td></td>
+<td>Twitter Consumer API Secret key</td>
+</tr>
+<tr>
+<td>auth.yandex.cid</td>
+<td>AUTH_YANDEX_CID</td>
+<td></td>
+<td>Yandex OAuth client ID</td>
+</tr>
+<tr>
+<td>auth.yandex.csec</td>
+<td>AUTH_YANDEX_CSEC</td>
+<td></td>
+<td>Yandex OAuth client secret</td>
+</tr>
+<tr>
+<td>auth.dev</td>
+<td>AUTH_DEV</td>
+<td><code>false</code></td>
+<td>local oauth2 server, development mode only</td>
+</tr>
+<tr>
+<td>auth.anon</td>
+<td>AUTH_ANON</td>
+<td><code>false</code></td>
+<td>enable anonymous login</td>
+</tr>
+<tr>
+<td>auth.email.enable</td>
+<td>AUTH_EMAIL_ENABLE</td>
+<td><code>false</code></td>
+<td>enable auth via email</td>
+</tr>
+<tr>
+<td>auth.email.from</td>
+<td>AUTH_EMAIL_FROM</td>
+<td></td>
+<td>email from</td>
+</tr>
+<tr>
+<td>auth.email.subj</td>
+<td>AUTH_EMAIL_SUBJ</td>
+<td><code>remark42 confirmation</code></td>
+<td>email subject</td>
+</tr>
+<tr>
+<td>auth.email.content-type</td>
+<td>AUTH_EMAIL_CONTENT_TYPE</td>
+<td><code>text/html</code></td>
+<td>email content type</td>
+</tr>
+<tr>
+<td>auth.email.template</td>
+<td>AUTH_EMAIL_TEMPLATE</td>
+<td>none (predefined)</td>
+<td>custom email message template file</td>
+</tr>
+<tr>
+<td>notify.type</td>
+<td>NOTIFY_TYPE</td>
+<td>none</td>
+<td>type of notification (telegram and/or email)</td>
+</tr>
+<tr>
+<td>notify.queue</td>
+<td>NOTIFY_QUEUE</td>
+<td><code>100</code></td>
+<td>size of notification queue</td>
+</tr>
+<tr>
+<td>notify.telegram.token</td>
+<td>NOTIFY_TELEGRAM_TOKEN</td>
+<td></td>
+<td>telegram token</td>
+</tr>
+<tr>
+<td>notify.telegram.chan</td>
+<td>NOTIFY_TELEGRAM_CHAN</td>
+<td></td>
+<td>telegram channel</td>
+</tr>
+<tr>
+<td>notify.telegram.timeout</td>
+<td>NOTIFY_TELEGRAM_TIMEOUT</td>
+<td><code>5s</code></td>
+<td>telegram timeout</td>
+</tr>
+<tr>
+<td>notify.email.fromAddress</td>
+<td>NOTIFY_EMAIL_FROM</td>
+<td></td>
+<td>from email address</td>
+</tr>
+<tr>
+<td>notify.email.verification_subj</td>
+<td>NOTIFY_EMAIL_VERIFICATION_SUBJ</td>
+<td><code>Email verification</code></td>
+<td>verification message subject</td>
+</tr>
+<tr>
+<td>notify.email.notify_admin</td>
+<td>NOTIFY_EMAIL_ADMIN</td>
+<td><code>false</code></td>
+<td>notify admin on new comments via ADMIN_SHARED_EMAIL</td>
+</tr>
+<tr>
+<td>smtp.host</td>
+<td>SMTP_HOST</td>
+<td></td>
+<td>SMTP host</td>
+</tr>
+<tr>
+<td>smtp.port</td>
+<td>SMTP_PORT</td>
+<td></td>
+<td>SMTP port</td>
+</tr>
+<tr>
+<td>smtp.username</td>
+<td>SMTP_USERNAME</td>
+<td></td>
+<td>SMTP user name</td>
+</tr>
+<tr>
+<td>smtp.password</td>
+<td>SMTP_PASSWORD</td>
+<td></td>
+<td>SMTP password</td>
+</tr>
+<tr>
+<td>smtp.tls</td>
+<td>SMTP_TLS</td>
+<td></td>
+<td>enable TLS for SMTP</td>
+</tr>
+<tr>
+<td>smtp.timeout</td>
+<td>SMTP_TIMEOUT</td>
+<td><code>10s</code></td>
+<td>SMTP TCP connection timeout</td>
+</tr>
+<tr>
+<td>ssl.type</td>
+<td>SSL_TYPE</td>
+<td>none</td>
+<td><code>none</code>-http, <code>static</code>-https, <code>auto</code>-https + le</td>
+</tr>
+<tr>
+<td>ssl.port</td>
+<td>SSL_PORT</td>
+<td><code>8443</code></td>
+<td>port for https server</td>
+</tr>
+<tr>
+<td>ssl.cert</td>
+<td>SSL_CERT</td>
+<td></td>
+<td>path to cert.pem file</td>
+</tr>
+<tr>
+<td>ssl.key</td>
+<td>SSL_KEY</td>
+<td></td>
+<td>path to key.pem file</td>
+</tr>
+<tr>
+<td>ssl.acme-location</td>
+<td>SSL_ACME_LOCATION</td>
+<td><code>./var/acme</code></td>
+<td>dir where obtained le-certs will be stored</td>
+</tr>
+<tr>
+<td>ssl.acme-email</td>
+<td>SSL_ACME_EMAIL</td>
+<td></td>
+<td>admin email for receiving notifications from LE</td>
+</tr>
+<tr>
+<td>max-comment</td>
+<td>MAX_COMMENT_SIZE</td>
+<td><code>2048</code></td>
+<td>comment&#39;s size limit</td>
+</tr>
+<tr>
+<td>max-votes</td>
+<td>MAX_VOTES</td>
+<td><code>-1</code></td>
+<td>votes limit per comment, <code>-1</code> - unlimited</td>
+</tr>
+<tr>
+<td>votes-ip</td>
+<td>VOTES_IP</td>
+<td><code>false</code></td>
+<td>restrict votes from the same ip</td>
+</tr>
+<tr>
+<td>anon-vote</td>
+<td>ANON_VOTE</td>
+<td><code>false</code></td>
+<td>allow voting for anonymous users, require VOTES_IP to be enabled as well</td>
+</tr>
+<tr>
+<td>votes-ip-time</td>
+<td>VOTES_IP_TIME</td>
+<td><code>5m</code></td>
+<td>same ip vote restriction time, <code>0s</code> - unlimited</td>
+</tr>
+<tr>
+<td>low-score</td>
+<td>LOW_SCORE</td>
+<td><code>-5</code></td>
+<td>low score threshold</td>
+</tr>
+<tr>
+<td>critical-score</td>
+<td>CRITICAL_SCORE</td>
+<td><code>-10</code></td>
+<td>critical score threshold</td>
+</tr>
+<tr>
+<td>positive-score</td>
+<td>POSITIVE_SCORE</td>
+<td><code>false</code></td>
+<td>restricts comment&#39;s score to be only positive</td>
+</tr>
+<tr>
+<td>restricted-words</td>
+<td>RESTRICTED_WORDS</td>
+<td></td>
+<td>words banned in comments (can use <code>*</code>), <em>multi</em></td>
+</tr>
+<tr>
+<td>edit-time</td>
+<td>EDIT_TIME</td>
+<td><code>5m</code></td>
+<td>edit window</td>
+</tr>
+<tr>
+<td>read-age</td>
+<td>READONLY_AGE</td>
+<td></td>
+<td>read-only age of comments, days</td>
+</tr>
+<tr>
+<td>image-proxy.http2https</td>
+<td>IMAGE_PROXY_HTTP2HTTPS</td>
+<td><code>false</code></td>
+<td>enable http-&gt;https proxy for images</td>
+</tr>
+<tr>
+<td>image-proxy.cache-external</td>
+<td>IMAGE_PROXY_CACHE_EXTERNAL</td>
+<td><code>false</code></td>
+<td>enable caching external images to current image storage</td>
+</tr>
+<tr>
+<td>emoji</td>
+<td>EMOJI</td>
+<td><code>false</code></td>
+<td>enable emoji support</td>
+</tr>
+<tr>
+<td>simple-view</td>
+<td>SIMPLE_VIEW</td>
+<td><code>false</code></td>
+<td>minimized UI with basic info only</td>
+</tr>
+<tr>
+<td>port</td>
+<td>REMARK_PORT</td>
+<td><code>8080</code></td>
+<td>web server port</td>
+</tr>
+<tr>
+<td>web-root</td>
+<td>REMARK_WEB_ROOT</td>
+<td><code>./web</code></td>
+<td>web server root directory</td>
+</tr>
+<tr>
+<td>update-limit</td>
+<td>UPDATE_LIMIT</td>
+<td><code>0.5</code></td>
+<td>updates/sec limit</td>
+</tr>
+<tr>
+<td>admin-passwd</td>
+<td>ADMIN_PASSWD</td>
+<td>none (disabled)</td>
+<td>password for <code>admin</code> basic auth</td>
+</tr>
+<tr>
+<td>dbg</td>
+<td>DEBUG</td>
+<td><code>false</code></td>
+<td>debug mode</td>
+</tr>
+</tbody></table>
+<ul>
+<li>command line parameters are long form <code>--&lt;key&gt;=value</code>, i.e. <code>--site=https://demo.remark42.com</code></li>
+<li><em>multi</em> parameters separated by <code>,</code> in the environment or repeated with command line key, like <code>--site=s1 --site=s2 ...</code></li>
+<li><em>required</em> parameters have to be presented in the environment or provided in command line</li>
+</ul>
+<h5 id="deprecated">Deprecated</h5>
+<p>Following list of command-line options is deprecated and will be removed in 2 minor releases or 1 major release (whichever is closer)
+from the version in which they were deprecated. After remark42 version update, please check startup log once for deprecation warnings to avoid
+trouble with unrecognized command-line options in the future.</p>
+<details>
+<summary>deprecated options</summary>
+
+<table>
+<thead>
+<tr>
+<th>Command line</th>
+<th>Replacement</th>
+<th>Environment</th>
+<th>Replacement</th>
+<th>Default</th>
+<th>Description</th>
+<th>Deprecation version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>auth.email.host</td>
+<td>smtp.host</td>
+<td>AUTH_EMAIL_HOST</td>
+<td>SMTP_HOST</td>
+<td></td>
+<td>smtp host</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>auth.email.port</td>
+<td>smtp.port</td>
+<td>AUTH_EMAIL_PORT</td>
+<td>SMTP_PORT</td>
+<td></td>
+<td>smtp port</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>auth.email.user</td>
+<td>smtp.username</td>
+<td>AUTH_EMAIL_USER</td>
+<td>SMTP_USERNAME</td>
+<td></td>
+<td>smtp user name</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>auth.email.passwd</td>
+<td>smtp.password</td>
+<td>AUTH_EMAIL_PASSWD</td>
+<td>SMTP_PASSWORD</td>
+<td></td>
+<td>smtp password</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>auth.email.tls</td>
+<td>smtp.tls</td>
+<td>AUTH_EMAIL_TLS</td>
+<td>SMTP_TLS</td>
+<td><code>false</code></td>
+<td>enable TLS</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>auth.email.timeout</td>
+<td>smtp.timeout</td>
+<td>AUTH_EMAIL_TIMEOUT</td>
+<td>SMTP_TIMEOUT</td>
+<td><code>10s</code></td>
+<td>smtp timeout</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>img-proxy</td>
+<td>image-proxy.http2https</td>
+<td>IMG_PROXY</td>
+<td>IMAGE_PROXY_HTTP2HTTPS</td>
+<td><code>false</code></td>
+<td>enable http-&gt;https proxy for images</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td></details></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="required-parameters">Required parameters</h5>
+<p>Most of the parameters have sane defaults and don&#39;t require customization. There are only a few parameters user has to define:</p>
+<ol>
+<li><code>SECRET</code> - secret key, can be any long and hard-to-guess string.</li>
+<li><code>REMARK_URL</code> - url pointing to your remark42 server, i.e. <code>https://demo.remark42.com</code></li>
+<li>At least one pair of <code>AUTH_&lt;PROVIDER&gt;_CID</code> and <code>AUTH_&lt;PROVIDER&gt;_CSEC</code> defining oauth2 provider(s)</li>
+</ol>
+<p>The minimal <code>docker-compose.yml</code> has to include all required parameters:</p>
+<pre><code class="language-yaml">version: &#39;2&#39;
+
+services:
+    remark42:
+        image: umputun/remark42:latest
+        restart: always
+        container_name: &quot;remark42&quot;
+        environment:
+            - REMARK_URL=https://demo.remark42.com  # url pointing to your remark42 server
+            - SITE=YOUR_SITE_ID                     # site ID, same as used for `site_id`, see &quot;Setup on your website&quot;
+            - SECRET=abcd-123456-xyz-$%^&amp;           # secret key
+            - AUTH_GITHUB_CID=12345667890           # oauth2 client ID
+            - AUTH_GITHUB_CSEC=abcdefg12345678      # oauth2 client secret
+        volumes:
+            - ./var:/srv/var                        # persistent volume to store all remark42 data</code></pre>
+<h4 id="quick-installation-test">Quick installation test</h4>
+<p>To verify if remark has been properly installed, check a demo page at <code>${REMARK_URL}/web</code> URL. Make sure to include <code>remark</code> site id to <code>${SITE}</code> list.</p>
+<h4 id="register-oauth2-providers">Register oauth2 providers</h4>
+<p>Authentication handled by external providers. You should setup oauth2 for all (or some) of them to allow users to make comments. It is not mandatory to have all of them, but at least one should be correctly configured.</p>
+<h5 id="google-auth-provider">Google Auth Provider</h5>
+<ol>
+<li>Create a new project: <a href="https://console.developers.google.com/project">https://console.developers.google.com/project</a></li>
+<li>Choose the new project from the top right project dropdown (only if another project is selected)</li>
+<li>In the project Dashboard center pane, choose <strong>&quot;API Manager&quot;</strong></li>
+<li>In the left Nav pane, choose <strong>&quot;Credentials&quot;</strong></li>
+<li>In the center pane, choose <strong>&quot;OAuth consent screen&quot;</strong> tab. Fill in <strong>&quot;Product name shown to users&quot;</strong> and hit save.</li>
+<li>In the center pane, choose <strong>&quot;Credentials&quot;</strong> tab.<ul>
+<li>Open the <strong>&quot;New credentials&quot;</strong> drop down</li>
+<li>Choose <strong>&quot;OAuth client ID&quot;</strong></li>
+<li>Choose <strong>&quot;Web application&quot;</strong></li>
+<li>Application name is freeform, choose something appropriate</li>
+<li>Authorized origins is your domain ex: <code>https://remark42.mysite.com</code></li>
+<li>Authorized redirect URIs is the location of oauth2/callback constructed as domain + <code>/auth/google/callback</code>, ex: <code>https://remark42.mysite.com/auth/google/callback</code></li>
+<li>Choose <strong>&quot;Create&quot;</strong></li>
+</ul>
+</li>
+<li>Take note of the <strong>Client ID</strong> and <strong>Client Secret</strong></li>
+</ol>
+<p><em>instructions for google oauth2 setup borrowed from <a href="https://github.com/bitly/oauth2_proxy">oauth2_proxy</a></em></p>
+<h5 id="github-auth-provider">GitHub Auth Provider</h5>
+<ol>
+<li>Create a new <strong>&quot;OAuth App&quot;</strong>: <a href="https://github.com/settings/developers">https://github.com/settings/developers</a></li>
+<li>Fill <strong>&quot;Application Name&quot;</strong> and <strong>&quot;Homepage URL&quot;</strong> for your site</li>
+<li>Under <strong>&quot;Authorization callback URL&quot;</strong> enter the correct url constructed as domain + <code>/auth/github/callback</code>. ie <code>https://remark42.mysite.com/auth/github/callback</code></li>
+<li>Take note of the <strong>Client ID</strong> and <strong>Client Secret</strong></li>
+</ol>
+<h5 id="facebook-auth-provider">Facebook Auth Provider</h5>
+<ol>
+<li>From <a href="https://developers.facebook.com">https://developers.facebook.com</a> select <strong>&quot;My Apps&quot;</strong> / <strong>&quot;Add a new App&quot;</strong></li>
+<li>Set <strong>&quot;Display Name&quot;</strong> and <strong>&quot;Contact email&quot;</strong></li>
+<li>Choose <strong>&quot;Facebook Login&quot;</strong> and then <strong>&quot;Web&quot;</strong></li>
+<li>Set &quot;Site URL&quot; to your domain, ex: <code>https://remark42.mysite.com</code></li>
+<li>Under <strong>&quot;Facebook login&quot;</strong> / <strong>&quot;Settings&quot;</strong> fill &quot;Valid OAuth redirect URIs&quot; with your callback url constructed as domain + <code>/auth/facebook/callback</code></li>
+<li>Select <strong>&quot;App Review&quot;</strong> and turn public flag on. This step may ask you to provide a link to your privacy policy.</li>
+</ol>
+<h5 id="twitter-auth-provider">Twitter Auth Provider</h5>
+<ol>
+<li>Create a new twitter application <a href="https://developer.twitter.com/en/apps">https://developer.twitter.com/en/apps</a></li>
+<li>Fill <strong>App name</strong>, <strong>Description</strong> and <strong>URL</strong> of your site</li>
+<li>In the field <strong>Callback URLs</strong> enter the correct url of your callback handler e.g.  domain + <code>/auth/twitter/callback</code></li>
+<li>Under <strong>Key and tokens</strong> take note of the <strong>Consumer API Key</strong> and <strong>Consumer API Secret key</strong>. Those will be used as <code>AUTH_TWITTER_CID</code> and
+<code>AUTH_TWITTER_CSEC</code></li>
+</ol>
+<h5 id="yandex-auth-provider">Yandex Auth Provider</h5>
+<ol>
+<li>Create a new <strong>&quot;OAuth App&quot;</strong>: <a href="https://oauth.yandex.com/client/new">https://oauth.yandex.com/client/new</a></li>
+<li>Fill <strong>&quot;App name&quot;</strong> for your site</li>
+<li>Under <strong>Platforms</strong> select <strong>&quot;Web services&quot;</strong> and enter <strong>&quot;Callback URI #1&quot;</strong> constructed as domain + <code>/auth/yandex/callback</code>. ie <code>https://remark42.mysite.com/auth/yandex/callback</code></li>
+<li>Select <strong>Permissions</strong>. You need following permissions only from the <strong>&quot;Yandex.Passport API&quot;</strong> section:<ul>
+<li>Access to user avatar</li>
+<li>Access to username, first name and surname, gender</li>
+</ul>
+</li>
+<li>Fill out the rest of fields if needed</li>
+<li>Take note of the <strong>ID</strong> and <strong>Password</strong></li>
+</ol>
+<p>For more details refer to <a href="https://tech.yandex.com/oauth/doc/dg/concepts/about-docpage/">Yandex OAuth</a> and <a href="https://tech.yandex.com/passport/doc/dg/index-docpage/">Yandex.Passport</a> API documentation.</p>
+<h5 id="anonymous-auth-provider">Anonymous Auth Provider</h5>
+<p>Optionally, anonymous access can be turned on. In this case an extra <code>anonymous</code> provider will allow logins without any social login with any name satisfying 2 conditions:</p>
+<ul>
+<li>name should be at least 3 characters long</li>
+<li>name has to start from the letter and contains letters, numbers, underscores and spaces only.</li>
+</ul>
+<h4 id="initial-import-from-disqus">Initial import from Disqus</h4>
+<ol>
+<li>Disqus provides an export of all comments on your site in a g-zipped file. This is found in your Moderation panel at Disqus Admin &gt; Setup &gt; Export. The export will be sent into a queue and then emailed to the address associated with your account once it&#39;s ready. Direct link to export will be something like <code>https://&lt;siteud&gt;.disqus.com/admin/discussions/export/</code>. See <a href="https://help.disqus.com/customer/portal/articles/1104797-importing-exporting">importing-exporting</a> for more details.</li>
+<li>Move this file to your remark42 host within <code>./var</code> and unzip, i.e. <code>gunzip &lt;disqus-export-name&gt;.xml.gz</code>.</li>
+<li>Run import command - <code>docker exec -it remark42 import -p disqus -f {disqus-export-name}.xml -s {your site id}</code></li>
+</ol>
+<h4 id="initial-import-from-wordpress">Initial import from WordPress</h4>
+<ol>
+<li>Install WordPress <a href="https://wordpress.org/plugins/wp-exporter/">plugin</a> to export comments and follow it instructions. The plugin should produce a xml-based file with site content including comments.</li>
+<li>Move this file to your remark42 host within <code>./var</code></li>
+<li>Run import command - <code>docker exec -it remark42 import -p wordpress -f {wordpress-export-name}.xml -s {your site id}</code></li>
+</ol>
+<h4 id="backup-and-restore">Backup and restore</h4>
+<h5 id="automatic-backups">Automatic backups</h5>
+<p>Remark42 by default makes daily backup files under <code>${BACKUP_PATH}</code> (default <code>./var/backup</code>). Backups kept up to <code>${MAX_BACKUP_FILES}</code> (default 10). Each backup file contains exported and gzipped content, i.e., all comments. At any point, the user can restore such backup and revert all comments to the desirable state. Note: restore procedure cleans the current data store and replaces all comments with comments from the backup file.</p>
+<p>For safety and security reasons restore functionality not exposed outside of your server by default. The recommended way to restore from the backup is to use provided <code>scripts/restore-backup.sh</code>. It can run inside the container:</p>
+<p><code>docker exec -it remark42 restore -f {backup-filename.gz} -s {your site id}</code></p>
+<h5 id="manual-backup">Manual backup</h5>
+<p>In addition to automatic backups user can make a backup manually. This command makes <code>userbackup-{site id}-{timestamp}.gz</code> by default.</p>
+<p><code>docker exec -it remark42 backup -s {your site id}</code></p>
+<h5 id="restore-from-backup">Restore from backup</h5>
+<p>Restore will clean all comments first and then will processed with complete import from a given file.</p>
+<p><code>docker exec -it remark42 restore -f {backup file name} -s {your site id}</code></p>
+<h5 id="backup-format">Backup format</h5>
+<p>Backup file is a text file with all exported comments separated by EOL. Each backup record is a valid json with all key/value
+unmarshaled from <code>Comment</code> struct (see below).</p>
+<h4 id="admin-users">Admin users</h4>
+<p>Admins/moderators should be defined in <code>docker-compose.yml</code> as a list of user IDs or passed in the command line.</p>
+<pre><code>    environment:
+        - ADMIN_SHARED_ID=github_ef0f706a79cc24b17bbbb374cd234a691a034128,github_dae9983158e9e5e127ef2b87a411ef13c891e9e5</code></pre><p>To get user id just login and click on your username or any other user you want to promote to admins.
+It will expand login info and show full user ID.</p>
+<h4 id="docker-parameters">Docker parameters</h4>
+<p>Two parameters allow customizing Docker container on the system level:</p>
+<ul>
+<li><code>APP_UID</code> - sets UID to run remark42 application in container (default=1001)</li>
+<li><code>TIME_ZONE</code> - sets time zone of remark42 container (default=America/Chicago)</li>
+</ul>
+<p><em>see <a href="https://github.com/umputun/baseimage">umputun/baseimage</a> for more details</em></p>
+<p>example of <code>docker-compose.yml</code>:</p>
+<pre><code class="language-yaml">version: &#39;2&#39;
+
+services:
+    remark42:
+        image: umputun/remark42:latest
+        restart: always
+        container_name: &quot;remark42&quot;
+        environment:
+            - APP_UID=2000                          # runs remark42 app with non-default UID
+            - TIME_ZONE=GTC                         # sets container time to UTC
+
+            - REMARK_URL=https://demo.remark42.com  # url pointing to your remark42 server
+            - SITE=YOUR_SITE_ID                     # site ID, same as used for `site_id`, see &quot;Setup on your website&quot;
+            - SECRET=abcd-123456-xyz-$%^&amp;           # secret key
+            - AUTH_GITHUB_CID=12345667890           # oauth2 client ID
+            - AUTH_GITHUB_CSEC=abcdefg12345678      # oauth2 client secret
+        volumes:
+            - ./var:/srv/var                        # persistent volume to store all remark42 data</code></pre>
+<h3 id="setup-on-your-website">Setup on your website</h3>
+<h4 id="comments">Comments</h4>
+<p>It&#39;s a main widget which renders list of comments.</p>
+<p>Add this snippet to the bottom of web page:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var remark_config = {
+    host: &quot;REMARK_URL&quot;, // hostname of remark server, same as REMARK_URL in backend config, e.g. &quot;https://demo.remark42.com&quot;
+    site_id: &#39;YOUR_SITE_ID&#39;,
+    components: [&#39;embed&#39;], // optional param; which components to load. default to [&quot;embed&quot;]
+                           // to load all components define components as [&#39;embed&#39;, &#39;last-comments&#39;, &#39;counter&#39;]
+                           // available component are:
+                           //     - &#39;embed&#39;: basic comments widget
+                           //     - &#39;last-comments&#39;: last comments widget, see `Last Comments` section below
+                           //     - &#39;counter&#39;: counter widget, see `Counter` section below
+    url: &#39;PAGE_URL&#39;, // optional param; if it isn&#39;t defined
+                     // `window.location.origin + window.location.pathname` will be used,
+                     //
+                     // Note that if you use query parameters as significant part of url
+                     // (the one that actually changes content on page)
+                     // you will have to configure url manually to keep query params, as
+                     // `window.location.origin + window.location.pathname` doesn&#39;t contain query params and
+                     // hash. For example default url for `https://example/com/example-post?id=1#hash`
+                     // would be `https://example/com/example-post`.
+                     //
+                     // The problem with query params is that they often contain useless params added by
+                     // various trackers (utm params) and doesn&#39;t have defined order, so Remark treats differently
+                     // all this examples:
+                     // https://example.com/?postid=1&amp;date=2007-02-11
+                     // https://example.com/?date=2007-02-11&amp;postid=1
+                     // https://example.com/?date=2007-02-11&amp;postid=1&amp;utm_source=google
+                     //
+                     // If you deal with query parameters make sure you pass only significant part of it
+                     // in well defined order
+    max_shown_comments: 10, // optional param; if it isn&#39;t defined default value (15) will be used
+    theme: &#39;dark&#39;, // optional param; if it isn&#39;t defined default value (&#39;light&#39;) will be used
+    page_title: &#39;Moving to Remark42&#39;, // optional param; if it isn&#39;t defined `document.title` will be used
+    locale: &#39;en&#39; // set up locale and language, if it isn&#39;t defined default value (&#39;en&#39;) will be used
+  };
+
+  (function(c) {
+    for(var i = 0; i &lt; c.length; i++){
+      var d = document, s = d.createElement(&#39;script&#39;);
+      s.src = remark_config.host + &#39;/web/&#39; +c[i] +&#39;.js&#39;;
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || [&#39;embed&#39;]);
+&lt;/script&gt;</code></pre>
+<p>And then add this node in the place where you want to see Remark42 widget:</p>
+<pre><code class="language-html">&lt;div id=&quot;remark42&quot;&gt;&lt;/div&gt;</code></pre>
+<p>After that widget will be rendered inside this node.</p>
+<h5 id="themes">Themes</h5>
+<p>Right now Remark has two themes: light and dark.
+You can pick one using configuration object,
+but there is also a possibility to switch between themes in runtime.
+For this purpose Remark adds to <code>window</code> object named <code>REMARK42</code>,
+which contains function <code>changeTheme</code>.
+Just call this function and pass a name of the theme that you want to turn on:</p>
+<pre><code class="language-js">window.REMARK42.changeTheme(&#39;light&#39;);</code></pre>
+<h5 id="locales">Locales</h5>
+<p>Right now Remark is translated to en, ru (partially), de, and fi languages.
+You can pick one using <a href="#setup-on-your-website">configuration object</a>.</p>
+<p>Do you want translate remark42 to other locale? Please see <a href="https://github.com/umputun/remark42/blob/master/docs/translation.md">this documentation</a> for details.</p>
+<h4 id="last-comments">Last comments</h4>
+<p>It&#39;s a widget which renders list of last comments from your site.</p>
+<p>Add this snippet to the bottom of web page, or adjust already present <code>remark_config</code> to have <code>last-comments</code> in <code>components</code> list:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var remark_config = {
+    host: &quot;REMARK_URL&quot;, // hostname of remark server, same as REMARK_URL in backend config, e.g. &quot;https://demo.remark42.com&quot;
+    site_id: &#39;YOUR_SITE_ID&#39;,
+    components: [&#39;last-comments&#39;]
+  };
+
+  (function(c) {
+    for(var i = 0; i &lt; c.length; i++){
+      var d = document, s = d.createElement(&#39;script&#39;);
+      s.src = remark_config.host + &#39;/web/&#39; +c[i] +&#39;.js&#39;;
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || [&#39;embed&#39;]);
+&lt;/script&gt;</code></pre>
+<p>And then add this node in the place where you want to see last comments widget:</p>
+<pre><code class="language-html">&lt;div class=&quot;remark42__last-comments&quot; data-max=&quot;50&quot;&gt;&lt;/div&gt;</code></pre>
+<p><code>data-max</code> sets the max amount of comments (default: <code>15</code>).</p>
+<h4 id="counter">Counter</h4>
+<p>It&#39;s a widget which renders a number of comments for the specified page.</p>
+<p>Add this snippet to the bottom of web page, or adjust already present <code>remark_config</code> to have <code>counter</code> in <code>components</code> list:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var remark_config = {
+    host: &quot;REMARK_URL&quot;, // hostname of remark server, same as REMARK_URL in backend config, e.g. &quot;https://demo.remark42.com&quot;
+    site_id: &#39;YOUR_SITE_ID&#39;,
+    components: [&#39;counter&#39;]
+  };
+
+  (function(c) {
+    for(var i = 0; i &lt; c.length; i++){
+      var d = document, s = d.createElement(&#39;script&#39;);
+      s.src = remark_config.host + &#39;/web/&#39; +c[i] +&#39;.js&#39;;
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || [&#39;embed&#39;]);
+&lt;/script&gt;</code></pre>
+<p>And then add a node like this in the place where you want to see a number of comments:</p>
+<pre><code class="language-html">&lt;span class=&quot;remark42__counter&quot; data-url=&quot;https://domain.com/path/to/article/&quot;&gt;&lt;/span&gt;</code></pre>
+<p>You can use as many nodes like this as you need to.
+The script will found all them by the class <code>remark__counter</code>,
+and it will use <code>data-url</code> attribute to define the page with comments.</p>
+<p>Also script can use <code>url</code> property from <code>remark_config</code> object, or <code>window.location.origin + window.location.pathname</code> if nothing else is defined.</p>
+<h2 id="build-from-the-source">Build from the source</h2>
+<ul>
+<li>to build Docker container - <code>make docker</code>. This command will produce container <code>umputun/remark42</code>.</li>
+<li>to build a single binary for direct execution - <code>make OS=&lt;linux|windows|darwin&gt; ARCH=&lt;amd64|386&gt;</code>. This step will produce executable
+<code>remark42</code> file with everything embedded.</li>
+</ul>
+<h2 id="development">Development</h2>
+<p>You can use fully functional local version to develop and test both frontend &amp; backend. It requires at least 2GB RAM or swap enabled</p>
+<p>To bring it up run:</p>
+<pre><code class="language-bash"># if you mainly work on backend
+docker-compose -f compose-dev-backend.yml build
+docker-compose -f compose-dev-backend.yml up
+# if you mainly work on frontend
+docker-compose -f compose-dev-frontend.yml build
+docker-compose -f compose-dev-frontend.yml up</code></pre>
+<p>It starts Remark42 on <code>127.0.0.1:8080</code> and adds local OAuth2 provider “Dev”.
+To access UI demo page go to <code>127.0.0.1:8080/web</code>.
+By default, you would be logged in as <code>dev_user</code> which defined as admin.
+You can tweak any of <a href="#Parameters">supported parameters</a> in corresponded yml file.</p>
+<p>Backend Docker Compose config by default skips running frontend related tests.
+Frontend Docker Compose config by default skips running backend related tests and sets <code>NODE_ENV=development</code> for frontend build.</p>
+<h3 id="backend-development">Backend development</h3>
+<p>In order to run backend locally (development mode, without Docker) you have to have the latest stable <code>go</code> toolchain <a href="https://golang.org/doc/install">installed</a>.</p>
+<p>To run backend - <code>cd backend; go run app/main.go server --dbg --secret=12345 --url=http://127.0.0.1:8080 --admin-passwd=password --site=remark</code>
+It stars backend service with embedded bolt store on port <code>8080</code> with basic auth, allowing to authenticate and run requests directly, like this:
+<code>HTTP http://admin:password@127.0.0.1:8080/api/v1/find?site=remark&amp;sort=-active&amp;format=tree&amp;url=http://127.0.0.1:8080</code></p>
+<h3 id="frontend-development">Frontend development</h3>
+<h4 id="developer-guide">Developer guide</h4>
+<p>Frontend guide can be found here: <a href="./frontend/Readme.md">./frontend/Readme.md</a></p>
+<h4 id="build">Build</h4>
+<p>You should have at least 2GB RAM or swap enabled for building</p>
+<ul>
+<li>install <a href="https://nodejs.org/en/">Node.js 12.11</a> or higher;</li>
+<li>install <a href="https://www.npmjs.com/package/npm">NPM 6.13.4</a>;</li>
+<li>run <code>npm install</code> inside <code>./frontend</code>;</li>
+<li>run <code>npm run build</code> there;</li>
+<li>result files will be saved in <code>./frontend/public</code>.</li>
+</ul>
+<p><strong>Note</strong> Running <code>npm install</code> will set up precommit hooks into your git repository.
+It used to reformat your frontend code using <code>prettier</code> and lint with <code>eslint</code> and <code>stylelint</code> before every commit.</p>
+<h4 id="devserver">Devserver</h4>
+<p>For local development mode with Hot Reloading use <code>npm start</code> instead of <code>npm run build</code>.
+In this case <code>webpack</code> will serve files using <code>webpack-dev-server</code> on <code>localhost:9000</code>.
+By visiting <code>127.0.0.1:9000/web</code> you will get a page with main comments widget
+communicating with demo server backend running on <code>https://demo.remark42.com</code>.
+But you will not be able to login with any oauth providers due to security reasons.</p>
+<p>You can attach to locally running backend by providing <code>REMARK_URL</code> environment variable.</p>
+<pre><code class="language-sh">npx cross-env REMARK_URL=http://127.0.0.1:8080 npm start</code></pre>
+<p>The best way for start local developer enviroment:</p>
+<pre><code class="language-sh">cp compose-dev-frontend.yml compose-private-frontend.yml
+docker-compose -f compose-private-frontend.yml up --build
+cd frontend
+npm run dev</code></pre>
+<p>Developer build running by <code>webpack-dev-server</code> supports devtools for <a href="https://github.com/facebook/react-devtools">React</a> and
+<a href="https://github.com/zalmoxisus/redux-devtools-extension">Redux</a>.</p>
+<h2 id="api">API</h2>
+<h3 id="authorization">Authorization</h3>
+<ul>
+<li><code>GET /auth/{provider}/login?from=http://url&amp;site=site_id&amp;session=1</code> - perform &quot;social&quot; login with one of supported providers and redirect to <code>url</code>. Presence of <code>session</code> (any non-zero value) change the default cookie expiration and makes them session-only.</li>
+<li><code>GET /auth/logout</code> - logout</li>
+</ul>
+<pre><code class="language-go">type User struct {
+    Name    string `json:&quot;name&quot;`
+    ID      string `json:&quot;id&quot;`
+    Picture string `json:&quot;picture&quot;`
+    Admin   bool   `json:&quot;admin&quot;`
+    Blocked bool   `json:&quot;block&quot;`
+    Verified bool  `json:&quot;verified&quot;`
+}</code></pre>
+<p><em>currently supported providers are <code>google</code>, <code>facebook</code>, <code>github</code> and <code>yandex</code></em></p>
+<h3 id="commenting">Commenting</h3>
+<ul>
+<li><code>POST /api/v1/comment</code> - add a comment. <em>auth required</em></li>
+</ul>
+<pre><code class="language-go">type Comment struct {
+    ID        string          `json:&quot;id&quot;`      // comment ID, read only
+    ParentID  string          `json:&quot;pid&quot;`     // parent ID
+    Text      string          `json:&quot;text&quot;`    // comment text, after md processing
+    Orig      string          `json:&quot;orig&quot;`    // original comment text
+    User      User            `json:&quot;user&quot;`    // user info, read only
+    Locator   Locator         `json:&quot;locator&quot;` // post locator
+    Score     int             `json:&quot;score&quot;`   // comment score, read only
+    Vote      int             `json:&quot;vote&quot;`    // vote for the current user, -1/1/0.
+    Controversy float64       `json:&quot;controversy,omitempty&quot;` // comment controversy, read only
+    Timestamp time.Time       `json:&quot;time&quot;`    // time stamp, read only
+    Edit      *Edit           `json:&quot;edit,omitempty&quot; bson:&quot;edit,omitempty&quot;` // pointer to have empty default in json response
+    Pin       bool            `json:&quot;pin&quot;`     // pinned status, read only
+    Delete    bool            `json:&quot;delete&quot;`  // delete status, read only
+    PostTitle string          `json:&quot;title&quot;`   // post title
+}
+
+type Locator struct {
+    SiteID string `json:&quot;site&quot;`     // site id
+    URL    string `json:&quot;url&quot;`      // post url
+}
+
+type Edit struct {
+  Timestamp time.Time `json:&quot;time&quot; bson:&quot;time&quot;`
+  Summary   string    `json:&quot;summary&quot;`
+}</code></pre>
+<ul>
+<li><p><code>POST /api/v1/preview</code> - preview comment in html. Body is <code>Comment</code> to render</p>
+</li>
+<li><p><code>GET /api/v1/find?site=site-id&amp;url=post-url&amp;sort=fld&amp;format=tree|plain</code> - find all comments for given post</p>
+</li>
+</ul>
+<p>This is the primary call used by UI to show comments for given post. It can return comments in two formats - <code>plain</code> and <code>tree</code>.
+In plain format result will be sorted list of <code>Comment</code>. In tree format this is going to be tree-like object with this structure:</p>
+<pre><code class="language-go">type Tree struct {
+    Nodes []Node `json:&quot;comments&quot;`
+    Info  store.PostInfo `json:&quot;info,omitempty&quot;`
+}
+
+type Node struct {
+    Comment store.Comment `json:&quot;comment&quot;`
+    Replies []Node        `json:&quot;replies,omitempty&quot;`
+}</code></pre>
+<p>Sort can be <code>time</code>, <code>active</code> or <code>score</code>. Supported sort order with prefix -/+, i.e. <code>-time</code>. For <code>tree</code> mode sort will be applied to top-level comments only and all replies always sorted by time.</p>
+<ul>
+<li><code>PUT /api/v1/comment/{id}?site=site-id&amp;url=post-url</code> - edit comment, allowed once in <code>EDIT_TIME</code> minutes since creation.  Body is <code>EditRequest</code> json</li>
+</ul>
+<pre><code class="language-go">   type EditRequest struct {
+     Text    string `json:&quot;text&quot;`    // updated text
+     Summary string `json:&quot;summary&quot;` // optional, summary of the edit
+     Delete  bool   `json:&quot;delete&quot;`  // delete flag
+   }{}</code></pre>
+<ul>
+<li><p><code>GET /api/v1/last/{max}?site=site-id&amp;since=ts-msec</code> - get up to <code>{max}</code> last comments, <code>since</code> (epoch time, milliseconds) is optional</p>
+</li>
+<li><p><code>GET /api/v1/id/{id}?site=site-id</code> - get comment by <code>comment id</code></p>
+</li>
+<li><p><code>GET /api/v1/comments?site=site-id&amp;user=id&amp;limit=N</code> - get comment by <code>user id</code>, returns <code>response</code> object</p>
+<pre><code class="language-go">type response struct {
+    Comments []store.Comment  `json:&quot;comments&quot;`
+    Count    int              `json:&quot;count&quot;`
+}{}</code></pre>
+</li>
+<li><p><code>GET /api/v1/count?site=site-id&amp;url=post-url</code> - get comment&#39;s count for <code>{url}</code></p>
+</li>
+<li><p><code>POST /api/v1/count?site=siteID</code> - get number of comments for posts from post body (list of post IDs)</p>
+</li>
+<li><p><code>GET /api/v1/list?site=site-id&amp;limit=5&amp;skip=2</code> - list commented posts, returns array or <code>PostInfo</code>, limit=0 will return all posts</p>
+<pre><code class="language-go">type PostInfo struct {
+    URL   string      `json:&quot;url&quot;`
+    Count int         `json:&quot;count&quot;`
+    ReadOnly bool     `json:&quot;read_only,omitempty&quot;`
+    FirstTS time.Time `json:&quot;first_time,omitempty&quot;`
+    LastTS  time.Time `json:&quot;last_time,omitempty&quot;`
+}</code></pre>
+</li>
+<li><p><code>GET /api/v1/user</code> - get user info, <em>auth required</em></p>
+</li>
+<li><p><code>PUT /api/v1/vote/{id}?site=site-id&amp;url=post-url&amp;vote=1</code> - vote for comment. <code>vote</code>=1 will increase score, -1 decrease. <em>auth required</em></p>
+</li>
+<li><p><code>GET /api/v1/userdata?site=site-id</code> - export all user data to gz stream  <em>auth required</em></p>
+</li>
+<li><p><code>POST /api/v1/deleteme?site=site-id</code> - request deletion of user data. <em>auth required</em></p>
+</li>
+<li><p><code>GET /api/v1/config?site=site-id</code> - returns configuration (parameters) for given site</p>
+<pre><code class="language-go">type Config struct {
+      Version        string   `json:&quot;version&quot;`
+      EditDuration   int      `json:&quot;edit_duration&quot;`
+      MaxCommentSize int      `json:&quot;max_comment_size&quot;`
+      Admins         []string `json:&quot;admins&quot;`
+      AdminEmail     string   `json:&quot;admin_email&quot;`
+      Auth           []string `json:&quot;auth_providers&quot;`
+      LowScore       int      `json:&quot;low_score&quot;`
+      CriticalScore  int      `json:&quot;critical_score&quot;`
+      PositiveScore  bool     `json:&quot;positive_score&quot;`
+      ReadOnlyAge    int      `json:&quot;readonly_age&quot;`
+      MaxImageSize   int      `json:&quot;max_image_size&quot;`
+      EmojiEnabled   bool     `json:&quot;emoji_enabled&quot;`
+}</code></pre>
+</li>
+<li><p><code>GET /api/v1/info?site=site-idd&amp;url=post-url</code> - returns <code>PostInfo</code> for site and url</p>
+</li>
+</ul>
+<h3 id="streaming-api">Streaming API</h3>
+<p>Streaming API provide server-sent events for post updates as well as site update</p>
+<ul>
+<li><code>GET /api/v1/stream/info?site=site-idd&amp;url=post-url&amp;since=unix_ts_msec</code> - returns stream (<code>event: info</code>) with <code>PostInfo</code> records for the site and url. <code>since</code> is optional</li>
+<li><code>GET /api/v1/stream/last?site=site-id&amp;since=unix_ts_msec</code> - returns updates stream (<code>event: last</code>) with comments for the site, <code>since</code> is optional</li>
+</ul>
+<details><summary>response example</summary>
+
+<pre><code>data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:2,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.142872-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:3,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.157709-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:4,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.172991-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:5,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.188429-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:6,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.204742-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:7,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.220692-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:8,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.23817-05:00&quot;}
+
+event: info
+data: {&quot;url&quot;:&quot;https://radio-t.com/blah1&quot;,&quot;count&quot;:9,&quot;first_time&quot;:&quot;2019-06-18T12:53:48.125686-05:00&quot;,&quot;last_time&quot;:&quot;2019-06-18T12:53:48.254669-05:00&quot;}</code></pre></details>
+
+<h3 id="rss-feeds">RSS feeds</h3>
+<ul>
+<li><code>GET /api/v1/rss/post?site=site-id&amp;url=post-url</code> - rss feed for a post</li>
+<li><code>GET /api/v1/rss/site?site=site-id</code> - rss feed for given site</li>
+<li><code>GET /api/v1/rss/reply?site=site-id&amp;user=user-id</code> - rss feed for replies to user&#39;s comments</li>
+</ul>
+<h3 id="images-management">Images management</h3>
+<ul>
+<li><code>GET /api/v1/picture/{user}/{id}</code> - load stored image</li>
+<li><code>POST /api/v1/picture</code> - upload and store image, uses post form with <code>FormFile(&quot;file&quot;)</code>. returns <code>{&quot;id&quot;: user/imgid}</code> <em>auth required</em></li>
+</ul>
+<p><em>returned id should be appended to load image url on caller side</em></p>
+<h3 id="email-subscription">Email subscription</h3>
+<ul>
+<li><p><code>GET /api/v1/email?site=site-id</code> - get user&#39;s email, <em>auth required</em></p>
+</li>
+<li><p><code>POST /api/v1/email/subscribe?site=site-id&amp;address=user@example.org</code> -  makes confirmation token and sends it to user over email, <em>auth required</em></p>
+<p>Trying to subscribe same email second time will return response code <code>409 Conflict</code> and explaining error message.</p>
+</li>
+<li><p><code>POST /api/v1/email/confirm?site=site-id&amp;tkn=token</code> - uses provided token parameter to set email for the user, <em>auth required</em></p>
+<p>Setting email subscribe user for all first-level replies to his messages.</p>
+</li>
+<li><p><code>DELETE /api/v1/email?site=siteID</code> - removes user&#39;s email, <em>auth required</em></p>
+</li>
+</ul>
+<h3 id="admin">Admin</h3>
+<ul>
+<li><code>DELETE /api/v1/admin/comment/{id}?site=site-id&amp;url=post-url</code> - delete comment by <code>id</code>.</li>
+<li><code>PUT /api/v1/admin/user/{userid}?site=site-id&amp;block=1&amp;ttl=7d</code> - block or unblock user with optional ttl (default=permanent)</li>
+<li><code>GET api/v1/admin/blocked&amp;site=site-id</code> - list of blocked user ids<pre><code class="language-go">type BlockedUser struct {
+    ID        string    `json:&quot;id&quot;`
+    Name      string    `json:&quot;name&quot;`
+    Until     time.Time `json:&quot;time&quot;`
+}</code></pre>
+</li>
+<li><code>GET /api/v1/admin/export?site=site-id&amp;mode=[stream|file]</code> - export all comments to json stream or gz file.</li>
+<li><code>POST /api/v1/admin/import?site=site-id</code> - import comments from the backup, uses post body.</li>
+<li><code>POST /api/v1/admin/import/form?site=site-id</code> - import comments from the backup, user post form.</li>
+<li><code>POST /api/v1/admin/remap?site=site-id</code> - remap comments to different URLs. Expect list of &quot;from-url new-url&quot; pairs separated by \n.
+From-url and new-url parts separated by space. If urls end with asterisk (*) it means matching by prefix. Remap procedure based on
+export/import chain so make backup first.<pre><code>  http://oldsite.com* https://newsite.com*
+  http://oldsite.com/from-old-page/1 https://newsite.com/to-new-page/1</code></pre></li>
+<li><code>GET /api/v1/admin/wait?site=site-id</code> - wait for completion for any async migration ops (import or remap).</li>
+<li><code>PUT /api/v1/admin/pin/{id}?site=site-id&amp;url=post-url&amp;pin=1</code> - pin or unpin comment.</li>
+<li><code>GET /api/v1/admin/user/{userid}?site=site-id</code> - get user&#39;s info.</li>
+<li><code>DELETE /api/v1/admin/user/{userid}?site=site-id</code> - delete all user&#39;s comments.</li>
+<li><code>PUT /api/v1/admin/readonly?site=site-id&amp;url=post-url&amp;ro=1</code> - set read-only status</li>
+<li><code>PUT /api/v1/admin/verify/{userid}?site=site-id&amp;verified=1</code> - set verified status</li>
+<li><code>GET /api/v1/admin/deleteme?token=token</code> - process deleteme user&#39;s request</li>
+</ul>
+<p><em>all admin calls require auth and admin privilege</em></p>
+<h2 id="privacy">Privacy</h2>
+<ul>
+<li>Remark42 is trying to be very sensitive to any private or semi-private information.</li>
+<li>Authentication requesting the minimal possible scope from authentication providers. All extra information returned by them dropped immediately and not stored in any form.</li>
+<li>Generally, remark42 keeps user id, username and avatar link only. None of these fields exposed directly - id and name hashed, avatar proxied.</li>
+<li>There is no tracking of any sort.</li>
+<li>Login mechanic uses JWT stored in a cookie (httpOnly, secured). The second cookie (XSRF_TOKEN) is a random id preventing CSRF.</li>
+<li>There is no cross-site login, i.e., user&#39;s behavior can&#39;t be analyzed across independent sites running remark42.</li>
+<li>There are no third-party analytic services involved.</li>
+<li>User can request all information remark42 knows about and export to gz file.</li>
+<li>Supported complete cleanup of all information related to user&#39;s activity.</li>
+<li>Cookie lifespan can be restricted to session-only.</li>
+<li>All potentially sensitive data stored by remark42 hashed and encrypted.</li>
+</ul>
+<h2 id="technical-details">Technical details</h2>
+<ul>
+<li>Data stored in <a href="https://github.com/coreos/bbolt">boltdb</a> (embedded key/value database) files under <code>STORE_BOLT_PATH</code></li>
+<li>Each site stored in a separate boltbd file.</li>
+<li>In order to migrate/move remark42 to another host boltbd files as well as avatars directory <code>AVATAR_FS_PATH</code> should be transferred. Optionally, boltdb can be used to store avatars as well.</li>
+<li>Automatic backup process runs every 24h and exports all content in json-like format to <code>backup-remark-YYYYMMDD.gz</code>.</li>
+<li>Authentication implemented with <a href="https://github.com/go-pkgz/auth">go-pkgz/auth</a> stored in a cookie. It uses HttpOnly, secure cookies.</li>
+<li>All heavy REST calls cached internally in LRU cache limited by <code>CACHE_MAX_ITEMS</code> and <code>CACHE_MAX_SIZE</code> with <a href="https://github.com/go-pkgz/rest">go-pkgz/rest</a></li>
+<li>User&#39;s activity throttled globally (up to 1000 simultaneous requests) and limited locally (per user, usually up to 10 req/sec)</li>
+<li>Request timeout set to 60sec</li>
+<li>Admin authentication (<code>--admin-password</code> set) allows to hit remark42 API without social login and with admin privileges. Adds basic-auth for username: <code>admin</code>, password: <code>${ADMIN_PASSWD}</code>.</li>
+<li>User can vote for the comment multiple times but only to change the vote. Double-voting not allowed.</li>
+<li>User can edit comments in 5 mins (configurable) window after creation.</li>
+<li>User ID hashed and prefixed by oauth provider name to avoid collisions and potential abuse.</li>
+<li>All avatars resized and cached locally to prevent rate limiters from oauth providers, part of <a href="https://github.com/go-pkgz/auth">go-pkgz/auth</a> functionality.</li>
+<li>Images can be proxied (<code>IMAGE_PROXY_HTTP2HTTPS=true</code>) to prevent mixed http/https.</li>
+<li>All images can be proxied and saved (<code>IMAGE_PROXY_CACHE_EXTERNAL=true</code>) instead of serving from original location. Beware, images which are posted with this parameter enabled will be served from proxy even after it will be disabled.</li>
+<li>Docker build uses <a href="https://github.com/umputun/baseimage">publicly available</a> base images.</li>
+</ul>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Fullstack but simple mail server . Only configuration files, no SQL database. Keep it simple and versioned. Easy to deploy and upgrade."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>docker-mailserver</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/tomav/docker-mailserver"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>docker-mailserver</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>30 Apr 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>5398</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>145</span></div><div class="tags"><a class="button" href="/tags/shell.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Shell</a><a class="button" href="/tags/communication-systems.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Communication systems</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a><a class="button" href="/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Docker</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="docker-mailserver">docker-mailserver</h1>
+<p><a href="https://travis-ci.org/tomav/docker-mailserver"><img src="https://travis-ci.org/tomav/docker-mailserver.svg?branch=master" alt="Build Status"></a> <a href="https://hub.docker.com/r/tvial/docker-mailserver/"><img src="https://img.shields.io/docker/pulls/tvial/docker-mailserver.svg" alt="Docker Pulls"></a> <a href="https://microbadger.com/images/tvial/docker-mailserver"><img src="https://images.microbadger.com/badges/image/tvial/docker-mailserver.svg" alt="Docker layers"></a> <a href="https://github.com/tomav/docker-mailserver/"><img src="https://img.shields.io/github/stars/tomav/docker-mailserver.svg?label=github%20%E2%98%85" alt="Github Stars"></a> <a href="https://github.com/tomav/docker-mailserver/"><img src="https://img.shields.io/github/contributors/tomav/docker-mailserver.svg" alt="Github Stars"></a> <a href="https://github.com/tomav/docker-mailserver/"><img src="https://img.shields.io/github/forks/tomav/docker-mailserver.svg?label=github%20forks" alt="Github Forks"></a> <a href="https://gitter.im/tomav/docker-mailserver"><img src="https://img.shields.io/gitter/room/tomav/docker-mailserver.svg" alt="Gitter"></a></p>
+<p>A fullstack but simple mail server (smtp, imap, antispam, antivirus...).
+Only configuration files, no SQL database. Keep it simple and versioned.
+Easy to deploy and upgrade.</p>
+<h2 id="announcement">ANNOUNCEMENT</h2>
+<p>At this point we have merged the next branch based on Debian Buster into master.
+That means the docker image latest uses Buster. The change may break things!</p>
+<p>The following possibly breaking changes are known:</p>
+<ul>
+<li>Filebeat is removed and should be handled by another container, see <a href="https://github.com/tomav/docker-mailserver/wiki/">Wiki</a>.</li>
+<li>Dovecot will be downgraded a little bit (same major version) so that we can use the official Debian version.</li>
+</ul>
+<p>If you want to stick to the old version a while longer, either switch to stable or to a specific version.
+If you run into problems, please raise issues and ask for help. Don&#39;t forget to provide details.</p>
+<p>Includes:</p>
+<ul>
+<li><a href="http://www.postfix.org">Postfix</a> with smtp or ldap auth</li>
+<li><a href="https://www.dovecot.org">Dovecot</a> for sasl, imap (and optional pop3) with ssl support, with ldap auth<ul>
+<li>Dovecot is installed from the <a href="https://wiki2.dovecot.org/PrebuiltBinaries">Dovecot Community Repo</a></li>
+</ul>
+</li>
+<li>saslauthd with ldap auth</li>
+<li><a href="https://www.amavis.org/">Amavis</a></li>
+<li><a href="http://spamassassin.apache.org/">Spamassasin</a> supporting custom rules</li>
+<li><a href="https://www.clamav.net/">ClamAV</a> with automatic updates</li>
+<li><a href="http://www.opendkim.org">OpenDKIM</a></li>
+<li><a href="https://github.com/trusteddomainproject/OpenDMARC">OpenDMARC</a></li>
+<li><a href="https://www.fail2ban.org/wiki/index.php/Main_Page">Fail2ban</a></li>
+<li><a href="http://www.fetchmail.info/fetchmail-man.html">Fetchmail</a></li>
+<li><a href="http://www.postfix.org/POSTSCREEN_README.html">Postscreen</a></li>
+<li><a href="https://postgrey.schweikert.ch/">Postgrey</a></li>
+<li>basic <a href="https://github.com/tomav/docker-mailserver/wiki/Configure-Sieve-filters">Sieve support</a> using dovecot</li>
+<li><a href="https://letsencrypt.org/">LetsEncrypt</a> and self-signed certificates</li>
+<li><a href="https://github.com/tomav/docker-mailserver/wiki/Setup-docker-mailserver-using-the-script-setup.sh">Setup script</a> to easily configure and maintain your mailserver</li>
+<li>persistent data and state (but think about backups!)</li>
+<li><a href="https://travis-ci.org/tomav/docker-mailserver">Integration tests</a></li>
+<li><a href="https://hub.docker.com/r/tvial/docker-mailserver/">Automated builds on docker hub</a></li>
+<li>Plus addressing (a.k.a. <a href="http://www.postfix.org/postconf.5.html#recipient_delimiter">extension delimiters</a>)
+works out of the box: email for <code>you+extension@example.com</code> go to <code>you@example.com</code></li>
+</ul>
+<p>Why I created this image: <a href="http://tvi.al/simple-mail-server-with-docker/">Simple mail server with Docker</a></p>
+<p>Before you open an issue, please have a look this <code>README</code>, the <a href="https://github.com/tomav/docker-mailserver/wiki/">Wiki</a> and Postfix/Dovecot documentation.</p>
+<h2 id="requirements">Requirements</h2>
+<p>Recommended:</p>
+<ul>
+<li>1 CPU</li>
+<li>1-2GB RAM</li>
+<li>Swap enabled for the container</li>
+</ul>
+<p>Minimum:</p>
+<ul>
+<li>1 CPU</li>
+<li>512MB RAM</li>
+</ul>
+<p><strong>Note:</strong> You&#39;ll need to deactivate some services like ClamAV to be able to run on a host with 512MB of RAM. Even with 1G RAM you may run into problems without swap, see <a href="https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips">FAQ</a>.</p>
+<h2 id="usage">Usage</h2>
+<h4 id="get-latest-image">Get latest image</h4>
+<pre><code>docker pull tvial/docker-mailserver:latest</code></pre><h4 id="get-the-tools">Get the tools</h4>
+<p>Download the docker-compose.yml, the .env and the setup.sh files:</p>
+<pre><code>curl -o setup.sh https://raw.githubusercontent.com/tomav/docker-mailserver/master/setup.sh; chmod a+x ./setup.sh
+
+curl -o docker-compose.yml https://raw.githubusercontent.com/tomav/docker-mailserver/master/docker-compose.yml.dist
+
+curl -o .env https://raw.githubusercontent.com/tomav/docker-mailserver/master/.env.dist
+
+curl -o env-mailserver https://raw.githubusercontent.com/tomav/docker-mailserver/master/env-mailserver.dist</code></pre><h4 id="create-a-docker-compose-environment">Create a docker-compose environment</h4>
+<ul>
+<li>Edit the files <code>.env</code> and <code>env-mailserver</code> to your liking:<ul>
+<li><code>.env</code> contains the configuration for docker-compose</li>
+<li><code>env-mailserver</code> contains the configuration for the mailserver container</li>
+<li>These files supports only simple <code>VAR=VAL</code> lines (see <a href="https://docs.docker.com/compose/env-file/">Documentation</a>).</li>
+<li>Don&#39;t quote your values.</li>
+<li>Variable substitution is <em>not</em> supported (e.g. <code>OVERRIDE_HOSTNAME=$HOSTNAME.$DOMAINNAME</code>).</li>
+</ul>
+</li>
+<li>Install <a href="https://docs.docker.com/compose/">docker-compose</a> in the version <code>1.7</code> or higher.</li>
+</ul>
+<p><strong>Note:</strong> If you want to use a bare domain (host name equals domain name) see <a href="https://github.com/tomav/docker-mailserver/wiki/FAQ-and-Tips#can-i-use-nakedbare-domains-no-host-name">FAQ</a>.</p>
+<h4 id="start-container">Start Container</h4>
+<pre><code>docker-compose up -d mail</code></pre><h4 id="create-your-mail-accounts">Create your mail accounts</h4>
+<pre><code>./setup.sh email add &lt;user@domain&gt; [&lt;password&gt;]</code></pre><h4 id="generate-dkim-keys">Generate DKIM keys</h4>
+<pre><code>./setup.sh config dkim</code></pre><p>Now the keys are generated, you can configure your DNS server by just pasting the content of <code>config/opendkim/keys/domain.tld/mail.txt</code> in your <code>domain.tld.hosts</code> zone.</p>
+<h4 id="restart-and-update-the-container">Restart and update the container</h4>
+<pre><code>docker-compose down
+docker pull tvial/docker-mailserver:latest
+docker-compose up -d mail</code></pre><p>You&#39;re done!</p>
+<p>And don&#39;t forget to have a look at the remaining functions of the <code>setup.sh</code> script</p>
+<h4 id="spfforwarding-problems">SPF/Forwarding Problems</h4>
+<p>If you got any problems with SPF and/or forwarding mails, give <a href="https://github.com/roehling/postsrsd/blob/master/README.md">SRS</a> a try. You enable SRS by setting <code>ENABLE_SRS=1</code>. See the variable description for further information.</p>
+<h4 id="for-informational-purposes">For informational purposes:</h4>
+<p>Your config folder will be mounted in <code>/tmp/docker-mailserver/</code>. To understand how things work on boot, please have a look at <a href="https://github.com/tomav/docker-mailserver/blob/master/target/start-mailserver.sh">start-mailserver.sh</a></p>
+<p><code>restart: always</code> ensures that the mail server container (and Filebeat/ELK containers when using the mail server together with ELK stack) is automatically restarted by Docker in cases like a Docker service or host restart or container exit.</p>
+<h4 id="exposed-ports">Exposed ports</h4>
+<table>
+<thead>
+<tr>
+<th>Protocol</th>
+<th>Opt-in Encryption<sup>1</sup></th>
+<th>Enforced Encryption</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SMTP</td>
+<td>25</td>
+<td>N/A</td>
+<td>Transfer<sup>2</sup></td>
+</tr>
+<tr>
+<td>ESMTP</td>
+<td>587</td>
+<td>465<sup>3</sup></td>
+<td>Submission</td>
+</tr>
+<tr>
+<td>POP3</td>
+<td>110</td>
+<td>995</td>
+<td>Retrieval</td>
+</tr>
+<tr>
+<td>IMAP4</td>
+<td>143</td>
+<td>993</td>
+<td>Retrieval</td>
+</tr>
+</tbody></table>
+<ol>
+<li>A connection <em>may</em> be secured over TLS when both ends support <code>STARTTLS</code>. On ports 110, 143 and 587, <code>docker-mailserver</code> will reject a connection that cannot be secured. Port 25 is <a href="https://serverfault.com/questions/623692/is-it-still-wrong-to-require-starttls-on-incoming-smtp-messages">required</a> to support insecure connections.</li>
+<li>Receives email and filters for spam and viruses. For submitting outgoing mail you should prefer the submission ports(465, 587), which require authentication. Unless a relay host is configured, outgoing email will leave the server via port 25(thus outbound traffic must not be blocked by your provider or firewall).</li>
+<li>A submission port since 2018, <a href="https://tools.ietf.org/html/rfc8314">RFC 8314</a>. Originally a secure variant of port 25.</li>
+</ol>
+<p>See the <a href="https://github.com/tomav/docker-mailserver/wiki">wiki</a> for further details and best practice advice, especially regarding security concerns.</p>
+<h5 id="examples-with-just-the-relevant-environmental-variables">Examples with just the relevant environmental variables:</h5>
+<pre><code class="language-yaml">version: &#39;2&#39;
+
+services:
+  mail:
+    image: tvial/docker-mailserver:latest
+    hostname: mail
+    domainname: domain.com
+    container_name: mail
+    ports:
+      - &quot;25:25&quot;
+      - &quot;143:143&quot;
+      - &quot;587:587&quot;
+      - &quot;993:993&quot;
+    volumes:
+      - maildata:/var/mail
+      - mailstate:/var/mail-state
+      - maillogs:/var/log/mail
+      - ./config/:/tmp/docker-mailserver/
+    environment:
+      - ENABLE_SPAMASSASSIN=1
+      - ENABLE_CLAMAV=1
+      - ENABLE_FAIL2BAN=1
+      - ENABLE_POSTGREY=1
+      - ONE_DIR=1
+      - DMS_DEBUG=0
+    cap_add:
+      - NET_ADMIN
+      - SYS_PTRACE
+
+volumes:
+  maildata:
+    driver: local
+  mailstate:
+    driver: local
+  maillogs:
+    driver: local</code></pre>
+<p><strong>for ldap setup</strong>:</p>
+<pre><code class="language-yaml">version: &#39;2&#39;
+
+services:
+  mail:
+    image: tvial/docker-mailserver:latest
+    hostname: mail
+    domainname: domain.com
+    container_name: mail
+    ports:
+      - &quot;25:25&quot;
+      - &quot;143:143&quot;
+      - &quot;587:587&quot;
+      - &quot;993:993&quot;
+    volumes:
+      - maildata:/var/mail
+      - mailstate:/var/mail-state
+      - maillogs:/var/log/mail
+      - ./config/:/tmp/docker-mailserver/
+    environment:
+      - ENABLE_SPAMASSASSIN=1
+      - ENABLE_CLAMAV=1
+      - ENABLE_FAIL2BAN=1
+      - ENABLE_POSTGREY=1
+      - ONE_DIR=1
+      - DMS_DEBUG=0
+      - ENABLE_LDAP=1
+      - LDAP_SERVER_HOST=ldap # your ldap container/IP/ServerName
+      - LDAP_SEARCH_BASE=ou=people,dc=localhost,dc=localdomain
+      - LDAP_BIND_DN=cn=admin,dc=localhost,dc=localdomain
+      - LDAP_BIND_PW=admin
+      - LDAP_QUERY_FILTER_USER=(&amp;(mail=%s)(mailEnabled=TRUE))
+      - LDAP_QUERY_FILTER_GROUP=(&amp;(mailGroupMember=%s)(mailEnabled=TRUE))
+      - LDAP_QUERY_FILTER_ALIAS=(|(&amp;(mailAlias=%s)(objectClass=PostfixBookMailForward))(&amp;(mailAlias=%s)(objectClass=PostfixBookMailAccount)(mailEnabled=TRUE)))
+      - LDAP_QUERY_FILTER_DOMAIN=(|(&amp;(mail=*@%s)(objectClass=PostfixBookMailAccount)(mailEnabled=TRUE))(&amp;(mailGroupMember=*@%s)(objectClass=PostfixBookMailAccount)(mailEnabled=TRUE))(&amp;(mailalias=*@%s)(objectClass=PostfixBookMailForward)))
+      - DOVECOT_PASS_FILTER=(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))
+      - DOVECOT_USER_FILTER=(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))
+      - ENABLE_SASLAUTHD=1
+      - SASLAUTHD_MECHANISMS=ldap
+      - SASLAUTHD_LDAP_SERVER=ldap
+      - SASLAUTHD_LDAP_BIND_DN=cn=admin,dc=localhost,dc=localdomain
+      - SASLAUTHD_LDAP_PASSWORD=admin
+      - SASLAUTHD_LDAP_SEARCH_BASE=ou=people,dc=localhost,dc=localdomain
+      - POSTMASTER_ADDRESS=postmaster@localhost.localdomain
+      - POSTFIX_MESSAGE_SIZE_LIMIT=100000000
+    cap_add:
+      - NET_ADMIN
+      - SYS_PTRACE
+
+volumes:
+  maildata:
+    driver: local
+  mailstate:
+    driver: local
+  maillogs:
+    driver: local</code></pre>
+<h1 id="environment-variables">Environment variables</h1>
+<p>Please check <a href="https://github.com/tomav/docker-mailserver/blob/master/target/start-mailserver.sh">how the container starts</a> to understand what&#39;s expected. Also if an option doesn&#39;t work as documented here, check if you are running the latest image!</p>
+<p>Value in <strong>bold</strong> is the default value.</p>
+<h2 id="general">General</h2>
+<h5 id="dms_debug">DMS_DEBUG</h5>
+<ul>
+<li><strong>0</strong> =&gt; Debug disabled</li>
+<li>1 =&gt; Enables debug on startup</li>
+</ul>
+<h5 id="enable_clamav">ENABLE_CLAMAV</h5>
+<ul>
+<li><strong>0</strong> =&gt; Clamav is disabled</li>
+<li>1 =&gt; Clamav is enabled</li>
+</ul>
+<h5 id="one_dir">ONE_DIR</h5>
+<ul>
+<li><strong>0</strong> =&gt; state in default directories</li>
+<li>1 =&gt; consolidate all states into a single directory (<code>/var/mail-state</code>) to allow persistence using docker volumes</li>
+</ul>
+<h5 id="enable_pop3">ENABLE_POP3</h5>
+<ul>
+<li><strong>empty</strong> =&gt; POP3 service disabled</li>
+<li>1 =&gt; Enables POP3 service</li>
+</ul>
+<h5 id="enable_fail2ban">ENABLE_FAIL2BAN</h5>
+<ul>
+<li><strong>0</strong> =&gt; fail2ban service disabled</li>
+<li>1 =&gt; Enables fail2ban service</li>
+</ul>
+<p>If you enable Fail2Ban, don&#39;t forget to add the following lines to your <code>docker-compose.yml</code>:</p>
+<pre><code>cap_add:
+  - NET_ADMIN</code></pre><p>Otherwise, <code>iptables</code> won&#39;t be able to ban IPs.</p>
+<h5 id="smtp_only">SMTP_ONLY</h5>
+<ul>
+<li><strong>empty</strong> =&gt; all daemons start</li>
+<li>1 =&gt; only launch postfix smtp</li>
+</ul>
+<h5 id="ssl_type">SSL_TYPE</h5>
+<ul>
+<li><strong>empty</strong> =&gt; SSL disabled</li>
+<li>letsencrypt =&gt; Enables Let&#39;s Encrypt certificates</li>
+<li>custom =&gt; Enables custom certificates</li>
+<li>manual =&gt; Let you manually specify locations of your SSL certificates for non-standard cases</li>
+<li>self-signed =&gt; Enables self-signed certificates</li>
+<li><em>any other value</em> =&gt; SSL required, settings by default</li>
+</ul>
+<p>Please read <a href="https://github.com/tomav/docker-mailserver/wiki/Configure-SSL">the SSL page in the wiki</a> for more information.</p>
+<h5 id="tls_level">TLS_LEVEL</h5>
+<ul>
+<li><strong>empty</strong> =&gt; modern</li>
+<li>modern =&gt; Enables TLSv1.2 and modern ciphers only. (default)</li>
+<li>intermediate =&gt; Enables TLSv1, TLSv1.1 and TLSv1.2 and broad compatibility ciphers.</li>
+<li>old =&gt; NOT implemented. If you really need it, then customize the TLS ciphers overriding postfix and dovecot settings [ wiki](<a href="https://github.com/tomav/docker-mailserver/wiki/">https://github.com/tomav/docker-mailserver/wiki/</a></li>
+</ul>
+<h5 id="spoof_protection">SPOOF_PROTECTION</h5>
+<p>Configures the handling of creating mails with forged sender addresses.</p>
+<ul>
+<li><strong>empty</strong> =&gt; Mail address spoofing allowed. Any logged in user may create email messages with a forged sender address. See also <a href="https://en.wikipedia.org/wiki/Email_spoofing">Wikipedia</a>(not recommended, but default for backwards compatibility reasons)</li>
+<li>1 =&gt; (recommended) Mail spoofing denied. Each user may only send with his own or his alias addresses. Addresses with <a href="http://www.postfix.org/postconf.5.html#recipient_delimiter">extension delimiters</a> are not able to send messages.</li>
+</ul>
+<h5 id="enable_srs">ENABLE_SRS</h5>
+<p>Enables the Sender Rewriting Scheme. SRS is needed if your mail server acts as forwarder. See <a href="https://github.com/roehling/postsrsd/blob/master/README.md#sender-rewriting-scheme-crash-course">postsrsd</a> for further explanation.</p>
+<ul>
+<li><strong>0</strong> =&gt; Disabled</li>
+<li>1 =&gt; Enabled</li>
+</ul>
+<h5 id="permit_docker">PERMIT_DOCKER</h5>
+<p>Set different options for mynetworks option (can be overwrite in postfix-main.cf) <strong>WARNING</strong>: Adding the docker network&#39;s gateway to the list of trusted hosts, e.g. using the <code>network</code> or <code>connected-networks</code> option, can create an <a href="https://en.wikipedia.org/wiki/Open_mail_relay"><strong>open relay</strong></a>, <a href="https://github.com/tomav/docker-mailserver/issues/1405#issuecomment-590106498">for instance</a> if IPv6 is enabled on the host machine but not in Docker.</p>
+<ul>
+<li><strong>empty</strong> =&gt; localhost only</li>
+<li>host =&gt; Add docker host (ipv4 only)</li>
+<li>network =&gt; Add the docker default bridge network (172.16.0.0/12); <strong>WARNING</strong>: <code>docker-compose</code> might use others (e.g. 192.168.0.0/16) use <code>PERMIT_DOCKER=connected-networks</code> in this case</li>
+<li>connected-networks =&gt; Add all connected docker networks (ipv4 only)</li>
+</ul>
+<p>Note: you probably want to <a href="#postfix_inet_protocols">set <code>POSTFIX_INET_PROTOCOLS=ipv4</code></a> to make it work fine with Docker.</p>
+<h5 id="virusmails_delete_delay">VIRUSMAILS_DELETE_DELAY</h5>
+<p>Set how many days a virusmail will stay on the server before being deleted</p>
+<ul>
+<li><strong>empty</strong> =&gt; 7 days</li>
+</ul>
+<h5 id="enable_postfix_virtual_transport">ENABLE_POSTFIX_VIRTUAL_TRANSPORT</h5>
+<p>This Option is activating the Usage of POSTFIX_DAGENT to specify a ltmp client different from default dovecot socket.</p>
+<ul>
+<li><strong>empty</strong> =&gt; disabled</li>
+<li>1 =&gt; enabled</li>
+</ul>
+<h5 id="postfix_dagent">POSTFIX_DAGENT</h5>
+<p>Enabled by ENABLE_POSTFIX_VIRTUAL_TRANSPORT. Specify the final delivery of postfix</p>
+<ul>
+<li><strong>empty</strong>: fail</li>
+<li><code>lmtp:unix:private/dovecot-lmtp</code> (use socket)</li>
+<li><code>lmtps:inet:&lt;host&gt;:&lt;port&gt;</code> (secure lmtp with starttls, take a look at <a href="https://sys4.de/en/blog/2014/11/17/sicheres-lmtp-mit-starttls-in-dovecot/">https://sys4.de/en/blog/2014/11/17/sicheres-lmtp-mit-starttls-in-dovecot/</a>)</li>
+<li><code>lmtp:&lt;kopano-host&gt;:2003</code> (use kopano as mailstore)</li>
+<li>etc.</li>
+</ul>
+<h5 id="postfix_mailbox_size_limit">POSTFIX_MAILBOX_SIZE_LIMIT</h5>
+<p>Set the mailbox size limit for all users. If set to zero, the size will be unlimited (default).</p>
+<ul>
+<li><strong>empty</strong> =&gt; 0 (no limit)</li>
+</ul>
+<h5 id="postfix_message_size_limit">POSTFIX_MESSAGE_SIZE_LIMIT</h5>
+<p>Set the message size limit for all users. If set to zero, the size will be unlimited (not recommended!)</p>
+<ul>
+<li><strong>empty</strong> =&gt; 10240000 (~10 MB)</li>
+</ul>
+<h5 id="enable_managesieve">ENABLE_MANAGESIEVE</h5>
+<ul>
+<li><strong>empty</strong> =&gt; Managesieve service disabled</li>
+<li>1 =&gt; Enables Managesieve on port 4190</li>
+</ul>
+<h5 id="override_hostname">OVERRIDE_HOSTNAME</h5>
+<ul>
+<li><strong>empty</strong> =&gt; uses the <code>hostname</code> command to get the mail server&#39;s canonical hostname</li>
+<li>=&gt; Specify a fully-qualified domainname to serve mail for.  This is used for many of the config features so if you can&#39;t set your hostname (e.g. you&#39;re in a container platform that doesn&#39;t let you) specify it in this environment variable.</li>
+</ul>
+<h5 id="postmaster_address">POSTMASTER_ADDRESS</h5>
+<ul>
+<li><strong>empty</strong> =&gt; <a href="mailto:postmaster@domain.com">postmaster@domain.com</a></li>
+<li>=&gt; Specify the postmaster address</li>
+</ul>
+<h5 id="postscreen_action">POSTSCREEN_ACTION</h5>
+<ul>
+<li><strong>enforce</strong> =&gt; Allow other tests to complete. Reject attempts to deliver mail with a 550 SMTP reply, and log the helo/sender/recipient information. Repeat this test the next time the client connects.</li>
+<li>drop =&gt; Drop the connection immediately with a 521 SMTP reply. Repeat this test the next time the client connects.</li>
+<li>ignore =&gt; Ignore the failure of this test. Allow other tests to complete. Repeat this test the next time the client connects. This option is useful for testing and collecting statistics without blocking mail.</li>
+</ul>
+<h5 id="dovecot_mailbox_format">DOVECOT_MAILBOX_FORMAT</h5>
+<ul>
+<li><strong>maildir</strong> =&gt; uses very common Maildir format, one file contains one message</li>
+<li>sdbox =&gt; (experimental) uses Dovecot high-performance mailbox format, one file contains one message</li>
+<li>mdbox ==&gt; (experimental) uses Dovecot high-performance mailbox format, multiple messages per file and multiple files per box</li>
+</ul>
+<p>This option has been added in November 2019. Using other format than Maildir is considered as experimental in docker-mailserver and should only be used for testing purpose. For more details, please refer to <a href="https://wiki2.dovecot.org/MailboxFormat">Dovecot Documentation</a>.</p>
+<h5 id="postfix_inet_protocols">POSTFIX_INET_PROTOCOLS</h5>
+<ul>
+<li><strong>all</strong> =&gt; All possible protocols.</li>
+<li>ipv4 =&gt; Use only IPv4 traffic. Most likely you want this behind Docker.</li>
+<li>ipv6 =&gt; Use only IPv6 traffic.</li>
+</ul>
+<p>Note: More details in <a href="http://www.postfix.org/postconf.5.html#inet_protocols">http://www.postfix.org/postconf.5.html#inet_protocols</a></p>
+<h2 id="reports">Reports</h2>
+<h5 id="pflogsumm_trigger">PFLOGSUMM_TRIGGER</h5>
+<p>  Enables regular pflogsumm mail reports.</p>
+<ul>
+<li><strong>not set</strong> =&gt; No report</li>
+<li>daily_cron =&gt; Daily report for the previous day</li>
+<li>logrotate =&gt; Full report based on the mail log when it is rotated</li>
+</ul>
+<p>This is a new option. The old REPORT options are still supported for backwards compatibility.
+If this is not set and reports are enabled with the old options, logrotate will be used.</p>
+<h5 id="pflogsumm_recipient">PFLOGSUMM_RECIPIENT</h5>
+<p>  Recipient address for pflogsumm reports.</p>
+<ul>
+<li><strong>not set</strong> =&gt; Use REPORT_RECIPIENT or POSTMASTER_ADDRESS</li>
+<li>=&gt; Specify the recipient address(es)</li>
+</ul>
+<h5 id="pflogsumm_sender">PFLOGSUMM_SENDER</h5>
+<p>  From address for pflogsumm reports.</p>
+<ul>
+<li><strong>not set</strong> =&gt; Use REPORT_SENDER or POSTMASTER_ADDRESS</li>
+<li>=&gt; Specify the sender address</li>
+</ul>
+<h5 id="logwatch_interval">LOGWATCH_INTERVAL</h5>
+<p>  Interval for logwatch report.</p>
+<ul>
+<li><strong>none</strong> =&gt; No report is generated</li>
+<li>daily =&gt; Send a daily report</li>
+<li>weekly =&gt; Send a report every week</li>
+</ul>
+<h5 id="logwatch_recipient">LOGWATCH_RECIPIENT</h5>
+<p>  Recipient address for logwatch reports if they are enabled.</p>
+<ul>
+<li><strong>not set</strong> =&gt; Use REPORT_RECIPIENT or POSTMASTER_ADDRESS</li>
+<li>=&gt; Specify the recipient address(es)</li>
+</ul>
+<h5 id="report_recipient-deprecated">REPORT_RECIPIENT (deprecated)</h5>
+<p>  Enables a report being sent (created by pflogsumm) on a regular basis.</p>
+<ul>
+<li><strong>0</strong> =&gt; Report emails are disabled unless enabled by other options</li>
+<li>1 =&gt; Using POSTMASTER_ADDRESS as the recipient</li>
+<li>=&gt; Specify the recipient address</li>
+</ul>
+<h5 id="report_sender-deprecated">REPORT_SENDER (deprecated)</h5>
+<p>  Change the sending address for mail report</p>
+<ul>
+<li><strong>empty</strong> =&gt; mailserver-report@hostname</li>
+<li>=&gt; Specify the report sender (From) address</li>
+</ul>
+<h5 id="report_interval-deprecated">REPORT_INTERVAL (deprecated)</h5>
+<p>  changes the interval in which logs are rotated and a report is being sent (deprecated).</p>
+<ul>
+<li><strong>daily</strong> =&gt; Send a daily report</li>
+<li>weekly =&gt; Send a report every week</li>
+<li>monthly =&gt; Send a report every month</li>
+</ul>
+<p>Note: This variable used to control logrotate inside the container and sent the pflogsumm report when the logs were rotated.
+It is still supported for backwards compatibility, but the new option LOGROTATE_INTERVAL has been added that only rotates
+the logs.</p>
+<h5 id="logrotate_interval">LOGROTATE_INTERVAL</h5>
+<p>  Defines the interval in which the mail log is being rotated.</p>
+<ul>
+<li><strong>daily</strong> =&gt; Rotate daily.</li>
+<li>weekly =&gt; Rotate weekly.</li>
+<li>monthly =&gt; Rotate monthly.</li>
+</ul>
+<p>Note that only the log inside the container is affected.
+The full log output is still available via <code>docker logs mail</code> (or your respective container name).
+If you want to control logrotation for the docker generated logfile see: <a href="https://docs.docker.com/config/containers/logging/configure/">Docker Logging Drivers</a>.</p>
+<p>Also note that by default the logs are lost when the container is recycled. To keep the logs, mount a volume.</p>
+<p>Finally the logrotate interval <strong>may</strong> affect the period for generated reports. That is the case when the reports are triggered by log rotation.</p>
+<h2 id="spamassassin">Spamassassin</h2>
+<h5 id="enable_spamassassin">ENABLE_SPAMASSASSIN</h5>
+<ul>
+<li><strong>0</strong> =&gt; Spamassassin is disabled</li>
+<li>1 =&gt; Spamassassin is enabled</li>
+</ul>
+<h5 id="sa_tag">SA_TAG</h5>
+<ul>
+<li><strong>2.0</strong> =&gt; add spam info headers if at, or above that level</li>
+</ul>
+<p>Note: this spamassassin setting needs <code>ENABLE_SPAMASSASSIN=1</code></p>
+<h5 id="sa_tag2">SA_TAG2</h5>
+<ul>
+<li><strong>6.31</strong> =&gt; add &#39;spam detected&#39; headers at that level</li>
+</ul>
+<p>Note: this spamassassin setting needs <code>ENABLE_SPAMASSASSIN=1</code></p>
+<h5 id="sa_kill">SA_KILL</h5>
+<ul>
+<li><strong>6.31</strong> =&gt; triggers spam evasive actions</li>
+</ul>
+<p>Note: this spamassassin setting needs <code>ENABLE_SPAMASSASSIN=1</code>. By default, the mailserver is configured to quarantine spam emails. If emails are quarantined, they are compressed and stored in a location dependent on the ONE_DIR setting above. If <code>ONE_DIR=1</code> the location is /var/mail-state/lib-amavis/virusmails/. If <code>ONE_DIR=0</code> it is /var/lib/amavis/virusmails/. These paths are inside the docker container. To inhibit this behaviour and deliver spam emails, set this to a very high value e.g. 100.0.</p>
+<h5 id="sa_spam_subject">SA_SPAM_SUBJECT</h5>
+<ul>
+<li><strong>***SPAM***</strong> =&gt; add tag to subject if spam detected</li>
+</ul>
+<p>Note: this spamassassin setting needs <code>ENABLE_SPAMASSASSIN=1</code></p>
+<h5 id="sa_shortcircuit_bayes_spam">SA_SHORTCIRCUIT_BAYES_SPAM</h5>
+<ul>
+<li><strong>1</strong> =&gt; will activate spamassassin short circuiting for bayes spam detection.</li>
+</ul>
+<p>This will uncomment the respective line in <code>/etc/spamassasin/local.cf</code></p>
+<p>Note: activate this only if you are confident in your bayes database for identifying spam.</p>
+<h5 id="sa_shortcircuit_bayes_ham">SA_SHORTCIRCUIT_BAYES_HAM</h5>
+<ul>
+<li><strong>1</strong> =&gt; will activate spamassassin short circuiting for bayes ham detection</li>
+</ul>
+<p>This will uncomment the respective line in <code>/etc/spamassasin/local.cf</code></p>
+<p>Note: activate this only if you are confident in your bayes database for identifying ham.</p>
+<h2 id="fetchmail">Fetchmail</h2>
+<h5 id="enable_fetchmail">ENABLE_FETCHMAIL</h5>
+<ul>
+<li><strong>0</strong> =&gt; <code>fetchmail</code> disabled</li>
+<li>1 =&gt; <code>fetchmail</code> enabled</li>
+</ul>
+<h5 id="fetchmail_poll">FETCHMAIL_POLL</h5>
+<ul>
+<li><strong>300</strong> =&gt; <code>fetchmail</code> The number of seconds for the interval</li>
+</ul>
+<h2 id="ldap">LDAP</h2>
+<h5 id="enable_ldap">ENABLE_LDAP</h5>
+<ul>
+<li><strong>empty</strong> =&gt; LDAP authentification is disabled</li>
+<li>1 =&gt; LDAP authentification is enabled</li>
+<li>NOTE:<ul>
+<li>A second container for the ldap service is necessary (e.g. <a href="https://github.com/osixia/docker-openldap">docker-openldap</a>)</li>
+<li>For preparing the ldap server to use in combination with this container <a href="http://acidx.net/wordpress/2014/06/installing-a-mailserver-with-postfix-dovecot-sasl-ldap-roundcube/">this</a> article may be helpful</li>
+</ul>
+</li>
+</ul>
+<h5 id="ldap_start_tls">LDAP_START_TLS</h5>
+<ul>
+<li><strong>empty</strong> =&gt; no</li>
+<li>yes =&gt; LDAP over TLS enabled for Postfix</li>
+</ul>
+<h5 id="ldap_server_host">LDAP_SERVER_HOST</h5>
+<ul>
+<li><strong>empty</strong> =&gt; mail.domain.com</li>
+<li>=&gt; Specify the dns-name/ip-address where the ldap-server</li>
+<li>NOTE: If you going to use the mailserver in combination with docker-compose you can set the service name here</li>
+</ul>
+<h5 id="ldap_search_base">LDAP_SEARCH_BASE</h5>
+<ul>
+<li><strong>empty</strong> =&gt; ou=people,dc=domain,dc=com</li>
+<li>=&gt; e.g. LDAP_SEARCH_BASE=dc=mydomain,dc=local</li>
+</ul>
+<h5 id="ldap_bind_dn">LDAP_BIND_DN</h5>
+<ul>
+<li><strong>empty</strong> =&gt; cn=admin,dc=domain,dc=com</li>
+<li>=&gt; take a look at examples of SASL_LDAP_BIND_DN</li>
+</ul>
+<h5 id="ldap_bind_pw">LDAP_BIND_PW</h5>
+<ul>
+<li><strong>empty</strong> =&gt; admin</li>
+<li>=&gt; Specify the password to bind against ldap</li>
+</ul>
+<h5 id="ldap_query_filter_user">LDAP_QUERY_FILTER_USER</h5>
+<ul>
+<li>e.g. <code>(&amp;(mail=%s)(mailEnabled=TRUE))</code></li>
+<li>=&gt; Specify how ldap should be asked for users</li>
+</ul>
+<h5 id="ldap_query_filter_group">LDAP_QUERY_FILTER_GROUP</h5>
+<ul>
+<li>e.g. <code>(&amp;(mailGroupMember=%s)(mailEnabled=TRUE))</code></li>
+<li>=&gt; Specify how ldap should be asked for groups</li>
+</ul>
+<h5 id="ldap_query_filter_alias">LDAP_QUERY_FILTER_ALIAS</h5>
+<ul>
+<li>e.g. <code>(&amp;(mailAlias=%s)(mailEnabled=TRUE))</code></li>
+<li>=&gt; Specify how ldap should be asked for aliases</li>
+</ul>
+<h5 id="ldap_query_filter_domain">LDAP_QUERY_FILTER_DOMAIN</h5>
+<ul>
+<li>e.g. <code>(&amp;(|(mail=*@%s)(mailalias=*@%s)(mailGroupMember=*@%s))(mailEnabled=TRUE))</code></li>
+<li>=&gt; Specify how ldap should be asked for domains</li>
+</ul>
+<h5 id="dovecot_tls">DOVECOT_TLS</h5>
+<ul>
+<li><strong>empty</strong> =&gt; no</li>
+<li>yes =&gt; LDAP over TLS enabled for Dovecot</li>
+</ul>
+<h2 id="dovecot">Dovecot</h2>
+<p>The following variables overwrite the default values for <code>/etc/dovecot/dovecot-ldap.conf.ext</code>.</p>
+<h5 id="dovecot_user_filter">DOVECOT_USER_FILTER</h5>
+<ul>
+<li>e.g. <code>(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))</code></li>
+</ul>
+<h5 id="dovecot_user_attrs">DOVECOT_USER_ATTRS</h5>
+<ul>
+<li>e.g. <code>homeDirectory=home,qmailUID=uid,qmailGID=gid,mailMessageStore=mail</code></li>
+<li>=&gt; Specify the directory to dovecot attribute mapping that fits your directory structure.</li>
+<li>Note: This is necessary for directories that do not use the <a href="test/docker-openldap/bootstrap/schema/mmc/postfix-book.schema">Postfix Book Schema</a>.</li>
+<li>Note: The left-hand value is the directory attribute, the right hand value is the dovecot variable.</li>
+<li>More details on the <a href="https://wiki.dovecot.org/AuthDatabase/LDAP/Userdb">Dovecot Wiki</a></li>
+</ul>
+<h5 id="dovecot_pass_filter">DOVECOT_PASS_FILTER</h5>
+<ul>
+<li>e.g. <code>(&amp;(objectClass=PostfixBookMailAccount)(uniqueIdentifier=%n))</code></li>
+</ul>
+<h5 id="dovecot_pass_attrs">DOVECOT_PASS_ATTRS</h5>
+<ul>
+<li>e.g. <code>uid=user,userPassword=password</code></li>
+<li>=&gt; Specify the directory to dovecot variable mapping that fits your directory structure.</li>
+<li>Note: This is necessary for directories that do not use the <a href="test/docker-openldap/bootstrap/schema/mmc/postfix-book.schema">Postfix Book Schema</a>.</li>
+<li>Note: The left-hand value is the directory attribute, the right hand value is the dovecot variable.</li>
+<li>More details on the <a href="https://wiki.dovecot.org/AuthDatabase/LDAP/PasswordLookups">Dovecot Wiki</a></li>
+</ul>
+<h2 id="postgrey">Postgrey</h2>
+<h5 id="enable_postgrey">ENABLE_POSTGREY</h5>
+<ul>
+<li><strong>0</strong> =&gt; <code>postgrey</code> is disabled</li>
+<li>1 =&gt; <code>postgrey</code> is enabled</li>
+</ul>
+<h5 id="postgrey_delay">POSTGREY_DELAY</h5>
+<ul>
+<li><strong>300</strong> =&gt; greylist for N seconds</li>
+</ul>
+<p>Note: This postgrey setting needs <code>ENABLE_POSTGREY=1</code></p>
+<h5 id="postgrey_max_age">POSTGREY_MAX_AGE</h5>
+<ul>
+<li><strong>35</strong> =&gt; delete entries older than N days since the last time that they have been seen</li>
+</ul>
+<p>Note: This postgrey setting needs <code>ENABLE_POSTGREY=1</code></p>
+<h5 id="postgrey_auto_whitelist_clients">POSTGREY_AUTO_WHITELIST_CLIENTS</h5>
+<ul>
+<li><strong>5</strong> =&gt; whitelist host after N successful deliveries (N=0 to disable whitelisting)</li>
+</ul>
+<p>Note: This postgrey setting needs <code>ENABLE_POSTGREY=1</code></p>
+<h5 id="postgrey_text">POSTGREY_TEXT</h5>
+<ul>
+<li><strong>Delayed by postgrey</strong> =&gt; response when a mail is greylisted</li>
+</ul>
+<p>Note: This postgrey setting needs <code>ENABLE_POSTGREY=1</code></p>
+<h2 id="sasl-auth">SASL Auth</h2>
+<h5 id="enable_saslauthd">ENABLE_SASLAUTHD</h5>
+<ul>
+<li><strong>0</strong> =&gt; <code>saslauthd</code> is disabled</li>
+<li>1 =&gt; <code>saslauthd</code> is enabled</li>
+</ul>
+<h5 id="saslauthd_mechanisms">SASLAUTHD_MECHANISMS</h5>
+<ul>
+<li>empty =&gt; pam</li>
+<li><code>ldap</code> =&gt; authenticate against ldap server</li>
+<li><code>shadow</code> =&gt; authenticate against local user db</li>
+<li><code>mysql</code> =&gt; authenticate against mysql db</li>
+<li><code>rimap</code> =&gt; authenticate against imap server</li>
+<li>NOTE: can be a list of mechanisms like pam ldap shadow</li>
+</ul>
+<h5 id="saslauthd_mech_options">SASLAUTHD_MECH_OPTIONS</h5>
+<ul>
+<li>empty =&gt; None</li>
+<li>e.g. with SASLAUTHD_MECHANISMS rimap you need to specify the ip-address/servername of the imap server  ==&gt; xxx.xxx.xxx.xxx</li>
+</ul>
+<h5 id="saslauthd_ldap_server">SASLAUTHD_LDAP_SERVER</h5>
+<ul>
+<li>empty =&gt; localhost</li>
+</ul>
+<h5 id="saslauthd_ldap_ssl">SASLAUTHD_LDAP_SSL</h5>
+<ul>
+<li>empty or 0 =&gt; <code>ldap://</code> will be used</li>
+<li>1 =&gt; <code>ldaps://</code> will be used</li>
+</ul>
+<h5 id="saslauthd_ldap_bind_dn">SASLAUTHD_LDAP_BIND_DN</h5>
+<ul>
+<li>empty =&gt; anonymous bind</li>
+<li>specify an object with privileges to search the directory tree</li>
+<li>e.g. active directory: SASLAUTHD_LDAP_BIND_DN=cn=Administrator,cn=Users,dc=mydomain,dc=net</li>
+<li>e.g. openldap: SASLAUTHD_LDAP_BIND_DN=cn=admin,dc=mydomain,dc=net</li>
+</ul>
+<h5 id="saslauthd_ldap_password">SASLAUTHD_LDAP_PASSWORD</h5>
+<ul>
+<li>empty =&gt; anonymous bind</li>
+</ul>
+<h5 id="saslauthd_ldap_search_base">SASLAUTHD_LDAP_SEARCH_BASE</h5>
+<ul>
+<li>empty =&gt; Reverting to SASLAUTHD_MECHANISMS pam</li>
+<li>specify the search base</li>
+</ul>
+<h5 id="saslauthd_ldap_filter">SASLAUTHD_LDAP_FILTER</h5>
+<ul>
+<li>empty =&gt; default filter <code>(&amp;(uniqueIdentifier=%u)(mailEnabled=TRUE))</code></li>
+<li>e.g. for active directory: <code>(&amp;(sAMAccountName=%U)(objectClass=person))</code></li>
+<li>e.g. for openldap: <code>(&amp;(uid=%U)(objectClass=person))</code></li>
+</ul>
+<h5 id="sasl_passwd">SASL_PASSWD</h5>
+<ul>
+<li><strong>empty</strong> =&gt; No sasl_passwd will be created</li>
+<li>string =&gt; <code>/etc/postfix/sasl_passwd</code> will be created with the string as password</li>
+</ul>
+<h2 id="srs-sender-rewriting-scheme">SRS (Sender Rewriting Scheme)</h2>
+<h5 id="srs_sender_classes">SRS_SENDER_CLASSES</h5>
+<p>An email has an &quot;envelope&quot; sender (indicating the sending server) and a
+&quot;header&quot; sender (indicating who sent it). More strict SPF policies may require
+you to replace both instead of just the envelope sender.</p>
+<p><a href="https://www.mybluelinux.com/what-is-email-envelope-and-email-header/">More info</a>.</p>
+<ul>
+<li><strong>envelope_sender</strong> =&gt; Rewrite only envelope sender address</li>
+<li>header_sender =&gt; Rewrite only header sender (not recommended)</li>
+<li>envelope_sender,header_sender =&gt; Rewrite both senders</li>
+</ul>
+<h5 id="srs_exclude_domains">SRS_EXCLUDE_DOMAINS</h5>
+<ul>
+<li><strong>empty</strong> =&gt; Envelope sender will be rewritten for all domains</li>
+<li>provide comma separated list of domains to exclude from rewriting</li>
+</ul>
+<h5 id="srs_secret">SRS_SECRET</h5>
+<ul>
+<li><strong>empty</strong> =&gt; generated when the container is started for the first time</li>
+<li>provide a secret to use in base64</li>
+<li>you may specify multiple keys, comma separated. the first one is used for signing and the remaining will be used for verification. this is how you rotate and expire keys</li>
+<li>if you have a cluster/swarm make sure the same keys are on all nodes</li>
+<li>example command to generate a key: <code>dd if=/dev/urandom bs=24 count=1 2&gt;/dev/null | base64</code></li>
+</ul>
+<h5 id="srs_domainname">SRS_DOMAINNAME</h5>
+<ul>
+<li><strong>empty</strong> =&gt; Derived from OVERRIDE_HOSTNAME, DOMAINNAME, or the container&#39;s hostname</li>
+<li>Set this if auto-detection fails, isn&#39;t what you want, or you wish to have a separate container handle DSNs</li>
+</ul>
+<h2 id="default-relay-host">Default Relay Host</h2>
+<h4 id="default_relay_host">DEFAULT_RELAY_HOST</h4>
+<ul>
+<li><strong>empty</strong> =&gt; don&#39;t set default relayhost setting in main.cf</li>
+<li>default host and port to relay all mail through.
+Format: <code>[example.com]:587</code> (don&#39;t forget the brackets if you need this to
+be compatible with <code>$RELAY_USER</code> and <code>$RELAY_PASSWORD</code>, explained below).</li>
+</ul>
+<h2 id="multi-domain-relay-hosts">Multi-domain Relay Hosts</h2>
+<h4 id="relay_host">RELAY_HOST</h4>
+<ul>
+<li><strong>empty</strong> =&gt; don&#39;t configure relay host</li>
+<li>default host to relay mail through</li>
+</ul>
+<h4 id="relay_port">RELAY_PORT</h4>
+<ul>
+<li><strong>empty</strong> =&gt; 25</li>
+<li>default port to relay mail through</li>
+</ul>
+<h4 id="relay_user">RELAY_USER</h4>
+<ul>
+<li><strong>empty</strong> =&gt; no default</li>
+<li>default relay username (if no specific entry exists in postfix-sasl-password.cf)</li>
+</ul>
+<h4 id="relay_password">RELAY_PASSWORD</h4>
+<ul>
+<li><strong>empty</strong> =&gt; no default</li>
+<li>password for default relay user</li>
+</ul>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

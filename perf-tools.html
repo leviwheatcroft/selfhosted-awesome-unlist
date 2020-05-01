@@ -1,0 +1,156 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="*  Performance analysis tools based on Linux perf_events  and ftrace."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>perf-tools</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/brendangregg/perf-tools"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>perf-tools</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>03 Apr 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>6452</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>36</span></div><div class="tags"><a class="button" href="/tags/shell.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Shell</a><a class="button" href="/tags/troubleshooting.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Troubleshooting</a><a class="button" href="/tags/sysadmin.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>sysadmin</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><h1 id="perf-tools">perf-tools</h1>
+<p>A miscellaneous collection of in-development and unsupported performance analysis tools for Linux ftrace and perf_events (aka the &quot;perf&quot; command). Both ftrace and perf are core Linux tracing tools, included in the kernel source. Your system probably has ftrace already, and perf is often just a package add (see Prerequisites).</p>
+<p>These tools are designed to be easy to install (fewest dependencies), provide advanced performance observability, and be simple to use: do one thing and do it well. This collection was created by Brendan Gregg (author of the DTraceToolkit).</p>
+<p>Many of these tools employ workarounds so that functionality is possible on existing Linux kernels. Because of this, many tools have caveats (see man pages), and their implementation should be considered a placeholder until future kernel features, or new tracing subsystems, are added.</p>
+<p>These are intended for Linux 3.2 and newer kernels. For Linux 2.6.x, see Warnings.</p>
+<h2 id="presentation">Presentation</h2>
+<p>These tools were introduced in the USENIX LISA 2014 presentation: Linux Performance Analysis: New Tools and Old Secrets</p>
+<ul>
+<li>slides: <a href="http://www.slideshare.net/brendangregg/linux-performance-analysis-new-tools-and-old-secrets">http://www.slideshare.net/brendangregg/linux-performance-analysis-new-tools-and-old-secrets</a></li>
+<li>video: <a href="https://www.usenix.org/conference/lisa14/conference-program/presentation/gregg">https://www.usenix.org/conference/lisa14/conference-program/presentation/gregg</a></li>
+</ul>
+<h2 id="contents">Contents</h2>
+<center><a href="images/perf-tools_2016.png"><img src="images/perf-tools_2016.png" border=0 width=700></a></center>
+
+<p>Using ftrace:</p>
+<ul>
+<li><a href="iosnoop">iosnoop</a>: trace disk I/O with details including latency. <a href="examples/iosnoop_example.txt">Examples</a>.</li>
+<li><a href="iolatency">iolatency</a>: summarize disk I/O latency as a histogram. <a href="examples/iolatency_example.txt">Examples</a>.</li>
+<li><a href="execsnoop">execsnoop</a>: trace process exec() with command line argument details. <a href="examples/execsnoop_example.txt">Examples</a>.</li>
+<li><a href="opensnoop">opensnoop</a>: trace open() syscalls showing filenames. <a href="examples/opensnoop_example.txt">Examples</a>.</li>
+<li><a href="killsnoop">killsnoop</a>: trace kill() signals showing process and signal details. <a href="examples/killsnoop_example.txt">Examples</a>.</li>
+<li>fs/<a href="fs/cachestat">cachestat</a>: basic cache hit/miss statistics for the Linux page cache. <a href="examples/cachestat_example.txt">Examples</a>.</li>
+<li>net/<a href="net/tcpretrans">tcpretrans</a>: show TCP retransmits, with address and other details. <a href="examples/tcpretrans_example.txt">Examples</a>.</li>
+<li>system/<a href="system/tpoint">tpoint</a>: trace a given tracepoint. <a href="examples/tpoint_example.txt">Examples</a>.</li>
+<li>kernel/<a href="kernel/funccount">funccount</a>: count kernel function calls, matching a string with wildcards. <a href="examples/funccount_example.txt">Examples</a>.</li>
+<li>kernel/<a href="kernel/functrace">functrace</a>: trace kernel function calls, matching a string with wildcards. <a href="examples/functrace_example.txt">Examples</a>.</li>
+<li>kernel/<a href="kernel/funcslower">funcslower</a>: trace kernel functions slower than a threshold. <a href="examples/funcslower_example.txt">Examples</a>.</li>
+<li>kernel/<a href="kernel/funcgraph">funcgraph</a>: trace a graph of kernel function calls, showing children and times. <a href="examples/funcgraph_example.txt">Examples</a>.</li>
+<li>kernel/<a href="kernel/kprobe">kprobe</a>: dynamically trace a kernel function call or its return, with variables. <a href="examples/kprobe_example.txt">Examples</a>.</li>
+<li>user/<a href="user/uprobe">uprobe</a>: dynamically trace a user-level function call or its return, with variables. <a href="examples/uprobe_example.txt">Examples</a>.</li>
+<li>tools/<a href="tools/reset-ftrace">reset-ftrace</a>: reset ftrace state if needed. <a href="examples/reset-ftrace_example.txt">Examples</a>.</li>
+</ul>
+<p>Using perf_events:</p>
+<ul>
+<li>misc/<a href="misc/perf-stat-hist">perf-stat-hist</a>: power-of aggregations for tracepoint variables. <a href="examples/perf-stat-hist_example.txt">Examples</a>.</li>
+<li><a href="syscount">syscount</a>: count syscalls by syscall or process. <a href="examples/syscount_example.txt">Examples</a>.</li>
+<li>disk/<a href="disk/bitesize">bitesize</a>: histogram summary of disk I/O size. <a href="examples/bitesize_example.txt">Examples</a>.</li>
+</ul>
+<p>Using eBPF:</p>
+<ul>
+<li>As a preview of things to come, see the bcc tracing <a href="https://github.com/iovisor/bcc/blob/master/README.md#tracing">Tools section</a>. These use <a href="https://github.com/iovisor/bcc">bcc</a>, a front end for using <a href="http://www.brendangregg.com/blog/2015-05-15/ebpf-one-small-step.html">eBPF</a>. bcc+eBPF will allow some of these tools to be rewritten and improved, and additional tools to be created.</li>
+</ul>
+<h2 id="screenshots">Screenshots</h2>
+<p>Showing new processes and arguments:</p>
+<pre># <b>./execsnoop</b> 
+Tracing exec()s. Ctrl-C to end.
+   PID   PPID ARGS
+ 22898  22004 man ls
+ 22905  22898 preconv -e UTF-8
+ 22908  22898 pager -s
+ 22907  22898 nroff -mandoc -rLL=164n -rLT=164n -Tutf8
+ 22906  22898 tbl
+ 22911  22910 locale charmap
+ 22912  22907 groff -mtty-char -Tutf8 -mandoc -rLL=164n -rLT=164n
+ 22913  22912 troff -mtty-char -mandoc -rLL=164n -rLT=164n -Tutf8
+ 22914  22912 grotty
+</pre>
+
+<p>Measuring block device I/O latency from queue insert to completion:</p>
+<pre># <b>./iolatency -Q</b>
+Tracing block I/O. Output every 1 seconds. Ctrl-C to end.
+
+  &gt;=(ms) .. &lt;(ms)   : I/O      |Distribution                          |
+       0 -> 1       : 1913     |######################################|
+       1 -> 2       : 438      |#########                             |
+       2 -> 4       : 100      |##                                    |
+       4 -> 8       : 145      |###                                   |
+       8 -> 16      : 43       |#                                     |
+      16 -> 32      : 43       |#                                     |
+      32 -> 64      : 1        |#                                     |
+
+[...]
+</pre>
+
+<p>Tracing the block:block_rq_insert tracepoint, with kernel stack traces, and only for reads:</p>
+<pre># <b>./tpoint -s block:block_rq_insert 'rwbs ~ "*R*"'</b>
+   cksum-11908 [000] d... 7269839.919098: block_rq_insert: 202,1 R 0 () 736560 + 136 [cksum]
+   cksum-11908 [000] d... 7269839.919107: <stack trace>
+ => __elv_add_request
+ => blk_flush_plug_list
+ => blk_finish_plug
+ => __do_page_cache_readahead
+ => ondemand_readahead
+ => page_cache_async_readahead
+ => generic_file_read_iter
+ => new_sync_read
+ => vfs_read
+ => SyS_read
+ => system_call_fastpath
+
+[...]
+</pre>
+
+<p>Count kernel function calls beginning with &quot;bio_&quot;, summarize every second:</p>
+<pre># <b>./funccount -i 1 'bio_*'</b>
+Tracing "bio_*"... Ctrl-C to end.
+
+FUNC                              COUNT
+bio_attempt_back_merge               26
+bio_get_nr_vecs                     361
+bio_alloc                           536
+bio_alloc_bioset                    536
+bio_endio                           536
+bio_free                            536
+bio_fs_destructor                   536
+bio_init                            536
+bio_integrity_enabled               536
+bio_put                             729
+bio_add_page                       1004
+
+[...]
+</pre>
+
+<p>There are many more examples in the <a href="examples">examples</a> directory. Also see the <a href="man/man8">man pages</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The intent is as few as possible. Eg, a Linux 3.2 server without debuginfo. See the tool man page for specifics.</p>
+<h3 id="ftrace">ftrace</h3>
+<p>FTRACE configured in the kernel. You may already have this configured and available in your kernel version, as FTRACE was first added in 2.6.27. This requires CONFIG_FTRACE and other FTRACE options depending on the tool. Some tools (eg, funccount) require CONFIG_FUNCTION_PROFILER.</p>
+<h3 id="perf_events">perf_events</h3>
+<p>Requires the &quot;perf&quot; command to be installed. This is in the linux-tools-common package. After installing that, perf may tell you to install an additional linux-tools package (linux-tools-<em>kernel_version</em>). perf can also be built under tools/perf in the kernel source. See <a href="http://www.brendangregg.com/perf.html#Prerequisites">perf_events Prerequisites</a> for more details about getting perf_events to work fully.</p>
+<h3 id="debugfs">debugfs</h3>
+<p>Requires a kernel with CONFIG_DEBUG_FS option enabled. As with FTRACE, this may already be enabled (debugfs was added in 2.6.10-rc3). The debugfs also needs to be mounted:</p>
+<pre><code># mount -t debugfs none /sys/kernel/debug</code></pre><h3 id="awk">awk</h3>
+<p>Many of there scripts use awk, and will try to use either mawk or gawk depending on the desired behavior: mawk for buffered output (because of its speed), and gawk for synchronous output (as fflush() works, allowing more efficient grouping of writes).</p>
+<h2 id="install">Install</h2>
+<p>These are just scripts. Either grab everything:</p>
+<pre><code>git clone --depth 1 https://github.com/brendangregg/perf-tools</code></pre><p>Or use the raw links on github to download individual scripts. Eg:</p>
+<pre><code>wget https://raw.githubusercontent.com/brendangregg/perf-tools/master/iosnoop</code></pre><p>This preserves tabs (which copy-n-paste can mess up).</p>
+<h2 id="warnings">Warnings</h2>
+<p>Ftrace was first added to Linux 2.6.27, and perf_events to Linux 2.6.31. These early versions had kernel bugs, and lockups and panics have been reported on 2.6.32 series kernels. This includes CentOS 6.x. If you must analyze older kernels, these tools may only be useful in a fault-tolerant environment, such as a lab with simulated issues. These tools have been primarily developed on Linux 3.2 and later kernels.</p>
+<p>Depending on the tool, there may also be overhead incurred. See the next section.</p>
+<h2 id="internals-and-overhead">Internals and Overhead</h2>
+<p>perf_events is evolving. This collection began development circa Linux 3.16, with Linux 3.2 servers as the main target, at a time when perf_events lacks certain programmatic capabilities (eg, custom in-kernel aggregations). It&#39;s possible these will be added in a forthcoming kernel release. Until then, many of these tools employ workarounds, tricks, and hacks in order to work. Some of these tools pass event data to user space for post-processing, which costs much higher overhead than in-kernel aggregations. The overhead of each tool is described in its man page.</p>
+<p><strong>WARNING</strong>: In <em>extreme</em> cases, your target application may run 5x slower when using these tools. Depending on the tool and kernel version, there may also be the risk of kernel panics. Read the program header for warnings, and test before use.</p>
+<p>If the overhead is a problem, these tools can be improved. If a tool doesn&#39;t already, it could be rewritten in C to use perf_events_open() and mmap() for the trace buffer. It could also implement frequency counts in C, and operate on mmap() directly, rather than using awk/Perl/Python. Additional improvements are possible for ftrace-based tools, such as use of snapshots and per-instance buffers.</p>
+<p>Some of these tools are intended as short-term workarounds until more kernel capabilities exist, at which point they can be substantially rewritten. Older versions of these tools will be kept in this repository, for older kernel versions.</p>
+<p>As my main target is a fleet of Linux 3.2 servers that do not have debuginfo, these tools try not to require it. At times, this makes the tool more brittle than it needs to be, as I&#39;m employing workarounds (that may be kernel version and platform specific) instead of using debuginfo information (which can be generic). See the man page for detailed prerequisites for each tool.</p>
+<p>I&#39;ve tried to use perf_events (&quot;perf&quot;) where possible, since that interface has been developed for multi-user use. For various reasons I&#39;ve often needed to use ftrace instead. ftrace is surprisingly powerful (thanks Steven Rostedt!), and not all of its features are exposed via perf, or in common usage. This tool collection is in some ways a demonstration of hidden Linux features using ftrace.</p>
+<p>Since things are changing, it&#39;s very possible you may find some tools don&#39;t work on your Linux kernel version. Some expertise and assembly will be required to fix them.</p>
+<h2 id="links">Links</h2>
+<p>A case study and summary:</p>
+<ul>
+<li>13 Aug 2014: <a href="http://lwn.net/Articles/608497">http://lwn.net/Articles/608497</a> Ftrace: The hidden light switch</li>
+</ul>
+<p>Related articles:</p>
+<ul>
+<li>28 Jun 2015: <a href="http://www.brendangregg.com/blog/2015-06-28/linux-ftrace-uprobe.html">http://www.brendangregg.com/blog/2015-06-28/linux-ftrace-uprobe.html</a></li>
+<li>31 Dec 2014: <a href="http://www.brendangregg.com/blog/2014-12-31/linux-page-cache-hit-ratio.html">http://www.brendangregg.com/blog/2014-12-31/linux-page-cache-hit-ratio.html</a></li>
+<li>06 Sep 2014: <a href="http://www.brendangregg.com/blog/2014-09-06/linux-ftrace-tcp-retransmit-tracing.html">http://www.brendangregg.com/blog/2014-09-06/linux-ftrace-tcp-retransmit-tracing.html</a></li>
+<li>28 Jul 2014: <a href="http://www.brendangregg.com/blog/2014-07-28/execsnoop-for-linux.html">http://www.brendangregg.com/blog/2014-07-28/execsnoop-for-linux.html</a></li>
+<li>25 Jul 2014: <a href="http://www.brendangregg.com/blog/2014-07-25/opensnoop-for-linux.html">http://www.brendangregg.com/blog/2014-07-25/opensnoop-for-linux.html</a></li>
+<li>23 Jul 2014: <a href="http://www.brendangregg.com/blog/2014-07-23/linux-iosnoop-latency-heat-maps.html">http://www.brendangregg.com/blog/2014-07-23/linux-iosnoop-latency-heat-maps.html</a></li>
+<li>16 Jul 2014: <a href="http://www.brendangregg.com/blog/2014-07-16/iosnoop-for-linux.html">http://www.brendangregg.com/blog/2014-07-16/iosnoop-for-linux.html</a></li>
+<li>10 Jul 2014: <a href="http://www.brendangregg.com/blog/2014-07-10/perf-hacktogram.html">http://www.brendangregg.com/blog/2014-07-10/perf-hacktogram.html</a></li>
+</ul>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

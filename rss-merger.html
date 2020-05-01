@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="PHP script which will take multiple RSS / Atom feeds as input and merge them into a single RSS feed."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>rss-merger</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/taophp/rss-merger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>RSS Merger</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>11 Apr 2017</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>19</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>0</span></div><div class="tags"><a class="button" href="/tags/php.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>PHP</a><a class="button" href="/tags/feed-readers.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Feed Readers</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><p>########################################################################</p>
+<p>RSS Merger 2.4.0-beta Atoms welcome</p>
+<p>Forked by Stéphane Mourey (<a href="mailto:steph@stephanemourey.fr">steph@stephanemourey.fr</a>)</p>
+<p>URL: <a href="http://stephanemourey.fr">http://stephanemourey.fr</a></p>
+<p>Created by: Makis Tracend (<a href="mailto:makis@makesites.cc">makis@makesites.cc</a>)</p>
+<p>URL: <a href="http://www.makesites.cc/projects/rss_merger">http://www.makesites.cc/projects/rss_merger</a></p>
+<p>########################################################################</p>
+<h1 id="description">Description</h1>
+<p>This script will load a number of RSS or Atom feeds and compile them into one RSS 2.0 file. You can use it to present a mash-up of your news from different places (blogs, twitter etc.) or just present news from other sources around the Net.
+This script is able to load all feeds asyncrhoniously if the <a href="http://php.net/manual/ref.curl.php">CURL extension</a> is loaded, which provides a <em>significative</em> speed improvement.
+But you should <em>really</em> use it with a cache of some sort. <code>rssCacheInt</code> is a interface that will helps you to write your own, if you need, but RSS Merger come with the <code>rssFileCache</code> class, which enable the use of a cache directory on the file system.</p>
+<h1 id="usage">Usage</h1>
+<p>Without cache :</p>
+<pre><code class="language-php">&lt;?php
+require_once(&#39;rssMerger.php&#39;);
+$mymerger = new Taophp\rssMerger();
+
+// Set the total number of items to produce (default is all)
+$mymerger-&gt;setNumberOfItems2Produce(10);
+
+// Set the number of items to gather from each feed (default is all)
+$mymerger-&gt;setNumberOfItems2Gather(2);
+
+// Adding feeds
+// with the fluent interface
+$mymerger-&gt;addFeeds(&#39;http://exemple.com/feed.rss&#39;)
+                 -&gt;addFeeds(&#39;http://exemple.com/feed2.atom&#39;)
+// With one argument foreach new feed
+$mymerger-&gt;addFeeds(&#39;http://exemple.com/feed3.rss&#39;,
+                                             &#39;http://exemple.com/feed4.rss&#39;)
+// Or with an array of feeds
+$mymerger-&gt;addFeeds(array(
+                                                &#39;http://exemple.com/feed3.atom&#39;,
+                                                &#39;http://exemple.com/feed4.rss&#39;
+                                            ));
+
+// Get the resulting RSS feed in a string
+$rssString = $mymerger-&gt;getMerged();
+header(&#39;Content-Type: application/rss+xml; charset=UTF-8&#39;);
+echo $rssString;</code></pre>
+<p>With file cache :</p>
+<pre><code class="language-php">&lt;?php
+require_once(&#39;rssMerger.php&#39;);
+require_once(&#39;rssCacheInt.php&#39;);
+require_once(&#39;rssFileCache.php&#39;);
+
+$mymerger = new Taophp\rssMerger();
+
+// create the cache from a directory path
+try {
+    $cache = new Taophp\rssFileCache(&#39;/path/to/cache/directory&#39;);
+} catch (Exception $e) {
+    error_log($e-&gt;getMessage());
+}
+
+// if $cache creation is successfull, associate it to the merger
+if ($cache) $mymerger    -&gt;setCache($cache);
+
+$mymerger    -&gt;addFeeds(&#39;http://exemple.com/feed5.rss,http://exemple.com/feed6.rss&#39;);
+
+// Get the resulting RSS feed in a string
+$rssString = $mymerger-&gt;getMerged();</code></pre>
+<h1 id="options-and-important-options">Options and Important Options</h1>
+<h2 id="asynchronious"><strong>Asynchronious</strong></h2>
+<p>By default, we use asynchronious loading of feeds. If you experience troubles like overloaded CPU, try to turn it off this way :</p>
+<pre><code>$mymerger-&gt;asynchronious = false;</code></pre><h2 id="loading-timeout"><strong>Loading timeout</strong></h2>
+<p>To prevent endless loading of slow feeds, we use the cURL timeout option set to 10 seconds. If you experience unloaded feed, you can try a longer one this way :
+    $mymerger-&gt;curlTimeOut = 15;    //example for 15 seconds</p>
+<h2 id="cache"><strong>Cache</strong></h2>
+<p>By default, we do not use any cache, but we <em>strongly</em> recommand to use one for <em>many reasons</em>. First, make all your settings with none and then, when things work, refer the Usage section to enable one. After that, never disable it except for debuging purposes.</p>
+<h2 id="formatting">Formatting</h2>
+<p>By default, we do not use line breaks or tabulations to format the output feed. If you want to, you can this way :</p>
+<pre><code>$mymerger-&gt;formatted = true;</code></pre><h2 id="language">Language</h2>
+<p>You can set the language of your feed (default is english) this way:</p>
+<pre><code>$mymerger-&gt;lang = &#39;fr&#39;;    //example for french</code></pre><h2 id="encoding">Encoding</h2>
+<p>By default, the output feed is encoded using UTF-8. You can change it this way:</p>
+<pre><code>$mymerger-&gt;xmlEncoding(&#39;UTF-16&#39;);    //example for UTF-16</code></pre><h1 id="dependencies">Dependencies</h1>
+<p>##Required:</p>
+<ul>
+<li>PHP &gt;= 5.3</li>
+</ul>
+<p>##Recommanded:</p>
+<ul>
+<li><a href="http://php.net/manual/book.mbstring.php">mb_string</a></li>
+<li><a href="http://php.net/manual/book.curl.php">cURL</a></li>
+</ul>
+<h1 id="changelog">Changelog</h1>
+<p>16-10-2014    (v2.4.0-beta) Now accepting Atom feeds</p>
+<p>19-09-2014    (v2.3.2-beta) Make the script not to overload the CPU, neither to wait endlessly for a feed, adding the CDATA tag to all data, better solution that XML_Util....</p>
+<p>19-09-2014    (v2.3.1-beta) Make the script to provide valid feed in anycase (hope so!)</p>
+<p>18-09-2014    (v2.3.0-beta) Adding the ability to download all the feeds asynchroniously.</p>
+<p>15-09-2014    (v2.2.0-beta) Removing the ability for rssFileCache to redirect to a file, which seems to have been a <em>bad</em> idea from Makis Tracend, because the client should use the url of the cached file to retrieve later news, but it may be overdated or even dead.</p>
+<p>15-09-2014    (v2.1.3-beta) Some tests and fixes. Should work well. Please submit an issue if any.</p>
+<p>12-09-2014    (v2.0.1-Pre-alpha) Adding rssCacheInt interface and rssFileCache class, re-enabled the cache use in rssMerger in a new way, some renaming, and documentation, adding a feature to enable or disable the output formatting</p>
+<p>11-09-2014    (v2.0.0-Pre-alpha) Move the code to my own pseudo &quot;Coding Standard&quot;, inhibate the use of the cache</p>
+<p>23-05-2009     (v1.21) Removed extra information before the <rss> tag to better support feedburner</p>
+<p>14-06-2008     (v1.2)     Re-written parsing function for PHP 5 using the SimpleXML extension. Items now sorted by date.</p>
+<p>01-02-2008     (v1.1)     Bug fix: Absence of a description or title for the XML file could break structure of the final XML output.
+                    Improvement: Made the description of the final XML output a variable.</p>
+<p>27-01-2008     (v1.0)     Initial release: Basic parsing &amp; caching functionality created.</p>
+<h1 id="todo">TODO</h1>
+<ul>
+<li>be compliant with PSR-4</li>
+</ul>
+<h1 id="copyright">Copyright</h1>
+<p>This work is released under the terms of the GNU General Public License:
+<a href="http://www.gnu.org/licenses/gpl-2.0.txt">http://www.gnu.org/licenses/gpl-2.0.txt</a></p>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>

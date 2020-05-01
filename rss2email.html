@@ -1,0 +1,187 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Fetches RSS/Atom-feeds and pushes new Content to any email-receiver, supports OPML."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/">Selfhosted Awesome [Un]list</a><ul class="navigation-list float-right"><li class="navigation-item"><a class="navigation-link" href="/tags"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github</a></li></ul></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>rss2email</h1><span class="subheading"></span><div class="links"><a class="button button-outline" href="https://github.com/wking/rss2email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>RSS2EMail</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info"><div class="github"><span class="pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>23 Mar 2020</span><span class="stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>220</span><span class="issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>52</span></div><div class="tags"><a class="button" href="/tags/python.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Python</a><a class="button" href="/tags/feed-readers.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Feed Readers</a><a class="button" href="/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>selfhosted</a></div></div></div></div></div></section><article><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><p>.. -<em>- coding: utf-8 -</em>-</p>
+<p>==============================
+Getting Started With rss2email
+==============================</p>
+<p>We highly recommend that you subscribe to the rss2email project feed
+so you can keep up to date with the latest version, bugfixes and
+features:</p>
+<p>  <a href="http://rss.gmane.org/gmane.mail.rss2email">http://rss.gmane.org/gmane.mail.rss2email</a></p>
+<p>.. contents::</p>
+<h1 id="installing-rss2email">Installing rss2email</h1>
+<h2 id="packages">Packages</h2>
+<p>A quick way to get rss2email going is using pre-made packages. There
+are releases for Debian__, Ubuntu__, Fedora__, openSUSE__, Gentoo__,
+and NetBSD__.</p>
+<p><em>_ <code>Debian package</code></em>
+<em>_ <code>Ubuntu package</code></em>
+<em>_ <code>Fedora package</code></em>
+<em>_ <code>openSUSE package</code></em>
+<em>_ <code>Gentoo package</code></em>
+<em>_ <code>NetBSD package</code></em></p>
+<h2 id="installing-by-hand">Installing by hand</h2>
+<p>Requirements</p>
+<pre><code>
+Before you install rss2email, you&#39;ll need to make sure that a few
+things are in place.
+
+1. Ensure that a version of Python_ ≥3.2 is installed.
+2. Install the required Python packages.
+
+   * feedparser_
+   * html2text_
+
+3. Figure out how you are going to send outgoing email.  You have two
+   options here: either use an STMP server or a local sendmail
+   program.  So,
+
+   * determine your outgoing email server&#39;s SMTP address, or
+   * install sendmail (or a compatible replacement like postfix).
+
+Download
+~~~~~~~~
+
+Download the latest rss2email source and unpack it.  You can choose
+from several equivalent formats.
+
+1. A ``.zip`` file (suggested for Microsoft Windows users)::
+
+    $ wget https://github.com/wking/rss2email/archive/v3.9.zip
+    $ unzip rss2email-*.zip
+
+2. A ``.tar.gz`` file (suggested for everyone else)::
+
+    $ wget https://github.com/wking/rss2email/archive/v3.9.tar.gz
+    $ tar xvf rss2email*.tar.gz
+
+3. A Git_ checkout (suggested for developers)::
+
+    $ git clone git://github.com/wking/rss2email.git
+
+Install
+~~~~~~~
+
+From the unpacked directory, run::
+
+  $ python setup.py install
+
+You can pass all the usual options to the ``install`` command,
+including ``--user``.  If you don&#39;t want to install rss2email, you can
+also run ``r2e`` directly from the source directory.
+
+Upgrading to a new version</code></pre><p>Just repeat the installation procedure for the new source package.  If
+your config file and data file were in the old source directory, move
+them over to the new source directory.  If the config and data files
+were in another directory (e.g. <code>~/.config</code> and <code>~/.local/share</code>),
+there is no need to move them.</p>
+<h1 id="using-rss2email">Using rss2email</h1>
+<p>Create a new feed database to send updates to your email address::</p>
+<p>  $ r2e new <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+<p>This command will create a configuration file
+(<code>$XDG_CONFIG_HOME/rss2email.cfs</code> by default) and a feed database
+(<code>$XDG_DATA_HOME/rss2email.json</code> by default).  If you&#39;d rather those
+files were stored in other locations, use the <code>--config</code> and
+<code>--data</code> options.  <code>XDG_CONFIG_HOME</code> defaults to <code>$HOME/.config</code>
+and <code>XDG_DATA_HOME</code> defaults to <code>$HOME/.local/share</code>.</p>
+<p>You should edit the default configuration file now to adjust rss2email
+for your local system.  Unless you&#39;ve installed a local
+sendmail-equivalent, you&#39;ll need to edit the SMTP_ options.</p>
+<p>Subscribe to some feeds::</p>
+<p>  $ r2e add rss2email <a href="http://rss.gmane.org/gmane.mail.rss2email">http://rss.gmane.org/gmane.mail.rss2email</a></p>
+<p>That&#39;s the feed to be notified when there&#39;s a new version of
+rss2email. Repeat this for each feed you want to subscribe to.</p>
+<p>When you run rss2email, it emails you about every story it hasn&#39;t seen
+before. But the first time you run it, that will be every story. To
+avoid this, you can ask rss2email not to send you any stories the
+first time you run it::</p>
+<p>  r2e run --no-send</p>
+<p>Then later, you can ask it to email you new stories::</p>
+<p>  r2e run</p>
+<h1 id="customizing-rss2email">Customizing rss2email</h1>
+<p>There are a number of options, described in full in
+<code>rss2email/config.py</code>, to customize the way rss2email behaves. If
+you want to change something, edit the the configuration file that was
+created by <code>r2e new</code>.</p>
+<p>For example, if you want to receive HTML mail, instead of having
+entries converted to plain text::</p>
+<p>  html-mail = True</p>
+<p>To be notified every time a post changes, instead of just when it&#39;s
+first posted (see also <code>trust-link</code>, described in
+<code>rss2email/config.py</code>)::</p>
+<p>  trust-guid = True</p>
+<p>And to make the emails look as if they were sent when the item was
+posted::</p>
+<p>  date-header = True</p>
+<p>If you get an error message <code>Sender domain must exist</code>, add the
+following to your configuration file::</p>
+<p>  from = <a href="mailto:rss2email@yoursite.com">rss2email@yoursite.com</a>
+  force-from = True</p>
+<p>You can make the email address whatever you want, but your mail server
+requires that the <code>yoursite.com</code> part actually exists.</p>
+<p>You can also add custom filters, see the example and documentation in
+<code>rss2email/post_process/prettify.py</code> for more information.</p>
+<h2 id="smtp">SMTP</h2>
+<p>By default, rss2email uses sendmail (or an equivalent) to send
+outgoing email.  If you don&#39;t have such a program installed, or simply
+prefer to use SMTP__ directly, edit the configuration file and fill in
+your outoing email server&#39;s details::</p>
+<p>  [DEFAULT]
+  ...
+  use-smtp = True
+  smtp-server = smtp.example.net:587
+  smtp-auth = False
+  ...</p>
+<p>If your server requires you to login, change <code>smtp-auth = False</code> to
+<code>smtp-auth = True</code> and enter your email username and password::</p>
+<p>  smtp-auth = True
+  smtp-username = username
+  smtp-password = password</p>
+<p>If your server requires an <code>TLS/SSL</code>_ connection (SMTPS), change
+<code>smtp-ssl = False</code> to <code>smtp-ssl = True</code>.  If your server does
+not require a SMTPS connection but you request authentication,
+rss2email will use STARTTLS_ to encrypt the connection before sending
+your login credentials to the server.</p>
+<p><em>_ <code>Simple Mail Transport Protocol</code></em></p>
+<h1 id="automating-rss2email">Automating rss2email</h1>
+<p>More than likely you will want rss2email to run automatically at a
+regular interval. Under Windows this is can be easily accomplished
+using the Windows Task Scheduler. This site has a
+nice tutorial__ on it. Just select <code>r2e.bat</code> as the program to run. Once
+you&#39;ve created the task, double click on it in the task list and
+change the Run entry so that <code>run</code> comes
+after <code>r2e.bat</code>. For example, if you installed rss2email in
+the <code>C:\rss2email</code> directory, then you would change the Run
+entry from <code>C:\rss2email\r2e.bat</code>
+to <code>C:\rss2email\r2e.bat run</code>.</p>
+<p><em>_ <code>windows scheduler</code></em></p>
+<p>On Unix/Linux systems, you should add a cron_ job that runs <code>r2e</code>.
+For example, run <code>r2e</code> every night (at 1:23 am) with::</p>
+<p>  23 1 * * * r2e run</p>
+<h1 id="development">Development</h1>
+<p>User discussion and development take place on the rss2email mailing
+list at <code>rss2email@tremily.us</code>.  Everyone is welcome to post bug
+reports, feature requests, comments, and patches.  To subscribe to the
+list, send an email to <code>rss2email+subscribe@tremily.us</code>.  The
+mailing list archives are available on Gmane_.</p>
+<p>.. _Debian package:
+  <a href="http://packages.qa.debian.org/r/rss2email.html">http://packages.qa.debian.org/r/rss2email.html</a>
+.. _Ubuntu package:
+  <a href="https://launchpad.net/ubuntu/+source/rss2email">https://launchpad.net/ubuntu/+source/rss2email</a>
+.. _Fedora package:
+  <a href="https://admin.fedoraproject.org/pkgdb/acls/name/rss2email">https://admin.fedoraproject.org/pkgdb/acls/name/rss2email</a>
+.. _openSUSE package:
+  <a href="https://build.opensuse.org/package/show?package=rss2email&amp;project=server%3Amail">https://build.opensuse.org/package/show?package=rss2email&amp;project=server%3Amail</a>
+.. _NetBSD package:
+  <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/mail/rss2email/README.html">http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/mail/rss2email/README.html</a>
+.. _Gentoo package:
+  <a href="http://gpo.zugaina.org/net-mail/rss2email">http://gpo.zugaina.org/net-mail/rss2email</a>
+.. _Python: <a href="http://www.python.org">http://www.python.org</a>
+.. _feedparser: <a href="http://pypi.python.org/pypi/feedparser">http://pypi.python.org/pypi/feedparser</a>
+.. _html2text: <a href="http://pypi.python.org/pypi/html2text">http://pypi.python.org/pypi/html2text</a>
+.. _Git: <a href="http://git-scm.com/">http://git-scm.com/</a>
+.. _Simple Mail Transport Protocol: <a href="http://en.wikipedia.org/wiki/Simple_Mail_Transport_Protocol">http://en.wikipedia.org/wiki/Simple_Mail_Transport_Protocol</a>
+.. _TLS/SSL: <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">http://en.wikipedia.org/wiki/Transport_Layer_Security</a>
+.. _STARTTLS: <a href="http://en.wikipedia.org/wiki/STARTTLS">http://en.wikipedia.org/wiki/STARTTLS</a>
+.. _windows scheduler: <a href="http://www.iopus.com/guides/winscheduler.htm">http://www.iopus.com/guides/winscheduler.htm</a>
+.. _cron: <a href="http://en.wikipedia.org/wiki/Cron">http://en.wikipedia.org/wiki/Cron</a>
+.. _Gmane: <a href="http://dir.gmane.org/gmane.mail.rss2email">http://dir.gmane.org/gmane.mail.rss2email</a></p>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built At: 02 May 2020</div><div class="column">Version: 1.0.0</div></div></div></footer><script src="/site.js"></script></body></html>
