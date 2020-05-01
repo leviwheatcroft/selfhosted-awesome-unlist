@@ -1,8 +1,8 @@
 nav.navigation
   section.container
-    a.navigation-title(href='/')= siteName
+    a.navigation-title(href= url('/'))= siteName
     ul.navigation-list.float-right
       li.navigation-item
-        a.navigation-link(href='/tags')
+        a.navigation-link(href='https://github.com/leviwheatcroft/selfhosted-awesome-unlist')
           != feather.icons.github.toSvg()
           | github

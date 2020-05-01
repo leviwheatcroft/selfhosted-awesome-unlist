@@ -39,7 +39,12 @@ metalsmith.metadata({
   version: pkg.version,
   marked,
   moment,
-  feather
+  feather,
+  url: (url) => {
+    if (process.env.NODE_ENV !== 'production')
+      return url
+    return `/selfhosted-awesome-unlist${url}`
+  }
 })
 metalsmith.use(async (files, ms) => {
   ms.metadata().projectCount = Object.values(files).length

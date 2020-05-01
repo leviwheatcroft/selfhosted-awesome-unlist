@@ -1,7 +1,7 @@
 mixin projectBrief(project)
   .brief
     .info
-      a(href=`/${project.name}.html`)
+      a(href= url(`/${project.name}.html`))
         h2.project-name= project.name
       span.spacer
       if !project.owner || !project.repo

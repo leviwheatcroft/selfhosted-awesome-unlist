@@ -15,6 +15,6 @@ section
               = open_issues_count
           .tags
             for tag in tags
-              a.button(href=`/tags/${tag.slug}.html`)
+              a.button(href= url(`/tags/${tag.slug}.html`))
                 != feather.icons.tag.toSvg()
                 = tag.name

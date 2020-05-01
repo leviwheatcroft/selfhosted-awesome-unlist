@@ -4,6 +4,6 @@ mixin sideList(list)
     ul.tags
       each item, key in list
           li.tag
-            a(href=`/tags/${item.urlSafe}.html`)
+            a(href= url(`/tags/${item.urlSafe}.html`))
               span.count= item.length
               = key
