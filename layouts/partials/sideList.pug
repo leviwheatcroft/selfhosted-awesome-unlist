@@ -1,8 +1,9 @@
 mixin sideList(list)
   .column.column-25
     h3 Tags
-    each item, key in list
-      .tag
-        a.button.button-outline.button-slim(href=`/tags/${item.urlSafe}.html`)
-          span.count= item.length
-          = key
+    ul.tags
+      each item, key in list
+          li.tag
+            a(href=`/tags/${item.urlSafe}.html`)
+              span.count= item.length
+              = key
