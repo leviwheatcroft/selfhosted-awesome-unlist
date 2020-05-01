@@ -6,7 +6,7 @@ const mode = process.env.NODE_ENV || 'development'
 module.exports = {
   mode,
   entry: './assets/index.js',
-  devtool: 'source-map',
+  devtool: mode === 'development' ? 'source-map' : 'none',
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'build'),

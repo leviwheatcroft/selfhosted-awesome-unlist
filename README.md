@@ -61,3 +61,7 @@ Note that while some elements of the content will be discarded when rendering th
  - `yarn run scrape:awesome` - scrape projects from awesome lists
  - `yarn run scrape:github` - populate projects with github info
  - `yarn run dev` - build & start dev server
+
+_production build_
+
+`yarn run buildContent && NODE_ENV=production yarn run buildAssets`
