@@ -9,7 +9,7 @@
   "scripts": {
     "buildAssets": "webpack --config webpack.config.js",
     "buildContent": "DEBUG=metalsmith* node buildContent.js",
-    "buildProduction": "rimraf build/* && yarn run buildContent && NODE_ENV=production yarn run  buildAssets",
+    "buildProduction": "rimraf build/* && NODE_ENV=production yarn run buildContent && NODE_ENV=production yarn run  buildAssets",
     "publish": "gh-pages -d build",
     "scrape:awesome": "DEBUG=sau node lib/scrapeAwesomeSelfhosted.js",
     "scrape:github": "DEBUG=sau node lib/populateProjects.js",
