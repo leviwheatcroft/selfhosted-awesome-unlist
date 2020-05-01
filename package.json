@@ -9,6 +9,8 @@
   "scripts": {
     "buildAssets": "webpack --config webpack.config.js",
     "buildContent": "DEBUG=metalsmith* node buildContent.js",
+    "buildProduction": "rimraf build/* && yarn run buildContent && NODE_ENV=production yarn run  buildAssets",
+    "publish": "gh-pages -d build",
     "scrape:awesome": "DEBUG=sau node lib/scrapeAwesomeSelfhosted.js",
     "scrape:github": "DEBUG=sau node lib/populateProjects.js",
     "dev": "concurrently \"npm-watch\" \"node browsersync\""
@@ -43,6 +45,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "feather-icons": "^4.28.0",
+    "gh-pages": "^2.2.0",
     "got": "^11.0.2",
     "gray-matter": "^4.0.2",
     "jquery": "^3.5.0",
@@ -67,6 +70,7 @@
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "puppeteer": "^3.0.1",
+    "rimraf": "^3.0.2",
     "style-loader": "^1.1.4",
     "tiny-async-pool": "^1.1.0",
     "webpack": "^4.43.0",
