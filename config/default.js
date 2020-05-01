@@ -4,5 +4,9 @@ module.exports = {
   },
   autoTags: {
     Docker: /docker/i
-  }
+  },
+  awesomeLists: [
+    'config/awesome-selfhosted.md',
+    'config/awesome-sysadmin.md'
+  ]
 }
