@@ -8,7 +8,9 @@
   "private": false,
   "scripts": {
     "buildAssets": "webpack --config webpack.config.js",
-    "buildContent": "DEBUG=metalsmith* node index.js",
+    "buildContent": "DEBUG=metalsmith* node buildContent.js",
+    "scrape:awesome": "DEBUG=sau node lib/scrapeAwesomeSelfhosted.js",
+    "scrape:github": "DEBUG=sau node lib/populateProjects.js",
     "dev": "concurrently \"npm-watch\" \"node browsersync\""
   },
   "watch": {
@@ -22,7 +24,7 @@
       "patterns": [
         "layouts/**/*",
         "projects/**/*",
-        "index.js",
+        "buildContent.js",
         "lib/**/*"
       ],
       "extensions": "pug,md,js"
