@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description"><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>Haskell</h1></div></div></div></div></header><div class="container"><div class="row"><div class="column"><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/gitit.html"><h2 class="project-name">gitit</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>02 May 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>1774<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>202<span>Issues</span></span></div><div class="overview"><body>
+<p>Gitit is a wiki program written in Haskell. It uses <a href="http://happstack.com">Happstack</a> for
+the web server and <a href="http://pandoc.org">pandoc</a> for markup processing. Pages and uploaded
+files are stored in a <a href="http://git.or.cz">git</a>, <a href="http://darcs.net">darcs</a>, or <a href="http://mercurial.selenic.com/">mercurial</a> repository
+and may be modified either by using the VCS&apos;s command-line tools or
+through the wiki&apos;s web interface. By default, pandoc&apos;s extended version
+of markdown is used as a markup language, but reStructuredText, LaTeX, HTML,
+DocBook, or Emacs Org-mode markup can also be used. Pages can be exported in a
+number of different formats, including LaTeX, RTF, OpenOffice ODT, and
+MediaWiki markup. Gitit can be configured to display TeX math (using
+<a href="http://github.com/jgm/texmath/tree/master">texmath</a>) and highlighted source code (using <a href="http://johnmacfarlane.net/highlighting-kate/">highlighting-kate</a>).</p>
+<p>Other features include</p>
+<ul>
+<li><p>plugins: dynamically loaded page transformations written in Haskell
+(see &quot;Network.Gitit.Interface&quot;)</p>
+</li>
+<li><p>categories</p>
+</li>
+<li><p>TeX math</p>
+</li>
+<li><p>syntax highlighting of source code files and code snippets (using
+highlighting-kate)</p>
+</li>
+<li><p>caching</p>
+</li>
+<li><p>Atom feeds (site-wide and per-page)</p>
+</li>
+<li><p>a library, &quot;Network.Gitit&quot;, that makes it simple to include a gitit
+wiki in any happstack application</p>
+</li>
+</ul>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/espial.html"><h2 class="project-name">espial</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>18 Apr 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>177<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>4<span>Issues</span></span></div><div class="overview"><body>
+<p>Espial is an open-source, web-based bookmarking server.</p>
+<p>It allows mutiple accounts, but currently intended for self-host scenarios.</p>
+<p>The bookmarks are stored in a sqlite3 database, for ease of deployment &amp; maintenence.</p>
+<p>The easist way for logged-in users to add bookmarks, is with the &quot;bookmarklet&quot;, found on the Settings page.</p>
+</body></div><brief-expander></brief-expander></div></div></div></div><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 02 May 2020</div><div class="column">Version: 1.1.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>

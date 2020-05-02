@@ -622,6 +622,7 @@ img {
   transition: all 0.15s ease-in-out;
 }
 .tooltip span::before {
+  background-color: #fff;
   content: '';
   position: absolute;
   bottom: 100%;
@@ -632,10 +633,10 @@ img {
   border-bottom-color: #b0b0b0;
   transform: translate(-50%, 0);
 }
-ul.tags {
+.tags ul {
   list-style-type: none;
 }
-ul.tags li.tag {
+.tags ul li {
   text-align: left;
   width: 100%;
   margin: 0;
@@ -647,22 +648,22 @@ ul.tags li.tag {
   font-weight: 700;
   text-decoration: none;
 }
-ul.tags li.tag:hover {
+.tags ul li:hover {
   border-bottom-color: #9b4dca;
   border-top-color: #9b4dca;
 }
-ul.tags li.tag:hover a span.count {
+.tags ul li:hover a span.count {
   background-color: #9b4dca;
   color: #ffffff;
 }
-ul.tags li.tag a {
+.tags ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
   color: #808080;
 }
-ul.tags li.tag a span.count {
+.tags ul li a span.count {
   text-align: center;
   margin-right: 1rem;
   border-radius: 2px;
@@ -670,6 +671,49 @@ ul.tags li.tag a span.count {
   line-height: 2rem;
   width: 4rem;
   display: inline-block;
+}
+@media (min-width: 40rem) {
+  .tags {
+    max-width: 25%;
+  }
+  .tags:first-child {
+    margin-left: 25%;
+  }
+}
+.brief {
+  margin-bottom: 2rem;
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 2rem;
+  max-height: 24rem;
+  overflow: hidden;
+}
+.brief .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 40rem) {
+  .brief .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.brief .info a {
+  margin-right: 0;
+}
+@media (min-width: 40rem) {
+  .brief .info a {
+    margin-right: auto;
+  }
+}
+.brief .info h2 {
+  display: inline;
+  margin: 0;
 }
 body {
   padding-top: 5.2rem;
@@ -713,15 +757,20 @@ body {
   padding: 0;
   text-decoration: none;
 }
+h1,
+h2,
+h3 {
+  font-family: 'Special Elite', cursive;
+}
 header .title {
-  height: 25rem;
+  min-height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 header .title h1 {
-  font-family: 'Special Elite', cursive;
   display: inline;
 }
 header .title .subheading {
@@ -738,28 +787,6 @@ section .info {
 .button.button-small {
   line-height: 2rem;
   height: 2rem;
-}
-.brief {
-  margin-bottom: 2rem;
-  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  padding: 2rem;
-  max-height: 24rem;
-  overflow: hidden;
-}
-.brief .info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.brief .info .spacer {
-  flex: 2 1 auto;
-}
-.brief .info h2 {
-  display: inline;
-  margin: 0;
 }
 .button-slim {
   height: 3rem;
@@ -793,6 +820,7 @@ section .info {
   right: 2rem;
   bottom: 2rem;
   border: 1px solid #f0f0f0;
+  background-color: #fff;
   border-radius: 3px;
   -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
