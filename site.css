@@ -633,10 +633,10 @@ img {
   border-bottom-color: #b0b0b0;
   transform: translate(-50%, 0);
 }
-.tags ul {
+.tagList ul {
   list-style-type: none;
 }
-.tags ul li {
+.tagList ul li {
   text-align: left;
   width: 100%;
   margin: 0;
@@ -648,22 +648,22 @@ img {
   font-weight: 700;
   text-decoration: none;
 }
-.tags ul li:hover {
+.tagList ul li:hover {
   border-bottom-color: #9b4dca;
   border-top-color: #9b4dca;
 }
-.tags ul li:hover a span.count {
+.tagList ul li:hover a span.count {
   background-color: #9b4dca;
   color: #ffffff;
 }
-.tags ul li a {
+.tagList ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
   color: #808080;
 }
-.tags ul li a span.count {
+.tagList ul li a span.count {
   text-align: center;
   margin-right: 1rem;
   border-radius: 2px;
@@ -673,10 +673,10 @@ img {
   display: inline-block;
 }
 @media (min-width: 40rem) {
-  .tags {
+  .tagList {
     max-width: 25%;
   }
-  .tags:first-child {
+  .tagList:first-child {
     margin-left: 25%;
   }
 }
@@ -776,13 +776,70 @@ header .title h1 {
 header .title .subheading {
   margin-bottom: 2rem;
 }
-header .title .links {
-  display: inline;
+header .title .links a {
+  display: inline-flex;
+  margin-right: 1rem;
+  align-items: center;
 }
-section .info {
+header .title .links a svg {
+  margin-right: 1rem;
+}
+.project .info.statistics {
   display: flex;
-  justify-content: space-between;
-  align-tems: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.project .info.statistics span.stat {
+  color: #999;
+  display: inline-flex;
+  white-space: nowrap;
+  margin-right: 2rem;
+}
+.project .info.statistics span.stat svg {
+  margin-right: 1rem;
+}
+.project .info.tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.project .info.tags a.tag {
+  color: #999;
+}
+.project .info.tags span.tag {
+  color: #777;
+}
+.project .info.tags a.tag,
+.project .info.tags span.tag {
+  display: inline-flex;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #808080;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  margin-right: 2rem;
+}
+.project .info.tags a.tag > *,
+.project .info.tags span.tag > * {
+  margin-right: 0.5rem;
+}
+.project .info.tags a.tag svg,
+.project .info.tags span.tag svg {
+  width: 16px;
+  height: 16px;
+}
+.project .info.tags a.tag span.count,
+.project .info.tags span.tag span.count {
+  text-align: center;
+  border-radius: 2px;
+  display: inline-block;
 }
 .button.button-small {
   line-height: 2rem;
@@ -792,22 +849,21 @@ section .info {
   height: 3rem;
   line-height: 3rem;
 }
-.title .links a {
-  display: inline-flex;
+@media (min-width: 40rem) {
+  .brief .info a {
+    margin-right: auto;
+  }
+}
+.brief .info span {
   margin-right: 1rem;
+}
+.brief .info span,
+.brief .info a {
+  display: inline-flex;
   align-items: center;
 }
-.title .links a svg {
-  margin-right: 1rem;
-}
-.info span,
-.info a {
-  display: inline-flex;
-  margin-right: 1rem;
-  align-items: center;
-}
-.info span svg,
-.info a svg {
+.brief .info span svg,
+.brief .info a svg {
   margin-right: 1rem;
 }
 

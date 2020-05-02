@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description"><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>cli</h1></div></div></div></div></header><div class="container"><div class="row"><div class="column"><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/goaccess.html"><h2 class="project-name">goaccess</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>02 May 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>11131 (1636/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>320<span>Issues</span></span></div><div class="overview"><body>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/beets.html"><h2 class="project-name">beets</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>29 Apr 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>9324 (958/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>672<span>Issues</span></span></div><div class="overview"><body>
+<p>Beets is the media library management system for obsessive music geeks.</p>
+<p>The purpose of beets is to get your music collection right once and for all.
+It catalogs your collection, automatically improving its metadata as it goes.
+It then provides a bouquet of tools for manipulating and accessing your music.</p>
+<p>Here&apos;s an example of beets&apos; brainy tag corrector doing its thing::</p>
+<p> $ beet import ~/music/ladytron
+Tagging:
+Ladytron - Witching Hour
+(Similarity: 98.4%)</p>
+<ul>
+<li>Last One Standing -&gt; The Last One Standing</li>
+<li>Beauty -&gt; Beauty*2</li>
+<li>White Light Generation -&gt; Whitelightgenerator</li>
+<li>All the Way -&gt; All the Way...</li>
+</ul>
+<p>Because beets is designed as a library, it can do almost anything you can
+imagine for your music collection. Via <code>plugins</code>_, beets becomes a panacea:</p>
+<ul>
+<li>Fetch or calculate all the metadata you could possibly need: <code>album art</code>_,
+<code>lyrics</code><em>, <code>genres</code>_, <code>tempos</code>_, <code>ReplayGain</code></em> levels, or `acoustic
+fingerprints`_.</li>
+<li>Get metadata from <code>MusicBrainz</code><em>, <code>Discogs</code>_, and <code>Beatport</code></em>. Or guess
+metadata using songs&apos; filenames or their acoustic fingerprints.</li>
+<li><code>Transcode audio</code>_ to any format you like.</li>
+<li>Check your library for <code>duplicate tracks and albums</code>_ or for `albums that
+are missing tracks`_.</li>
+<li>Clean up crufty tags left behind by other, less-awesome tools.</li>
+<li>Embed and extract album art from files&apos; metadata.</li>
+<li>Browse your music library graphically through a Web browser and play it in any
+browser that supports <code>HTML5 Audio</code>_.</li>
+<li>Analyze music files&apos; metadata from the command line.</li>
+<li>Listen to your library with a music player that speaks the <code>MPD</code>_ protocol
+and works with a staggering variety of interfaces.</li>
+</ul>
+<p>If beets doesn&apos;t do what you want yet, <code>writing your own plugin</code>_ is
+shockingly simple if you know a little Python.</p>
+<p>.. _plugins: <a href="https://beets.readthedocs.org/page/plugins/">https://beets.readthedocs.org/page/plugins/</a>
+.. _MPD: <a href="https://www.musicpd.org/">https://www.musicpd.org/</a>
+.. _MusicBrainz music collection: <a href="https://musicbrainz.org/doc/Collections/">https://musicbrainz.org/doc/Collections/</a>
+.. _writing your own plugin:
+<a href="https://beets.readthedocs.org/page/dev/plugins.html">https://beets.readthedocs.org/page/dev/plugins.html</a>
+.. _HTML5 Audio:
+<a href="http://www.w3.org/TR/html-markup/audio.html">http://www.w3.org/TR/html-markup/audio.html</a>
+.. _albums that are missing tracks:
+<a href="https://beets.readthedocs.org/page/plugins/missing.html">https://beets.readthedocs.org/page/plugins/missing.html</a>
+.. _duplicate tracks and albums:
+<a href="https://beets.readthedocs.org/page/plugins/duplicates.html">https://beets.readthedocs.org/page/plugins/duplicates.html</a>
+.. _Transcode audio:
+<a href="https://beets.readthedocs.org/page/plugins/convert.html">https://beets.readthedocs.org/page/plugins/convert.html</a>
+.. _Discogs: <a href="https://www.discogs.com/">https://www.discogs.com/</a>
+.. _acoustic fingerprints:
+<a href="https://beets.readthedocs.org/page/plugins/chroma.html">https://beets.readthedocs.org/page/plugins/chroma.html</a>
+.. _ReplayGain: <a href="https://beets.readthedocs.org/page/plugins/replaygain.html">https://beets.readthedocs.org/page/plugins/replaygain.html</a>
+.. _tempos: <a href="https://beets.readthedocs.org/page/plugins/acousticbrainz.html">https://beets.readthedocs.org/page/plugins/acousticbrainz.html</a>
+.. _genres: <a href="https://beets.readthedocs.org/page/plugins/lastgenre.html">https://beets.readthedocs.org/page/plugins/lastgenre.html</a>
+.. _album art: <a href="https://beets.readthedocs.org/page/plugins/fetchart.html">https://beets.readthedocs.org/page/plugins/fetchart.html</a>
+.. _lyrics: <a href="https://beets.readthedocs.org/page/plugins/lyrics.html">https://beets.readthedocs.org/page/plugins/lyrics.html</a>
+.. _MusicBrainz: <a href="https://musicbrainz.org/">https://musicbrainz.org/</a>
+.. _Beatport: <a href="https://www.beatport.com">https://www.beatport.com</a></p>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/n8n.html"><h2 class="project-name">n8n</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>03 May 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>7282 (8441/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>65<span>Issues</span></span></div><div class="overview"><body>
+<p>n8n is a free and open <a href="http://faircode.io">fair-code</a> licensed node based Workflow Automation Tool. It can be self-hosted, easily extended, and so also used with internal tools.</p>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/rtop.html"><h2 class="project-name">rtop</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>13 Feb 2019<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>1858 (373/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>20<span>Issues</span></span></div><div class="overview"><body>
+<p><code>rtop</code> is a remote system monitor. It connects over SSH to a remote system
+and displays vital system metrics (CPU, disk, memory, network). No special
+software is needed on the remote system, other than an SSH server and
+working credentials.</p>
+<p>Only Linux systems can be monitored, and most modern distros will work.</p>
+<p><code>rtop</code> is MIT-licensed and can be used anywhere with attribution.</p>
+<p><em><code>rtop</code>&apos;s <a href="http://www.rtop-monitor.org/">home page</a> has more information
+and screenshots!</em></p>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/dnote.html"><h2 class="project-name">dnote</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>01 May 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>1701 (550/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>45<span>Issues</span></span></div><div class="overview"><body>
+<p>Dnote is a simple command line notebook for programmers.</p>
+<p>It <strong>keeps you focused</strong> by providing a way of effortlessly capturing and retrieving information <strong>without leaving your terminal</strong>. It also offers a seamless <strong>multi-device sync</strong> and a <strong>web interface</strong>.</p>
+</body></div><brief-expander></brief-expander></div><div class="brief"><div class="info"><a href="/selfhosted-awesome-unlist/sharppaste.html"><h2 class="project-name">sharppaste</h2></a><span class="pushed-at tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>17 Apr 2020<span>Last Commit</span></span><span class="stargazers-count tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>26 (7/yr)<span>Github Stars</span></span><span class="issues tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>51<span>Issues</span></span></div><div class="overview"><body>
+<p>Cross-platform C# pastebin with client-side AES-256 encryption that just works, made with :heart: in Italy :it:.</p>
+</body></div><brief-expander></brief-expander></div></div></div></div><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 03 May 2020</div><div class="column">Version: 1.1.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>
