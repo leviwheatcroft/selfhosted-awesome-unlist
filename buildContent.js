@@ -62,7 +62,7 @@ metalsmith.use((files) => {
   const projects = multimatch(Object.keys(files), '*.html')
   index.projects = projects.map((p) => files[p])
   index.contents = Buffer.from('')
-  index.title = 'Selfhosed Awesome [Un]list'
+  index.title = 'Selfhosted Awesome [Un]list'
   // dbg(index)
   files['index.html'] = index
 })
