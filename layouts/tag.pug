@@ -1,15 +1,17 @@
-include /partials/mainList
-include /partials/sideList
+include /partials/header
+include /partials/projectBrief
+
 doctype html
 html
   head
     include /partials/head
   body
     include /partials/nav
-    include /partials/header
+    +header(tag)
     .container
       .row
-        +mainList(pagination.files)
-        +sideList(tags)
+        .column
+          each project in pagination.files
+            +projectBrief(project)
     include /partials/footer
     include /partials/js

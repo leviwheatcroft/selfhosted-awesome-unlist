@@ -52,9 +52,20 @@ metalsmith.use(async (files, ms) => {
 metalsmith.use(overview())
 metalsmith.use(markdown())
 metalsmith.use(tags({
+  handle: 'tags',
+  metadataKey: 'tags',
   layout: 'tag.pug',
   sortBy: 'stargazers_count',
-  path: 'tags/:tag.html'
+  path: 'tags/:tag.html',
+  reverse: true
+}))
+metalsmith.use(tags({
+  handle: 'language',
+  metadataKey: 'languages',
+  layout: 'tag.pug',
+  path: 'languages/:tag.html',
+  sortBy: 'stargazers_count',
+  reverse: true
 }))
 metalsmith.use((files) => {
   const index = {}
@@ -74,13 +85,14 @@ metalsmith.use(layouts({
     basedir: 'layouts'
   }
 }))
-// metalsmith.use((files, ms) => {
-// const fileData = Object.values(files)
-// dbg(fileData[fileData.length - 1].pagination.files)
-// dbg(ms.metadata().tags['File Sharing and Synchronization'])
-// dbg(files)
-// dbg(Object.values(files)[0].tags)
-// })
+metalsmith.use((files, ms) => {
+  // const fileData = Object.values(files)
+  // dbg(fileData[fileData.length - 1].pagination.files)
+  // dbg(ms.metadata().languages)
+  // dbg(files)
+  // dbg(Object.keys(files))
+  dbg(files['reveal.js.html'])
+})
 metalsmith.build((err) => {
   if (err)
     throw err

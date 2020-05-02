@@ -3,7 +3,6 @@ mixin projectBrief(project)
     .info
       a(href= url(`/${project.name}.html`))
         h2.project-name= project.name
-      span.spacer
       if !project.owner || !project.repo
         span.no-repo.tooltip
           != feather.icons['help-circle'].toSvg()

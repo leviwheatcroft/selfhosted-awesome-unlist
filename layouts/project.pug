@@ -1,10 +1,11 @@
+include /partials/header
 doctype html
 html
   head
     include /partials/head
-  body
+  body.project
     include /partials/nav
-    include /partials/header
+    +header(name, description, links)
     include /partials/info
     include /partials/contentPost
     include /partials/footer

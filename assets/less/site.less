@@ -1,6 +1,6 @@
 @import "tooltip.less";
 @import "tags.less";
-
+@import "brief.less";
 body {
   padding-top: 5.2rem;
 }
@@ -44,29 +44,63 @@ body {
   }
 }
 
+h1, h2, h3 {
+  font-family: 'Special Elite', cursive;
+}
 header {
   .title {
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     h1 {
-      font-family: 'Special Elite', cursive;
+
       display: inline;
     }
     .subheading {
       margin-bottom: 2rem;
     }
     .links {
-      display: inline;
+      a {
+        display: inline-flex;
+        margin-right: 1rem;
+        align-items: center;
+        svg {
+          margin-right: 1rem;
+        }
+      }
     }
   }
 }
-section .info {
+.project .info {
   display: flex;
   justify-content: space-between;
   align-tems: center;
+  span:last-of-type {
+    margin-right: auto;
+  }
+  a {
+    display: inline-flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #808080;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    span.count {
+      text-align: center;
+      margin-right: 1rem;
+      border-radius: 2px;
+      height: 2rem;
+      line-height: 2rem;
+      width: 4rem;
+      display: inline-block;
+    }
+  }
 }
 
 .button {
@@ -76,31 +110,7 @@ section .info {
   }
 }
 
-.brief {
-  margin-bottom: 2rem;
-  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
-  -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
-  box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
-  border-radius: 4px;
-  padding: 2rem;
-  max-height: 24rem;
-  overflow: hidden;
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .spacer {
-      flex: 2 1 auto;
-    }
-    h2 {
-      display: inline;
-      margin: 0;
-    }
-  }
-  .overview {
 
-  }
-}
 .button-slim {
   height: 3rem;
   line-height: 3rem;
@@ -108,16 +118,7 @@ section .info {
 
 
 .title {
-  .links {
-    a {
-      display: inline-flex;
-      margin-right: 1rem;
-      align-items: center;
-      svg {
-        margin-right: 1rem;
-      }
-    }
-  }
+
 }
 
 .info {
