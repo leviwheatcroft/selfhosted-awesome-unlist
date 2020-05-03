@@ -74,14 +74,33 @@ header {
     }
   }
 }
-.project .info {
+.project .info.statistics {
   display: flex;
-  justify-content: space-between;
-  align-tems: center;
-  span:last-of-type {
-    margin-right: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  span.stat {
+    color: #999;
+    display: inline-flex;
+    white-space: nowrap;
+    margin-right: 2rem;
+    svg {
+      margin-right: 1rem;
+    }
   }
-  a {
+}
+.project .info.tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  a.tag {
+    color: #999;
+  }
+  span.tag {
+    color: #777;
+  }
+  a.tag, span.tag {
     display: inline-flex;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -91,13 +110,20 @@ header {
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: 700;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin-right: 2rem;
+    >* {
+      margin-right: 0.5rem;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+    }
     span.count {
       text-align: center;
-      margin-right: 1rem;
       border-radius: 2px;
-      height: 2rem;
-      line-height: 2rem;
-      width: 4rem;
+
       display: inline-block;
     }
   }
@@ -121,10 +147,18 @@ header {
 
 }
 
-.info {
+.brief .info {
+  a {
+    @media(min-width: 40rem) {
+      margin-right: auto;
+    }
+  }
+  span {
+    margin-right: 1rem;
+  }
   span, a {
     display: inline-flex;
-    margin-right: 1rem;
+
     align-items: center;
     svg {
       margin-right: 1rem;

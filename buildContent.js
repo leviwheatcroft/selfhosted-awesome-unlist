@@ -59,6 +59,22 @@ metalsmith.use(tags({
   path: 'tags/:tag.html',
   reverse: true
 }))
+metalsmith.use((files, ms) => {
+  const meta = ms.metadata()
+  Object.values(files).forEach((file) => {
+    if (!file.tags)
+      return
+    file.tags.forEach((tag) => {
+      tag.count = meta.tags[tag.name].length
+    })
+  })
+  Object.entries(meta.tags).forEach(([name, projects]) => {
+    if (projects.length > 4)
+      return
+    delete meta.tags[name]
+    delete files[`tags/${name}.html`]
+  })
+})
 metalsmith.use(tags({
   handle: 'language',
   metadataKey: 'languages',
@@ -91,7 +107,8 @@ metalsmith.use((files, ms) => {
   // dbg(ms.metadata().languages)
   // dbg(files)
   // dbg(Object.keys(files))
-  dbg(files['reveal.js.html'])
+  dbg(ms.metadata().tags.Docker)
+  dbg(files['tags/docker.html'])
 })
 metalsmith.build((err) => {
   if (err)

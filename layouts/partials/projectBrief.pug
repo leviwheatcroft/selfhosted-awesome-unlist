@@ -14,7 +14,7 @@ mixin projectBrief(project)
           span Last Commit
         span.stargazers-count.tooltip
           != feather.icons.star.toSvg()
-          = project.stargazers_count
+          | #{project.stargazers_count} (#{project.starsYears}/yr)
           span Github Stars
         span.issues.tooltip
           != feather.icons['alert-circle'].toSvg()
