@@ -2,19 +2,32 @@ section
   .container
     .row
       .column
-        .info
-          .github
-            span.pushed-at
-              != feather.icons['git-commit'].toSvg()
-              = moment(pushed_at).format('DD MMM YYYY')
-            span.stargazers-count
-              != feather.icons.star.toSvg()
-              = stargazers_count
-            span.issues
-              != feather.icons['alert-circle'].toSvg()
-              = open_issues_count
-          .tags
-            for tag in tags
-              a.button(href= url(`/tags/${tag.slug}.html`))
+        .info.statistics
+          span.stat.pushed-at
+            != feather.icons['git-commit'].toSvg()
+            = moment(pushed_at).format('DD MMM YYYY')
+          span.stat.stargazers-count
+            != feather.icons.star.toSvg()
+            = stargazers_count
+          span.stat.issues
+            != feather.icons['alert-circle'].toSvg()
+            = open_issues_count
+    .row
+      .column
+        .info.tags
+          if language
+            for _language in language
+              a.tag(href= url(`/languages/${_language.slug}.html`))
+                != feather.icons.code.toSvg()
+                = _language.name
+          for tag in tags
+            if tag.count === 1
+              span.tag
+                != feather.icons.bookmark.toSvg()
+                span.count= tag.count
+                = tag.name
+            else
+              a.tag(href= url(`/tags/${tag.slug}.html`))
                 != feather.icons.tag.toSvg()
+                span.count= tag.count
                 = tag.name

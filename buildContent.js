@@ -10,6 +10,11 @@ const marked = require('marked')
 const moment = require('moment')
 const feather = require('feather-icons')
 const multimatch = require('multimatch')
+const {
+  promises: {
+    writeFile
+  }
+} = require('fs')
 const overview = require('./lib/overview')
 const pkg = require('./package.json')
 const Project = require('./lib/Project')
@@ -52,10 +57,54 @@ metalsmith.use(async (files, ms) => {
 metalsmith.use(overview())
 metalsmith.use(markdown())
 metalsmith.use(tags({
+  handle: 'tags',
+  metadataKey: 'tags',
   layout: 'tag.pug',
   sortBy: 'stargazers_count',
-  path: 'tags/:tag.html'
+  path: 'tags/:tag.html',
+  reverse: true
 }))
+metalsmith.use((files, ms) => {
+  const meta = ms.metadata()
+
+  // add counts to tags on project files
+  Object.values(files).forEach((file) => {
+    if (!file.tags)
+      return
+    file.tags.forEach((tag) => {
+      tag.count = meta.tags[tag.name].length
+    })
+  })
+
+  // discard tags with less than 5 projects
+  Object.entries(meta.tags).forEach(([name, projects]) => {
+    if (projects.length > 4)
+      return
+    delete meta.tags[name]
+    delete files[`tags/${name}.html`]
+  })
+
+  // convert tags structure to an array, and sort
+  // eslint-disable-next-line arrow-body-style
+  meta.tags = Object.entries(meta.tags).map(([name, projects]) => {
+    let category = 'other'
+    const {
+      urlSafe
+    } = projects
+    // eslint-disable-next-line no-shadow
+    Object.entries(config.get('tagCategories')).forEach(([_category, tags]) => {
+      if (tags.includes(name))
+        category = _category
+    })
+    return {
+      name,
+      projects,
+      category,
+      urlSafe
+    }
+  })
+  meta.tags.sort((a, b) => b.projects.length - a.projects.length)
+})
 metalsmith.use((files) => {
   const index = {}
   index.layout = 'index.pug'
@@ -74,13 +123,18 @@ metalsmith.use(layouts({
     basedir: 'layouts'
   }
 }))
-// metalsmith.use((files, ms) => {
-// const fileData = Object.values(files)
-// dbg(fileData[fileData.length - 1].pagination.files)
-// dbg(ms.metadata().tags['File Sharing and Synchronization'])
-// dbg(files)
-// dbg(Object.values(files)[0].tags)
-// })
+metalsmith.use(async (files, ms) => {
+  const tagNames = Object.keys(ms.metadata().tags)
+  const tagNamesJson = JSON.stringify(tagNames, null, 2)
+  await writeFile('debug/tagNames.json', tagNamesJson)
+  // const fileData = Object.values(files)
+  // dbg(fileData[fileData.length - 1].pagination.files)
+  // dbg(ms.metadata().languages)
+  // dbg(files)
+  // dbg(Object.keys(files))
+  // dbg(ms.metadata().tags.Docker)
+  // dbg(files['tags/docker.html'])
+})
 metalsmith.build((err) => {
   if (err)
     throw err

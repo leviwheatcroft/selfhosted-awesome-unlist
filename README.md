@@ -1,6 +1,6 @@
 ## Why
 
-The [Selfhosted Awesome List]() is indeed awesome, but like all lists becomes less and less useful as it's size increases. [Un]list solves some of these problems:
+The [Selfhosted Awesome List](https://github.com/awesome-selfhosted/awesome-selfhosted) is indeed awesome, but like all lists becomes less and less useful as it's size increases. [Un]list solves some of these problems:
 
  - **awesome or not?** when looking at entries you need an indication of whether a project is still active, well supported, and beloved by it's community. [Un]list shows you stars, issues, and last updated information.
  - **spoon or fork?** many entries on the list defy categorisation. One project might belong in multiple categories, or maybe requires a category of it's own. [Un]list uses tags which solve this problem. Presently it just auto generates a few simple tags.

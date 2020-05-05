@@ -1,0 +1,42 @@
+.brief {
+  margin-bottom: 2rem;
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  padding: 2rem;
+  max-height: 24rem;
+  overflow: hidden;
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 40.0rem) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    a {
+      margin-right: 0;
+      @media (min-width: 40.0rem) {
+        margin-right: auto;
+      }
+    }
+    // > * {
+    //   width: 100%;
+    //   @media (min-width: 40.0rem) {
+    //     width: auto;
+    //   }
+    // }
+
+    h2 {
+      display: inline;
+      margin: 0;
+    }
+  }
+  .overview {
+
+  }
+}

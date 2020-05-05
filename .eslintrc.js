@@ -24,6 +24,9 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'curly': ['error', 'multi-or-nest', 'consistent'],
     'operator-linebreak': ['error', 'after'],
-    'no-param-reassign': ['error', { 'props': false }]
+    'no-param-reassign': ['error', { 'props': false }],
+    'no-await-in-loop': 'off',
+    'class-methods-use-this': 'off',
+    'arrow-body-style': 'off'
   }
 };

@@ -1,6 +1,6 @@
 {
   "name": "selfhosted-awesome-unlist",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "My webpack project",
   "main": "index.js",
   "author": "Levi Wheatcroft <levi@wheatcroft.com.au>",
@@ -37,6 +37,7 @@
     "bootstrap": "3.3.6",
     "browser-sync": "^2.26.7",
     "cheerio": "^1.0.0-rc.3",
+    "classnames": "^2.2.6",
     "concurrently": "^5.1.0",
     "config": "^3.3.1",
     "css-loader": "^3.5.2",

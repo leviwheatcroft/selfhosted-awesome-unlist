@@ -1,43 +1,53 @@
-ul.tags {
-  list-style-type: none;
-  li.tag {
-    &:hover {
-      border-bottom-color: #9b4dca;
-      border-top-color: #9b4dca;
+.tagList {
+  ul {
+    list-style-type: none;
+    li {
+      &:hover {
+        border-bottom-color: #9b4dca;
+        border-top-color: #9b4dca;
+        a {
+          span.count {
+            background-color: #9b4dca;
+            color: #ffffff;
+          }
+        }
+      }
+      text-align: left;
+      width: 100%;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      margin: 0;
+      padding: 0.25rem 1rem;
+      border: 1px solid transparent;
+      font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
       a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        color: #808080;
         span.count {
-          background-color: #9b4dca;
-          color: #ffffff;
+          text-align: center;
+          margin-right: 1rem;
+          border-radius: 2px;
+          height: 2rem;
+          line-height: 2rem;
+          width: 4rem;
+          display: inline-block;
         }
       }
     }
-    text-align: left;
-    width: 100%;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    margin: 0;
-    padding: 0.25rem 1rem;
-    border: 1px solid transparent;
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    a {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      display: block;
-      color: #808080;
-      span.count {
-        text-align: center;
-        margin-right: 1rem;
-        border-radius: 2px;
-        height: 2rem;
-        line-height: 2rem;
-        width: 4rem;
-        display: inline-block;
-      }
+  }
+}
+@media (min-width: 40.0rem) {
+  .tagList {
+    max-width: 25%;
+    &:first-child {
+      margin-left: 25%;
     }
   }
 }

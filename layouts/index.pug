@@ -1,16 +1,31 @@
-include /partials/mainList
-include /partials/sideList
+include /partials/header
 doctype html
 html
   head
     include /partials/head
   body
     include /partials/nav
-    include /partials/header
+    +header(
+      'Selfhosted Awesome [Un]list',
+      'Like a list but with tags, stars, and issues.',
+      { Readme: 'https://github.com/leviwheatcroft/selfhosted-awesome-unlist' }
+    )
     .container
       .row
-        .column.column-75
-          include:markdown-it ../README.md
-        +sideList(tags)
+        .column
+          tag-list
+            .header
+              h3 Tags
+              .tagListFiltersButton
+                != feather.icons.filter.toSvg()
+            ul.tagList
+              for tag in tags
+                li(data-category= tag.category)
+                  a(href= url(`/tags/${tag.urlSafe}.html`))
+                    span.count= tag.projects.length
+                    = tag.name
+            .shrug.hide
+              span ¯\_(ツ)_/¯
+              span No results.
     include /partials/footer
     include /partials/js

@@ -1,21 +1,20 @@
-header
-  .container
-    .row
-      .column
-        .title
-          if pagination
-            h1 Tag: #{pagination.tag}
-          else
-            h1= name || title
-          span.subheading= intro
-          if links
-            .links
-              for link, key in links
-                a.button.button-outline(href=link)
-                  if key.toLowerCase() === 'source code'
-                    != feather.icons.github.toSvg()
-                  else if key.toLowerCase() === 'demo'
-                    != feather.icons.box.toSvg()
-                  else
-                    != feather.icons['external-link'].toSvg()
-                  = key
+mixin header(heading, subheading, links)
+  header
+    .container
+      .row
+        .column
+          .title
+            h1= heading
+            if subheading
+              span.subheading= subheading
+            if links
+              .links
+                for link, key in links
+                  a.button.button-outline(href=link)
+                    if key.toLowerCase() === 'source code'
+                      != feather.icons.github.toSvg()
+                    else if key.toLowerCase() === 'demo'
+                      != feather.icons.box.toSvg()
+                    else
+                      != feather.icons['external-link'].toSvg()
+                    = key

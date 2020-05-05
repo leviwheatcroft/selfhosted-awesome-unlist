@@ -1,4 +1,5 @@
 require('./components/BriefExpander')
+require('./components/TagList')
 
 function docReady (fn) {
   // see if DOM is already available
