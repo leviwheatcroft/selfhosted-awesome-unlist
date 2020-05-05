@@ -1,6 +1,6 @@
 {
   "name": "selfhosted-awesome-unlist",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "My webpack project",
   "main": "index.js",
   "author": "Levi Wheatcroft <levi@wheatcroft.com.au>",
