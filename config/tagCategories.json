@@ -1,0 +1,44 @@
+{
+  "languages": [
+    "go",
+    "golang",
+    "typescript",
+    "javascript",
+    "python",
+    "java",
+    "nodejs",
+    "node",
+    "ruby",
+    "c",
+    "html5",
+    "php7",
+    "html",
+    "python3",
+    "c-plus-plus"
+  ],
+  "databases": [
+    "mysql",
+    "redis",
+    "postgresql",
+    "sqlite",
+    "rdbms",
+    "graphql",
+    "mongodb",
+    "postgres",
+    "nosql"
+  ],
+  "libraries": [
+    "react",
+    "django",
+    "laravel",
+    "framework",
+    "vue",
+    "flask",
+    "rails",
+    "electron",
+    "atom",
+    "vuejs",
+    "angular",
+    "activitypub"
+  ]
+}

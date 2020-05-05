@@ -1,8 +1,15 @@
 @import "tooltip.less";
-@import "tags.less";
 @import "brief.less";
+
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   padding-top: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 .navigation {
   border-bottom: .1rem solid #d1d1d1;
@@ -165,4 +172,11 @@ header {
     }
   }
 
+}
+
+footer {
+  margin-top: auto;
+  .column {
+    text-align: center;
+  }
 }

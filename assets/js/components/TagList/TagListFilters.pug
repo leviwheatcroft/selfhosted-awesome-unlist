@@ -1,0 +1,31 @@
+.tagListFilters
+  .container
+    .row
+      .column
+        h3 Include
+        ul
+          li.filter(
+            class= classnames({ selected: filters.includes('languages') })
+            data-category='languages'
+          )
+            != feather.icons.code.toSvg()
+            | Languages
+          li.filter(
+            class= classnames({ selected: filters.includes('databases') })
+            data-category='databases'
+          )
+            != feather.icons.database.toSvg()
+            | Databases
+          li.filter(
+            class= classnames({ selected: filters.includes('libraries') })
+            data-category='libraries'
+          )
+            != feather.icons.layers.toSvg()
+            | Libraries
+          li.filter(
+            class= classnames({ selected: filters.includes('other') })
+            data-category='other'
+          )
+            != feather.icons.paperclip.toSvg()
+            | Other
+        button.button.apply Apply

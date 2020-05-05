@@ -3,3 +3,4 @@ build
 *.log
 config/local.js
 projects/scraped
+debug
