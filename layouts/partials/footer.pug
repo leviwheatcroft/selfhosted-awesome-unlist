@@ -2,8 +2,8 @@ footer
   .container
     .row
       .column
-        | Total Projects: #{projectCount}
+        | Total Projects: #{stats.projectCount}
       .column
-        | Built On: #{moment(buildDate).format('DD MMM YYYY')}
+        | Built On: #{moment(stats.buildDate).format('DD MMM YYYY')}
       .column
-        | Version: #{version}
+        | Version: #{stats.version}
