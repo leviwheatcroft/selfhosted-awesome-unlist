@@ -15,11 +15,6 @@ section
     .row
       .column
         .info.tags
-          if language
-            for _language in language
-              a.tag(href= url(`/languages/${_language.slug}.html`))
-                != feather.icons.code.toSvg()
-                = _language.name
           for tag in tags
             if tag.count === 1
               span.tag
