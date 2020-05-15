@@ -1,20 +1,21 @@
-<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A modern reverse proxy for node that includes cluster, HTTP2, LetsEncrypt, and Docker support."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body class="project"><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>redbird</h1><span class="subheading">A modern reverse proxy for node that includes cluster, HTTP2, LetsEncrypt, and Docker support.</span><div class="links"><a class="button button-outline" href="https://github.com/OptimalBits/redbird"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Redbird</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info statistics"><span class="stat pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>30 Mar 2020</span><span class="stat stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>4134</span><span class="stat issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>107</span></div></div></div><div class="row"><div class="column"><div class="info tags"><a class="tag" href="/selfhosted-awesome-unlist/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">199</span>javascript</a><a class="tag" href="/selfhosted-awesome-unlist/tags/proxy.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">19</span>proxy</a><a class="tag" href="/selfhosted-awesome-unlist/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">943</span>selfhosted</a><a class="tag" href="/selfhosted-awesome-unlist/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">327</span>docker</a></div></div></div></div></section><article><div class="container"><div class="row"><div class="column"><h1 id="redbird-reverse-proxy">Redbird Reverse Proxy</h1>
-<h2 id="with-built-in-cluster-http2-letsencrypt-and-docker-support">With built-in Cluster, HTTP2, <a href="https://letsencrypt.org/">LetsEncrypt</a> and <a href="https://www.docker.com/">Docker</a> support</h2>
-<p><img src="http://cliparts.co/cliparts/6cr/o9d/6cro9dRzi.jpg" alt="redbird"></p>
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A modern reverse proxy for node that includes cluster, HTTP2, LetsEncrypt, and Docker support."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body class="project"><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>redbird</h1><span class="subheading">A modern reverse proxy for node that includes cluster, HTTP2, LetsEncrypt, and Docker support.</span><div class="links"><a class="button button-outline" href="https://github.com/OptimalBits/redbird"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Redbird</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info statistics"><span class="stat pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>30 Mar 2020</span><span class="stat stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>4135</span><span class="stat issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>107</span></div></div></div><div class="row"><div class="column"><div class="info tags"><a class="tag" href="/selfhosted-awesome-unlist/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">199</span>javascript</a><a class="tag" href="/selfhosted-awesome-unlist/tags/proxy.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">19</span>proxy</a><a class="tag" href="/selfhosted-awesome-unlist/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">943</span>selfhosted</a><a class="tag" href="/selfhosted-awesome-unlist/tags/docker.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">328</span>docker</a></div></div></div></div></section><article><div class="container"><div class="row"><div class="column">
+<div id="readme" class="md" data-path="README.md"><article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-redbird-reverse-proxy" class="anchor" aria-hidden="true" href="#redbird-reverse-proxy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird Reverse Proxy</h1>
+<h2><a id="user-content-with-built-in-cluster-http2-letsencrypt-and-docker-support" class="anchor" aria-hidden="true" href="#with-built-in-cluster-http2-letsencrypt-and-docker-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>With built-in Cluster, HTTP2, <a href="https://letsencrypt.org/" rel="nofollow">LetsEncrypt</a> and <a href="https://www.docker.com/" rel="nofollow">Docker</a> support</h2>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4daf31bdce53db03c0af1995a8a4c6c9030cc56c/687474703a2f2f636c6970617274732e636f2f636c6970617274732f3663722f6f39642f3663726f3964527a692e6a7067"><img src="https://camo.githubusercontent.com/4daf31bdce53db03c0af1995a8a4c6c9030cc56c/687474703a2f2f636c6970617274732e636f2f636c6970617274732f3663722f6f39642f3663726f3964527a692e6a7067" alt="redbird" data-canonical-src="http://cliparts.co/cliparts/6cr/o9d/6cro9dRzi.jpg" style="max-width:100%;"></a></p>
 <p>It should be easy and robust to handle dynamic virtual hosts, load balancing, proxying web sockets and SSL encryption.</p>
 <p>With Redbird you get a complete library to build dynamic reverse proxies with the speed and robustness of http-proxy.</p>
 <p>This light-weight package includes everything you need for easy reverse routing of your applications.
 Great for routing many applications from different domains in one single host, handling SSL with ease, etc.</p>
-<p>Developed by <a href="http://twitter.com/manast">manast</a></p>
-<p><a href="http://travis-ci.org/OptimalBits/redbird"><img src="https://secure.travis-ci.org/OptimalBits/redbird.png?branch=master" alt="BuildStatus"></a>
-<a href="http://badge.fury.io/js/redbird"><img src="https://badge.fury.io/js/redbird.svg" alt="NPM version"></a></p>
-<h2 id="super-hot">SUPER HOT</h2>
+<p>Developed by <a href="http://twitter.com/manast" rel="nofollow">manast</a></p>
+<p><a href="http://travis-ci.org/OptimalBits/redbird" rel="nofollow"><img src="https://camo.githubusercontent.com/2308297f0747b81628e2e5a054238bcb241286de/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f4f7074696d616c426974732f726564626972642e706e673f6272616e63683d6d6173746572" alt="BuildStatus" data-canonical-src="https://secure.travis-ci.org/OptimalBits/redbird.png?branch=master" style="max-width:100%;"></a>
+<a href="http://badge.fury.io/js/redbird" rel="nofollow"><img src="https://camo.githubusercontent.com/69c3b4239f398abd5975fe4b72d9fd3ba287b8be/68747470733a2f2f62616467652e667572792e696f2f6a732f726564626972642e737667" alt="NPM version" data-canonical-src="https://badge.fury.io/js/redbird.svg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-super-hot" class="anchor" aria-hidden="true" href="#super-hot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SUPER HOT</h2>
 <p>Support for HTTP2. You can now enable HTTP2 just by setting the HTTP2 flag to true. Keep in mind that HTTP2 requires
 SSL/TLS certificates. Thankfully we also support LetsEncrypt so this becomes easy as pie.</p>
-<h2 id="hot">HOT</h2>
+<h2><a id="user-content-hot" class="anchor" aria-hidden="true" href="#hot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HOT</h2>
 <p>We have now support for automatic generation of SSL certificates using <a href="#letsencrypt">LetsEncrypt</a>. Zero config setup for your
 TLS protected services that just works.</p>
-<h2 id="features">Features</h2>
+<h2><a id="user-content-features" class="anchor" aria-hidden="true" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h2>
 <ul>
 <li>Flexible and easy routing</li>
 <li>Websockets</li>
@@ -28,227 +29,233 @@ TLS protected services that just works.</p>
 <li>Based on top of rock-solid node-http-proxy and battle tested on production in many sites</li>
 <li>Optional logging based on bunyan</li>
 </ul>
-<h2 id="install">Install</h2>
-<pre><code class="language-sh">npm install redbird</code></pre>
-<h2 id="example">Example</h2>
+<h2><a id="user-content-install" class="anchor" aria-hidden="true" href="#install"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install</h2>
+<div class="highlight highlight-source-shell"><pre>npm install redbird</pre></div>
+<h2><a id="user-content-example" class="anchor" aria-hidden="true" href="#example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h2>
 <p>You can programmatically register or unregister routes dynamically even if the proxy is already running:</p>
-<pre><code class="language-js">var proxy = require(&#39;redbird&#39;)({port: 80});
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">port</span>: <span class="pl-c1">80</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// OPTIONAL: Setup your proxy but disable the X-Forwarded-For header
-var proxy = require(&#39;redbird&#39;)({port: 80, xfwd: false});
+<span class="pl-c">// OPTIONAL: Setup your proxy but disable the X-Forwarded-For header</span>
+<span class="pl-k">var</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">port</span>: <span class="pl-c1">80</span><span class="pl-kos">,</span> <span class="pl-c1">xfwd</span>: <span class="pl-c1">false</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Route to any global ip
-proxy.register(&quot;optimalbits.com&quot;, &quot;http://167.23.42.67:8000&quot;);
+<span class="pl-c">// Route to any global ip</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"optimalbits.com"</span><span class="pl-kos">,</span> <span class="pl-s">"http://167.23.42.67:8000"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Route to any local ip, for example from docker containers.
-proxy.register(&quot;example.com&quot;, &quot;http://172.17.42.1:8001&quot;);
+<span class="pl-c">// Route to any local ip, for example from docker containers.</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"example.com"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.1:8001"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Route from hostnames as well as paths
-proxy.register(&quot;example.com/static&quot;, &quot;http://172.17.42.1:8002&quot;);
-proxy.register(&quot;example.com/media&quot;, &quot;http://172.17.42.1:8003&quot;);
+<span class="pl-c">// Route from hostnames as well as paths</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"example.com/static"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.1:8002"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"example.com/media"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.1:8003"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Subdomains, paths, everything just works as expected
-proxy.register(&quot;abc.example.com&quot;, &quot;http://172.17.42.4:8080&quot;);
-proxy.register(&quot;abc.example.com/media&quot;, &quot;http://172.17.42.5:8080&quot;);
+<span class="pl-c">// Subdomains, paths, everything just works as expected</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"abc.example.com"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.4:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"abc.example.com/media"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.5:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Route to any href including a target path
-proxy.register(&quot;foobar.example.com&quot;, &quot;http://172.17.42.6:8080/foobar&quot;);
+<span class="pl-c">// Route to any href including a target path</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"foobar.example.com"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.6:8080/foobar"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// You can also enable load balancing by registering the same hostname with different
-// target hosts. The requests will be evenly balanced using a Round-Robin scheme.
-proxy.register(&quot;balance.me&quot;, &quot;http://172.17.40.6:8080&quot;);
-proxy.register(&quot;balance.me&quot;, &quot;http://172.17.41.6:8080&quot;);
-proxy.register(&quot;balance.me&quot;, &quot;http://172.17.42.6:8080&quot;);
-proxy.register(&quot;balance.me&quot;, &quot;http://172.17.43.6:8080&quot;);
+<span class="pl-c">// You can also enable load balancing by registering the same hostname with different</span>
+<span class="pl-c">// target hosts. The requests will be evenly balanced using a Round-Robin scheme.</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"balance.me"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.40.6:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"balance.me"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.41.6:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"balance.me"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.42.6:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"balance.me"</span><span class="pl-kos">,</span> <span class="pl-s">"http://172.17.43.6:8080"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
 
-// LetsEncrypt support
-// With Redbird you can get zero conf and automatic SSL certificates for your domains
-redbird.register(&#39;example.com&#39;, &#39;http://172.60.80.2:8082&#39;, {
-  ssl: {
-    letsencrypt: {
-      email: &#39;john@example.com&#39;, // Domain owner/admin email
-      production: true, // WARNING: Only use this flag when the proxy is verified to work correctly to avoid being banned!
-    }
-  }
-});
+<span class="pl-c">// LetsEncrypt support</span>
+<span class="pl-c">// With Redbird you can get zero conf and automatic SSL certificates for your domains</span>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'example.com'</span><span class="pl-kos">,</span> <span class="pl-s">'http://172.60.80.2:8082'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+    <span class="pl-c1">letsencrypt</span>: <span class="pl-kos">{</span>
+      <span class="pl-c1">email</span>: <span class="pl-s">'john@example.com'</span><span class="pl-kos">,</span> <span class="pl-c">// Domain owner/admin email</span>
+      <span class="pl-c1">production</span>: <span class="pl-c1">true</span><span class="pl-kos">,</span> <span class="pl-c">// WARNING: Only use this flag when the proxy is verified to work correctly to avoid being banned!</span>
+    <span class="pl-kos">}</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-//
-// LetsEncrypt requires a minimal web server for handling the challenges, this is by default on port 3000
-// it can be configured when initiating the proxy. This web server is only used by Redbird internally so most of the time
-// you  do not need to do anything special other than avoid having other web services in the same host running
-// on the same port.
+<span class="pl-c">//</span>
+<span class="pl-c">// LetsEncrypt requires a minimal web server for handling the challenges, this is by default on port 3000</span>
+<span class="pl-c">// it can be configured when initiating the proxy. This web server is only used by Redbird internally so most of the time</span>
+<span class="pl-c">// you  do not need to do anything special other than avoid having other web services in the same host running</span>
+<span class="pl-c">// on the same port.</span>
 
-//
-// HTTP2 Support using LetsEncrypt for the certificates
-//
-var proxy = require(&#39;redbird&#39;)({
-  port: 80, // http port is needed for LetsEncrypt challenge during request / renewal. Also enables automatic http-&gt;https redirection for registered https routes.
-  letsencrypt: {
-    path: __dirname + &#39;/certs&#39;,
-    port: 9999 // LetsEncrypt minimal web server port for handling challenges. Routed 80-&gt;9999, no need to open 9999 in firewall. Default 3000 if not defined.
-  },
-  ssl: {
-    http2: true,
-    port: 443, // SSL port used to serve registered https routes with LetsEncrypt certificate.
-  }
-});
-</code></pre>
-<h2 id="about-https">About HTTPS</h2>
+<span class="pl-c">//</span>
+<span class="pl-c">// HTTP2 Support using LetsEncrypt for the certificates</span>
+<span class="pl-c">//</span>
+<span class="pl-k">var</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+  <span class="pl-c1">port</span>: <span class="pl-c1">80</span><span class="pl-kos">,</span> <span class="pl-c">// http port is needed for LetsEncrypt challenge during request / renewal. Also enables automatic http-&gt;https redirection for registered https routes.</span>
+  <span class="pl-c1">letsencrypt</span>: <span class="pl-kos">{</span>
+    <span class="pl-c1">path</span>: <span class="pl-s1">__dirname</span> <span class="pl-c1">+</span> <span class="pl-s">'/certs'</span><span class="pl-kos">,</span>
+    <span class="pl-c1">port</span>: <span class="pl-c1">9999</span> <span class="pl-c">// LetsEncrypt minimal web server port for handling challenges. Routed 80-&gt;9999, no need to open 9999 in firewall. Default 3000 if not defined.</span>
+  <span class="pl-kos">}</span><span class="pl-kos">,</span>
+  <span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+    <span class="pl-c1">http2</span>: <span class="pl-c1">true</span><span class="pl-kos">,</span>
+    <span class="pl-c1">port</span>: <span class="pl-c1">443</span><span class="pl-kos">,</span> <span class="pl-c">// SSL port used to serve registered https routes with LetsEncrypt certificate.</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-about-https" class="anchor" aria-hidden="true" href="#about-https"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>About HTTPS</h2>
 <p>The HTTPS proxy supports virtual hosts by using SNI (which most modern browsers support: IE7 and above).
 The proxying is performed by hostname, so you must use the same SSL certificates for a given hostname independently of its paths.</p>
-<h3 id="letsencrypt">LetsEncrypt</h3>
-<p>Some important considerations when using LetsEncrypt. You need to agree to LetsEncrypt <a href="https://letsencrypt.org/documents/LE-SA-v1.0.1-July-27-2015.pdf">terms of service</a>. When using
+<h3><a id="user-content-letsencrypt" class="anchor" aria-hidden="true" href="#letsencrypt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LetsEncrypt</h3>
+<p>Some important considerations when using LetsEncrypt. You need to agree to LetsEncrypt <a href="https://letsencrypt.org/documents/LE-SA-v1.0.1-July-27-2015.pdf" rel="nofollow">terms of service</a>. When using
 LetsEncrypt, the obtained certificates will be copied to disk to the specified path. Its your responsibility to backup, or save persistently when applicable. Keep in mind that
 these certificates needs to be handled with care so that they cannot be accessed by malicious users. The certificates will be renewed every
 2 months automatically forever.</p>
-<h2 id="https-example">HTTPS Example</h2>
+<h2><a id="user-content-https-example" class="anchor" aria-hidden="true" href="#https-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTPS Example</h2>
 <p>(NOTE: This is a legacy example not needed when using LetsEncrypt)</p>
 <p>Conceptually HTTPS is easy, but it is also easy to struggle getting it right. With Redbird its straightforward, check this complete example:</p>
-<p>1) Generate a localhost development SSL certificate:</p>
-<pre><code class="language-sh">/certs $ openssl genrsa -out dev-key.pem 1024
+<ol>
+<li>Generate a localhost development SSL certificate:</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre>/certs $ openssl genrsa -out dev-key.pem 1024
 /certs $ openssl req -new -key dev-key.pem -out dev-csr.pem
 
-// IMPORTANT: Do not forget to fill the field! Common Name (e.g. server FQDN or YOUR name) []:localhost
+// IMPORTANT: Do not forget to fill the field<span class="pl-k">!</span> Common Name (e.g. server FQDN or YOUR name) []:localhost
 
 /certs $ openssl x509 -req -in dev-csr.pem -signkey dev-key.pem -out dev-cert.pem
-</code></pre>
+</pre></div>
 <p>Note: For production sites you need to buy valid SSL certificates from a trusted authority.</p>
-<p>2) Create a simple redbird based proxy:</p>
-<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
-    port: 8080,
+<ol start="2">
+<li>Create a simple redbird based proxy:</li>
+</ol>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+	<span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
 
-    // Specify filenames to default SSL certificates (in case SNI is not supported by the
-    // user&#39;s browser)
-    ssl: {
-        port: 8443,
-        key: &quot;certs/dev-key.pem&quot;,
-        cert: &quot;certs/dev-cert.pem&quot;,
-    }
-});
+	<span class="pl-c">// Specify filenames to default SSL certificates (in case SNI is not supported by the</span>
+	<span class="pl-c">// user's browser)</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">port</span>: <span class="pl-c1">8443</span><span class="pl-kos">,</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">"certs/dev-key.pem"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">"certs/dev-cert.pem"</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// Since we will only have one https host, we dont need to specify additional certificates.
-redbird.register(&#39;localhost&#39;, &#39;http://localhost:8082&#39;, {ssl: true});</code></pre>
-<p>3) Test it:</p>
+<span class="pl-c">// Since we will only have one https host, we dont need to specify additional certificates.</span>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'localhost'</span><span class="pl-kos">,</span> <span class="pl-s">'http://localhost:8082'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span><span class="pl-c1">ssl</span>: <span class="pl-c1">true</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<ol start="3">
+<li>Test it:</li>
+</ol>
 <p>Point your browser to <code>localhost:8000</code> and you will see how it automatically redirects to your https server and proxies you to
 your target server.</p>
 <p>You can define many virtual hosts, each with its own SSL certificate. And if you do not define any, they will use the default one
 as in the example above:</p>
-<pre><code class="language-js">redbird.register(&#39;example.com&#39;, &#39;http://172.60.80.2:8082&#39;, {
-    ssl: {
-        key: &quot;../certs/example.key&quot;,
-        cert: &quot;../certs/example.crt&quot;,
-        ca: &quot;../certs/example.ca&quot;
-    }
-});
+<div class="highlight highlight-source-js"><pre><span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'example.com'</span><span class="pl-kos">,</span> <span class="pl-s">'http://172.60.80.2:8082'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">"../certs/example.key"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">"../certs/example.crt"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">ca</span>: <span class="pl-s">"../certs/example.ca"</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-redbird.register(&#39;foobar.com&#39;, &#39;http://172.60.80.3:8082&#39;, {
-    ssl: {
-        key: &quot;../certs/foobar.key&quot;,
-        cert: &quot;../certs/foobar.crt&quot;,
-    }
-});</code></pre>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'foobar.com'</span><span class="pl-kos">,</span> <span class="pl-s">'http://172.60.80.3:8082'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">"../certs/foobar.key"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">"../certs/foobar.crt"</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p>You can also specify https hosts as targets and also specify if you want the connection to the target host to be secure (default is true).</p>
-<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
-    port: 80,
-    secure: false,
-    ssl: {
-        port: 443,
-        key: &quot;../certs/default.key&quot;,
-        cert: &quot;../certs/default.crt&quot;,
-    }
-});
-redbird.register(&#39;tutorial.com&#39;, &#39;https://172.60.80.2:8083&#39;, {
-    ssl: {
-        key: &quot;../certs/tutorial.key&quot;,
-        cert: &quot;../certs/tutorial.crt&quot;,
-    }
-});
-</code></pre>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+	<span class="pl-c1">port</span>: <span class="pl-c1">80</span><span class="pl-kos">,</span>
+	<span class="pl-c1">secure</span>: <span class="pl-c1">false</span><span class="pl-kos">,</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">port</span>: <span class="pl-c1">443</span><span class="pl-kos">,</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">"../certs/default.key"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">"../certs/default.crt"</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'tutorial.com'</span><span class="pl-kos">,</span> <span class="pl-s">'https://172.60.80.2:8083'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">"../certs/tutorial.key"</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">"../certs/tutorial.crt"</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p>Edge case scenario: you have an HTTPS server with two IP addresses assigned to it and your clients use old software without SNI support. In this case, both IP addresses will receive the same fallback certificate. I.e. some of the domains will get a wrong certificate. To handle this case you can create two HTTPS servers each one bound to its own IP address and serving the appropriate certificate.</p>
-<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
-    port: 8080,
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+	<span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
 
-    // Specify filenames to default SSL certificates (in case SNI is not supported by the
-    // user&#39;s browser)
-    ssl: [
-        {
-            port: 443,
-            ip: &#39;123.45.67.10&#39;,  // assigned to tutorial.com
-            key: &#39;certs/tutorial.key&#39;,
-            cert: &#39;certs/tutorial.crt&#39;,
-        },
-        {
-            port: 443,
-            ip: &#39;123.45.67.11&#39;, // assigned to my-other-domain.com
-            key: &#39;certs/my-other-domain.key&#39;,
-            cert: &#39;certs/my-other-domain.crt&#39;,
-        }
-    ]
-});
+	<span class="pl-c">// Specify filenames to default SSL certificates (in case SNI is not supported by the</span>
+	<span class="pl-c">// user's browser)</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">[</span>
+		<span class="pl-kos">{</span>
+			<span class="pl-c1">port</span>: <span class="pl-c1">443</span><span class="pl-kos">,</span>
+			<span class="pl-c1">ip</span>: <span class="pl-s">'123.45.67.10'</span><span class="pl-kos">,</span>  <span class="pl-c">// assigned to tutorial.com</span>
+			<span class="pl-c1">key</span>: <span class="pl-s">'certs/tutorial.key'</span><span class="pl-kos">,</span>
+			<span class="pl-c1">cert</span>: <span class="pl-s">'certs/tutorial.crt'</span><span class="pl-kos">,</span>
+		<span class="pl-kos">}</span><span class="pl-kos">,</span>
+		<span class="pl-kos">{</span>
+			<span class="pl-c1">port</span>: <span class="pl-c1">443</span><span class="pl-kos">,</span>
+			<span class="pl-c1">ip</span>: <span class="pl-s">'123.45.67.11'</span><span class="pl-kos">,</span> <span class="pl-c">// assigned to my-other-domain.com</span>
+			<span class="pl-c1">key</span>: <span class="pl-s">'certs/my-other-domain.key'</span><span class="pl-kos">,</span>
+			<span class="pl-c1">cert</span>: <span class="pl-s">'certs/my-other-domain.crt'</span><span class="pl-kos">,</span>
+		<span class="pl-kos">}</span>
+	<span class="pl-kos">]</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// These certificates will be served if SNI is supported
-redbird.register(&#39;tutorial.com&#39;, &#39;http://192.168.0.10:8001&#39;, {
-    ssl: {
-        key: &#39;certs/tutorial.key&#39;,
-        cert: &#39;certs/tutorial.crt&#39;,
-    }
-});
-redbird.register(&#39;my-other-domain.com&#39;, &#39;http://192.168.0.12:8001&#39;, {
-    ssl: {
-        key: &#39;certs/my-other-domain.key&#39;,
-        cert: &#39;certs/my-other-domain.crt&#39;,
-    }
-});</code></pre>
-<h2 id="docker-support">Docker support</h2>
+<span class="pl-c">// These certificates will be served if SNI is supported</span>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'tutorial.com'</span><span class="pl-kos">,</span> <span class="pl-s">'http://192.168.0.10:8001'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">'certs/tutorial.key'</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">'certs/tutorial.crt'</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">redbird</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">'my-other-domain.com'</span><span class="pl-kos">,</span> <span class="pl-s">'http://192.168.0.12:8001'</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
+	<span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+		<span class="pl-c1">key</span>: <span class="pl-s">'certs/my-other-domain.key'</span><span class="pl-kos">,</span>
+		<span class="pl-c1">cert</span>: <span class="pl-s">'certs/my-other-domain.crt'</span><span class="pl-kos">,</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-docker-support" class="anchor" aria-hidden="true" href="#docker-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker support</h2>
 <p>If you use docker, you can tell Redbird to automatically register routes based on image
 names. You register your image name and then every time a container starts from that image,
 it gets registered, and unregistered if the container is stopped. If you run more than one
 container from the same image, Redbird will load balance following a round-robin algorithm:</p>
-<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
-  port: 8080,
-});
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+  <span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-var docker = require(&#39;redbird&#39;).docker;
-docker(redbird).register(&quot;old.api.com&quot;, &#39;company/api:v1.0.0&#39;);
-docker(redbird).register(&quot;stable.api.com&quot;, &#39;company/api:v2.*&#39;);
-docker(redbird).register(&quot;preview.api.com&quot;, &#39;company/api:v[3-9].*&#39;);</code></pre>
-<h2 id="etcd-backend">etcd backend</h2>
+<span class="pl-k">var</span> <span class="pl-s1">docker</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">docker</span><span class="pl-kos">;</span>
+<span class="pl-s1">docker</span><span class="pl-kos">(</span><span class="pl-s1">redbird</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"old.api.com"</span><span class="pl-kos">,</span> <span class="pl-s">'company/api:v1.0.0'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">docker</span><span class="pl-kos">(</span><span class="pl-s1">redbird</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"stable.api.com"</span><span class="pl-kos">,</span> <span class="pl-s">'company/api:v2.*'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">docker</span><span class="pl-kos">(</span><span class="pl-s1">redbird</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">register</span><span class="pl-kos">(</span><span class="pl-s">"preview.api.com"</span><span class="pl-kos">,</span> <span class="pl-s">'company/api:v[3-9].*'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-etcd-backend" class="anchor" aria-hidden="true" href="#etcd-backend"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>etcd backend</h2>
 <p>Redbird can use <a href="https://github.com/stianeikeland/node-etcd">node-etcd</a> to automatically create proxy records from an etcd cluster. Configuration
 is accomplished by passing an array of <a href="https://github.com/stianeikeland/node-etcd#constructor-options">options</a>, plus the hosts and path variables,
 which define which etcd cluster hosts, and which directory within those hosts, that Redbird should poll for updates.</p>
-<pre><code class="language-js">var redbird = require(&#39;redbird&#39;)({
-  port:8080
-});
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+  <span class="pl-c1">port</span>:<span class="pl-c1">8080</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-var options = {
-  hosts: [&#39;localhost:2379&#39;], // REQUIRED - you must define array of cluster hosts
-    path: [&#39;redbird&#39;], // OPTIONAL - path to etcd keys
-    ... // OPTIONAL - pass in node-etcd connection options
-}
-require(&#39;redbird&#39;).etcd(redbird,options);</code></pre>
+<span class="pl-k">var</span> <span class="pl-s1">options</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">hosts</span>: <span class="pl-kos">[</span><span class="pl-s">'localhost:2379'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c">// REQUIRED - you must define array of cluster hosts</span>
+	<span class="pl-c1">path</span>: <span class="pl-kos">[</span><span class="pl-s">'redbird'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c">// OPTIONAL - path to etcd keys</span>
+	... <span class="pl-c">// OPTIONAL - pass in node-etcd connection options</span>
+<span class="pl-kos">}</span>
+<span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">etcd</span><span class="pl-kos">(</span><span class="pl-s1">redbird</span><span class="pl-kos">,</span><span class="pl-s1">options</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p>etcd records can be created in one of two ways, either as a target destination pair:
-<code>/redbird/example.com            &quot;8.8.8.8&quot;</code>
+<code>/redbird/example.com			"8.8.8.8"</code>
 or by passing a JSON object containing multiple hosts, and Redbird options:</p>
-<pre><code>/redbird/derek.com                { &quot;hosts&quot; : [&quot;10.10.10.10&quot;, &quot;11.11.11.11&quot;]}
-/redbird/johnathan.com    { &quot;ssl&quot; : true }
-/redbird/jeff.com         { &quot;docker&quot; : &quot;alpine/alpine:latest&quot; }</code></pre><h2 id="cluster-support">Cluster support</h2>
+<pre><code>/redbird/derek.com				{ "hosts" : ["10.10.10.10", "11.11.11.11"]}
+/redbird/johnathan.com    { "ssl" : true }
+/redbird/jeff.com         { "docker" : "alpine/alpine:latest" }
+</code></pre>
+<h2><a id="user-content-cluster-support" class="anchor" aria-hidden="true" href="#cluster-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cluster support</h2>
 <p>Redbird supports automatic node cluster generation. To use, just specify the number
 of processes that you want Redbird to use in the options object. Redbird will automatically
 restart any thread that crashes, increasing reliability.</p>
-<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
-    port: 8080,
-  cluster: 4
-});</code></pre>
-<h2 id="ntlm-support">NTLM support</h2>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+	<span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
+  <span class="pl-c1">cluster</span>: <span class="pl-c1">4</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-ntlm-support" class="anchor" aria-hidden="true" href="#ntlm-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NTLM support</h2>
 <p>If you need NTLM support, you can tell Redbird to add the required header handler. This
 registers a response handler which makes sure the NTLM auth header is properly split into
 two entries from http-proxy.</p>
-<pre><code class="language-js">var redbird = new require(&#39;redbird&#39;)({
-  port: 8080,
-  ntlm: true
-});</code></pre>
-<h2 id="custom-resolvers">Custom Resolvers</h2>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">redbird</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+  <span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
+  <span class="pl-c1">ntlm</span>: <span class="pl-c1">true</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-custom-resolvers" class="anchor" aria-hidden="true" href="#custom-resolvers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Custom Resolvers</h2>
 <p>With custom resolvers, you can decide how the proxy server handles request. Custom resolvers allow you to extend Redbird considerably. With custom resolvers, you can perform the following:</p>
 <ul>
 <li>Do path-based routing.</li>
@@ -265,82 +272,83 @@ two entries from http-proxy.</p>
 </ol>
 <pre><code>  {
      url: string or array of string [required], when array, the urls will be load-balanced across.
-     path: path prefix for route, [optional], defaults to &#39;/&#39;,
+     path: path prefix for route, [optional], defaults to '/',
      opts: {} // Redbird target options, see Redbird.register() [optional],
-  }</code></pre><h3 id="defining-resolvers">Defining Resolvers</h3>
-<p>Resolvers can be defined when initializing the proxy object with the <code>resolvers</code> parameter. An example is below:</p>
-<pre><code class="language-javascript"> // for every URL path that starts with /api/, send request to upstream API service
- var customResolver1 = function(host, url, req) {
-   if(/^\/api\//.test(url)){
-      return &#39;http://127.0.0.1:8888&#39;;
-   }
- };
-
- // assign high priority
- customResolver1.priority = 100;
-
- var proxy = new require(&#39;redbird&#39;)({
-    port: 8080,
-    resolvers: [
-    customResolver1,
-    // uses the same priority as default resolver, so will be called after default resolver
-    function(host, url, req) {
-      if(/\.example\.com/.test(host)){
-        return &#39;http://127.0.0.1:9999&#39;
-      }
-    }]
- })
+  }
 </code></pre>
-<h3 id="adding-and-removing-resolvers-at-runtime">Adding and Removing Resolvers at Runtime.</h3>
+<h3><a id="user-content-defining-resolvers" class="anchor" aria-hidden="true" href="#defining-resolvers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Defining Resolvers</h3>
+<p>Resolvers can be defined when initializing the proxy object with the <code>resolvers</code> parameter. An example is below:</p>
+<div class="highlight highlight-source-js"><pre> <span class="pl-c">// for every URL path that starts with /api/, send request to upstream API service</span>
+ <span class="pl-k">var</span> <span class="pl-en">customResolver1</span> <span class="pl-c1">=</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">host</span><span class="pl-kos">,</span> <span class="pl-s1">url</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+   <span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-pds">/<span class="pl-cce">^</span><span class="pl-cce">\/</span>api<span class="pl-cce">\/</span>/</span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">url</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+      <span class="pl-k">return</span> <span class="pl-s">'http://127.0.0.1:8888'</span><span class="pl-kos">;</span>
+   <span class="pl-kos">}</span>
+ <span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+ <span class="pl-c">// assign high priority</span>
+ <span class="pl-en">customResolver1</span><span class="pl-kos">.</span><span class="pl-c1">priority</span> <span class="pl-c1">=</span> <span class="pl-c1">100</span><span class="pl-kos">;</span>
+
+ <span class="pl-k">var</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+    <span class="pl-c1">port</span>: <span class="pl-c1">8080</span><span class="pl-kos">,</span>
+    <span class="pl-c1">resolvers</span>: <span class="pl-kos">[</span>
+    <span class="pl-en">customResolver1</span><span class="pl-kos">,</span>
+    <span class="pl-c">// uses the same priority as default resolver, so will be called after default resolver</span>
+    <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">host</span><span class="pl-kos">,</span> <span class="pl-s1">url</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+      <span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-pds">/<span class="pl-cce">\.</span>example<span class="pl-cce">\.</span>com/</span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">host</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+        <span class="pl-k">return</span> <span class="pl-s">'http://127.0.0.1:9999'</span>
+      <span class="pl-kos">}</span>
+    <span class="pl-kos">}</span><span class="pl-kos">]</span>
+ <span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
+<h3><a id="user-content-adding-and-removing-resolvers-at-runtime" class="anchor" aria-hidden="true" href="#adding-and-removing-resolvers-at-runtime"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding and Removing Resolvers at Runtime.</h3>
 <p>You can add or remove resolvers at runtime, this is useful in situations where your upstream is tied to a service discovery service system.</p>
-<pre><code class="language-javascript">var topPriority = function(host, url, req) {
-  return /app\.example\.com/.test(host) ? {
-    // load balanced
-    url: [
-    &#39;http://127.0.0.1:8000&#39;,
-    &#39;http://128.0.1.1:9999&#39;
-   ]
-  } : null;
-};
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">topPriority</span> <span class="pl-c1">=</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">host</span><span class="pl-kos">,</span> <span class="pl-s1">url</span><span class="pl-kos">,</span> <span class="pl-s1">req</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-pds">/app<span class="pl-cce">\.</span>example<span class="pl-cce">\.</span>com/</span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">host</span><span class="pl-kos">)</span> ? <span class="pl-kos">{</span>
+    <span class="pl-c">// load balanced</span>
+    <span class="pl-c1">url</span>: <span class="pl-kos">[</span>
+    <span class="pl-s">'http://127.0.0.1:8000'</span><span class="pl-kos">,</span>
+    <span class="pl-s">'http://128.0.1.1:9999'</span>
+   <span class="pl-kos">]</span>
+  <span class="pl-kos">}</span> : null<span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
 
-topPriority.priority = 200;
-proxy.addResolver(topPriority);
+<span class="pl-en">topPriority</span><span class="pl-kos">.</span><span class="pl-c1">priority</span> <span class="pl-c1">=</span> <span class="pl-c1">200</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">addResolver</span><span class="pl-kos">(</span><span class="pl-en">topPriority</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
 
-// remove top priority after 10 minutes,
-setTimeout(function() {
-  proxy.removeResolver(topPriority);
-}, 600000);</code></pre>
-<h2 id="replacing-the-default-httphttps-server-modules">Replacing the default HTTP/HTTPS server modules</h2>
+<span class="pl-c">// remove top priority after 10 minutes,</span>
+<span class="pl-en">setTimeout</span><span class="pl-kos">(</span><span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">removeResolver</span><span class="pl-kos">(</span><span class="pl-en">topPriority</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-c1">600000</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-replacing-the-default-httphttps-server-modules" class="anchor" aria-hidden="true" href="#replacing-the-default-httphttps-server-modules"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Replacing the default HTTP/HTTPS server modules</h2>
 <p>By passing <code>serverModule: module</code> or <code>ssl: {serverModule : module}</code> you can override the default http/https
 servers used to listen for connections with another module.</p>
 <p>One application for this is to enable support for PROXY protocol: This is useful if you want to use a module like
 <a href="https://github.com/findhit/proxywrap">findhit-proxywrap</a> to enable support for the
-<a href="http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt">PROXY protocol</a>.</p>
+<a href="http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt" rel="nofollow">PROXY protocol</a>.</p>
 <p>PROXY protocol is used in tools like HA-Proxy, and can be optionally enabled in Amazon ELB load balancers to pass the
 original client IP when proxying TCP connections (similar to an X-Forwarded-For header, but for raw TCP). This is useful
 if you want to run redbird on AWS behind an ELB load balancer, but have redbird terminate any HTTPS connections so you
-can have SNI/Let&#39;s Encrypt/HTTP2support. With this in place Redbird will see the client&#39;s IP address rather
-than the load-balancer&#39;s, and pass this through in an X-Forwarded-For header.</p>
-<pre><code class="language-javascript">//Options for proxywrap. This means the proxy will also respond to regular HTTP requests without PROXY information as well.
-proxy_opts = {strict: false};
-proxyWrap = require(&#39;findhit-proxywrap&#39;);
-var opts = {
-    port: process.env.HTTP_PORT,
-    serverModule: proxyWrap.proxy( require(&#39;http&#39;), proxy_opts),
-    ssl: {
-        //Do this if you want http2:
-        http2: true,
-        serverModule: proxyWrap.proxy(require(&#39;spdy&#39;).server, proxy_opts),
-        //Do this if you only want regular https
-        // serverModule: proxyWrap.proxy( require(&#39;http&#39;), proxy_opts),
-        port: process.env.HTTPS_PORT,
-    }
-}
+can have SNI/Let's Encrypt/HTTP2support. With this in place Redbird will see the client's IP address rather
+than the load-balancer's, and pass this through in an X-Forwarded-For header.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//Options for proxywrap. This means the proxy will also respond to regular HTTP requests without PROXY information as well.</span>
+<span class="pl-s1">proxy_opts</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">strict</span>: <span class="pl-c1">false</span><span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-s1">proxyWrap</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'findhit-proxywrap'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">var</span> <span class="pl-s1">opts</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+    <span class="pl-c1">port</span>: <span class="pl-s1">process</span><span class="pl-kos">.</span><span class="pl-c1">env</span><span class="pl-kos">.</span><span class="pl-c1">HTTP_PORT</span><span class="pl-kos">,</span>
+    <span class="pl-c1">serverModule</span>: <span class="pl-s1">proxyWrap</span><span class="pl-kos">.</span><span class="pl-en">proxy</span><span class="pl-kos">(</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'http'</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-s1">proxy_opts</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+    <span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+        <span class="pl-c">//Do this if you want http2:</span>
+        <span class="pl-c1">http2</span>: <span class="pl-c1">true</span><span class="pl-kos">,</span>
+        <span class="pl-c1">serverModule</span>: <span class="pl-s1">proxyWrap</span><span class="pl-kos">.</span><span class="pl-en">proxy</span><span class="pl-kos">(</span><span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'spdy'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">server</span><span class="pl-kos">,</span> <span class="pl-s1">proxy_opts</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+        <span class="pl-c">//Do this if you only want regular https</span>
+        <span class="pl-c">// serverModule: proxyWrap.proxy( require('http'), proxy_opts),</span>
+        <span class="pl-c1">port</span>: <span class="pl-s1">process</span><span class="pl-kos">.</span><span class="pl-c1">env</span><span class="pl-kos">.</span><span class="pl-c1">HTTPS_PORT</span><span class="pl-kos">,</span>
+    <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
 
-// Create the proxy
-var proxy = require(&#39;redbird&#39;)(opts);</code></pre>
-<h2 id="roadmap">Roadmap</h2>
+<span class="pl-c">// Create the proxy</span>
+<span class="pl-k">var</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'redbird'</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-s1">opts</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h2><a id="user-content-roadmap" class="anchor" aria-hidden="true" href="#roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Roadmap</h2>
 <ul>
 <li>Statistics (number of connections, load, response times, etc)</li>
 <li>CORS support.</li>
@@ -348,98 +356,96 @@ var proxy = require(&#39;redbird&#39;)(opts);</code></pre>
 <li>Simple IP Filtering.</li>
 <li>Automatic routing via Redis.</li>
 </ul>
-<h2 id="reference">Reference</h2>
+<h2><a id="user-content-reference" class="anchor" aria-hidden="true" href="#reference"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h2>
 <p><a href="#redbird">constructor</a>
 <a href="#register">register</a>
 <a href="#unregister">unregister</a>
 <a href="#notFound">notFound</a>
 <a href="#close">close</a></p>
-<a name="redbird"/>
-
-<h3 id="redbirdopts">Redbird(opts)</h3>
+<a name="user-content-redbird">
+<h3><a id="user-content-redbirdopts" class="anchor" aria-hidden="true" href="#redbirdopts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird(opts)</h3>
 <p>This is the Proxy constructor. Creates a new Proxy and starts listening to
 the given port.</p>
 <p><strong>Arguments</strong></p>
 <pre><code>    opts {Object} Options to pass to the proxy:
     {
-        port: {Number} // port number that the proxy will listen to.
-        ssl: { // Optional SSL proxying.
-            port: {Number} // SSL port the proxy will listen to.
-            // Default certificates
-            key: keyPath,
-            cert: certPath,
-            ca: caPath // Optional.
-            redirectPort: port, // optional https port number to be redirected if entering using http.
+    	port: {Number} // port number that the proxy will listen to.
+    	ssl: { // Optional SSL proxying.
+    		port: {Number} // SSL port the proxy will listen to.
+    		// Default certificates
+    		key: keyPath,
+    		cert: certPath,
+    		ca: caPath // Optional.
+        	redirectPort: port, // optional https port number to be redirected if entering using http.
             http2: false, //Optional, setting to true enables http2/spdy support
-            serverModule : require(&#39;https&#39;) // Optional, override the https server module used to listen for https or http2 connections.  Default is require(&#39;https&#39;) or require(&#39;spdy&#39;)
-        }
+            serverModule : require('https') // Optional, override the https server module used to listen for https or http2 connections.  Default is require('https') or require('spdy')
+    	}
         bunyan: {Object} Bunyan options. Check [bunyan](https://github.com/trentm/node-bunyan) for info.
         If you want to disable bunyan, just set this option to false. Keep in mind that
         having logs enabled incours in a performance penalty of about one order of magnitude per request.
         resolvers: {Function | Array}  a list of custom resolvers. Can be a single function or an array of functions. See more details about resolvers above.
-        serverModule : {Module} Optional - Override the http server module used to listen for http connections.  Default is require(&#39;http&#39;)
-    }</code></pre><hr>
-<a name="register"/>
-
-<h4 id="redbirdregistersrc-target-opts">Redbird::register(src, target, opts)</h4>
+        serverModule : {Module} Optional - Override the http server module used to listen for http connections.  Default is require('http')
+	}
+</code></pre>
+<hr>
+</a><a name="user-content-register">
+<h4><a id="user-content-redbirdregistersrc-target-opts" class="anchor" aria-hidden="true" href="#redbirdregistersrc-target-opts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird::register(src, target, opts)</h4>
 <p>Register a new route. As soon as this method is called, the proxy will
 start routing the sources to the given targets.</p>
 <p><strong>Arguments</strong></p>
-<pre><code class="language-javascript">    src {String} {String|URL} A string or a url parsed by node url module.
-        Note that port is ignored, since the proxy just listens to one port.
+<div class="highlight highlight-source-js"><pre>    <span class="pl-s1">src</span> <span class="pl-kos">{</span><span class="pl-v">String</span><span class="pl-kos">}</span> <span class="pl-kos">{</span><span class="pl-v">String</span>|<span class="pl-c1">URL</span><span class="pl-kos">}</span> <span class="pl-v">A</span> <span class="pl-s1">string</span> <span class="pl-s1">or</span> <span class="pl-s1">a</span> <span class="pl-s1">url</span> <span class="pl-s1">parsed</span> <span class="pl-s1">by</span> <span class="pl-s1">node</span> <span class="pl-s1">url</span> <span class="pl-smi">module</span><span class="pl-kos">.</span>
+    	<span class="pl-c1">Note</span> <span class="pl-s1">that</span> <span class="pl-s1">port</span> <span class="pl-s1">is</span> <span class="pl-s1">ignored</span><span class="pl-kos">,</span> <span class="pl-s1">since</span> <span class="pl-s1">the</span> <span class="pl-s1">proxy</span> <span class="pl-s1">just</span> <span class="pl-s1">listens</span> <span class="pl-s1">to</span> <span class="pl-s1">one</span> <span class="pl-s1">port</span><span class="pl-kos">.</span>
 
-    target {String|URL} A string or a url parsed by node url module.
-    opts {Object} route options:
+    <span class="pl-c1">target</span><span class="pl-kos"></span> <span class="pl-kos">{</span><span class="pl-v">String</span>|<span class="pl-c1">URL</span><span class="pl-kos">}</span> <span class="pl-v">A</span> <span class="pl-s1">string</span> <span class="pl-s1">or</span> <span class="pl-s1">a</span> <span class="pl-s1">url</span> <span class="pl-s1">parsed</span> <span class="pl-s1">by</span> <span class="pl-s1">node</span> <span class="pl-s1">url</span> <span class="pl-smi">module</span><span class="pl-kos">.</span>
+    <span class="pl-c1">opts</span><span class="pl-kos"></span> <span class="pl-kos">{</span><span class="pl-v">Object</span><span class="pl-kos">}</span> route <span class="pl-s1">options</span>:
     examples:
-    {ssl : true} // Will use default ssl certificates.
-    {ssl: {
-        redirect: true, // False to disable HTTPS autoredirect to this route.
-        key: keyPath,
-        cert: certPath,
-        ca: caPath, // optional
-        secureOptions: constants.SSL_OP_NO_TLSv1 //optional, see below
-        }
-    }
-    {onRequest: (req, res, target) =&gt; {
-      // called before forwarding is occurred, you can modify req.headers for example
-      // return undefined to forward to default target
-    }}</code></pre>
+    <span class="pl-kos">{</span><span class="pl-c1">ssl</span> : <span class="pl-c1">true</span><span class="pl-kos">}</span> <span class="pl-c">// Will use default ssl certificates.</span>
+    <span class="pl-kos">{</span><span class="pl-c1">ssl</span>: <span class="pl-kos">{</span>
+        <span class="pl-c1">redirect</span>: <span class="pl-c1">true</span><span class="pl-kos">,</span> <span class="pl-c">// False to disable HTTPS autoredirect to this route.</span>
+    	<span class="pl-c1">key</span>: <span class="pl-s1">keyPath</span><span class="pl-kos">,</span>
+    	<span class="pl-c1">cert</span>: <span class="pl-s1">certPath</span><span class="pl-kos">,</span>
+    	<span class="pl-c1">ca</span>: <span class="pl-s1">caPath</span><span class="pl-kos">,</span> <span class="pl-c">// optional</span>
+    	<span class="pl-c1">secureOptions</span>: <span class="pl-s1">constants</span><span class="pl-kos">.</span><span class="pl-c1">SSL_OP_NO_TLSv1</span> <span class="pl-c">//optional, see below</span>
+    	<span class="pl-kos">}</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-kos">{</span><span class="pl-en">onRequest</span>: <span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">,</span> <span class="pl-s1">target</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+      <span class="pl-c">// called before forwarding is occurred, you can modify req.headers for example</span>
+      <span class="pl-c">// return undefined to forward to default target</span>
+    <span class="pl-kos">}</span><span class="pl-kos">}</span></pre></div>
 <blockquote>
 <p><em>Note: if you need to use <strong>ssl.secureOptions</strong>, to disable older, insecure TLS versions, import crypto/constants first:</em></p>
 </blockquote>
 <blockquote>
-<p><code>const { constants } = require(&#39;crypto&#39;)</code></p>
+<p><code>const { constants } = require('crypto')</code></p>
 </blockquote>
 <hr>
-<a name="unregister"/>
-
-<h4 id="redbirdunregistersrc-target">Redbird.unregister(src, [target])</h4>
-<p> Unregisters a route. After calling this method, the given route will not
- be proxied anymore.</p>
+</a><a name="user-content-unregister">
+<h4><a id="user-content-redbirdunregistersrc-target" class="anchor" aria-hidden="true" href="#redbirdunregistersrc-target"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird.unregister(src, [target])</h4>
+<p>Unregisters a route. After calling this method, the given route will not
+be proxied anymore.</p>
 <p><strong>Arguments</strong></p>
-<pre><code class="language-javascript">    src {String|URL} A string or a url parsed by node url module.
-    target {String|URL} A string or a url parsed by node url module. If not
-    specified, it will unregister all routes for the given source.</code></pre>
+<div class="highlight highlight-source-js"><pre>    <span class="pl-s1">src</span> <span class="pl-kos">{</span><span class="pl-v">String</span>|<span class="pl-c1">URL</span><span class="pl-kos">}</span> <span class="pl-v">A</span> <span class="pl-s1">string</span> <span class="pl-s1">or</span> <span class="pl-s1">a</span> <span class="pl-s1">url</span> <span class="pl-s1">parsed</span> <span class="pl-s1">by</span> <span class="pl-s1">node</span> <span class="pl-s1">url</span> <span class="pl-smi">module</span><span class="pl-kos">.</span>
+    <span class="pl-c1">target</span> <span class="pl-kos">{</span><span class="pl-v">String</span>|<span class="pl-c1">URL</span><span class="pl-kos">}</span> <span class="pl-v">A</span> <span class="pl-s1">string</span> <span class="pl-s1">or</span> <span class="pl-s1">a</span> <span class="pl-s1">url</span> <span class="pl-s1">parsed</span> <span class="pl-s1">by</span> <span class="pl-s1">node</span> <span class="pl-s1">url</span> <span class="pl-smi">module</span><span class="pl-kos">.</span> <span class="pl-c1">If</span> <span class="pl-s1">not</span>
+    <span class="pl-s1">specified</span><span class="pl-kos">,</span> <span class="pl-s1">it</span> <span class="pl-s1">will</span> <span class="pl-s1">unregister</span> <span class="pl-s1">all</span> <span class="pl-s1">routes</span> <span class="pl-k">for</span> <span class="pl-s1">the</span> <span class="pl-s1">given</span> <span class="pl-s1">source</span><span class="pl-kos">.</span></pre></div>
 <hr>
-<a name="notFound"/>
-
-<h4 id="redbirdnotfoundcallback">Redbird.notFound(callback)</h4>
-<p> Gives Redbird a callback function with two parameters, the HTTP request
- and response objects, respectively, which will be called when a proxy route is
- not found. The default is</p>
-<pre><code class="language-javascript">    function(req, res){
-      res.statusCode = 404;
-      res.write(&#39;Not Found&#39;);
-      res.end();
-    };</code></pre>
+</a><a name="user-content-notfound">
+<h4><a id="user-content-redbirdnotfoundcallback" class="anchor" aria-hidden="true" href="#redbirdnotfoundcallback"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird.notFound(callback)</h4>
+<p>Gives Redbird a callback function with two parameters, the HTTP request
+and response objects, respectively, which will be called when a proxy route is
+not found. The default is</p>
+<div class="highlight highlight-source-js"><pre>    <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-c1">statusCode</span> <span class="pl-c1">=</span> <span class="pl-c1">404</span><span class="pl-kos">;</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s">'Not Found'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      <span class="pl-s1">res</span><span class="pl-kos">.</span><span class="pl-en">end</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
 <p>.</p>
 <p><strong>Arguments</strong></p>
-<pre><code class="language-javascript">    src {Function(req, res)} The callback which will be called with the HTTP
-      request and response objects when a proxy route is not found.</code></pre>
+<div class="highlight highlight-source-js"><pre>    <span class="pl-s1">src</span> <span class="pl-kos">{</span><span class="pl-v">Function</span><span class="pl-kos">(</span><span class="pl-s1">req</span><span class="pl-kos">,</span> <span class="pl-s1">res</span><span class="pl-kos">)</span><span class="pl-kos">}</span> <span class="pl-v">The</span> <span class="pl-s1">callback</span> <span class="pl-s1">which</span> <span class="pl-s1">will</span> <span class="pl-s1">be</span> <span class="pl-s1">called</span> <span class="pl-k">with</span> <span class="pl-s1">the</span> <span class="pl-c1">HTTP</span>
+      <span class="pl-s1">request</span> <span class="pl-s1">and</span> <span class="pl-s1">response</span> <span class="pl-s1">objects</span> <span class="pl-s1">when</span> <span class="pl-s1">a</span> <span class="pl-s1">proxy</span> <span class="pl-s1">route</span> <span class="pl-s1">is</span> <span class="pl-s1">not</span> <span class="pl-s1">found</span><span class="pl-kos">.</span></pre></div>
 <hr>
-<a name="close"/>
-
-<h4 id="redbirdclose">Redbird.close()</h4>
-<p> Close the proxy stopping all the incoming connections.</p>
+</a><a name="user-content-close">
+<h4><a id="user-content-redbirdclose" class="anchor" aria-hidden="true" href="#redbirdclose"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redbird.close()</h4>
+<p>Close the proxy stopping all the incoming connections.</p>
 <hr>
-</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 13 May 2020</div><div class="column">Version: 1.2.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>
+</a></article></div>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 15 May 2020</div><div class="column">Version: 1.3.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>

@@ -1,94 +1,120 @@
-<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Responsive HTML5 + Javascript client for the Mopidy music server."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body class="project"><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>moped</h1><span class="subheading">Responsive HTML5 + Javascript client for the Mopidy music server.</span><div class="links"><a class="button button-outline" href="https://github.com/martijnboland/moped"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Moped</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info statistics"><span class="stat pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>22 May 2017</span><span class="stat stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>424</span><span class="stat issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>13</span></div></div></div><div class="row"><div class="column"><div class="info tags"><a class="tag" href="/selfhosted-awesome-unlist/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">199</span>javascript</a><a class="tag" href="/selfhosted-awesome-unlist/tags/media-streaming.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">54</span>media streaming</a><a class="tag" href="/selfhosted-awesome-unlist/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">943</span>selfhosted</a></div></div></div></div></section><article><div class="container"><div class="row"><div class="column"><hr>
-<p>Mopidy-Moped</p>
-<hr>
-<p>Moped is a responsive HTML5 + JavaScript client for the <code>Mopidy &lt;http://www.mopidy.com/&gt;</code>_ music server.</p>
-<p>.. image:: <a href="https://github.com/martijnboland/moped/raw/master/screenshots/moped-all-720.png?raw=true">https://github.com/martijnboland/moped/raw/master/screenshots/moped-all-720.png?raw=true</a></p>
-<h1 id="installation">Installation</h1>
-<p>Make sure to have Mopidy 1.0.0 or higher <code>installed &lt;http://docs.mopidy.com/en/latest/installation/&gt;</code>_ on your music server. Also make sure that the <code>HTTP extension &lt;http://docs.mopidy.com/en/latest/ext/http/&gt;</code>_ is enabled. </p>
-<p>Install from PyPI on your music server::</p>
-<pre><code>sudo pip install Mopidy-Moped</code></pre><p>Alternatively, clone the <code>GitHub repository &lt;https://github.com/martijnboland/moped.git&gt;</code>_ and copy all files from the /dist/ directory to the webclient directory on your server.</p>
-<h1 id="usage">Usage</h1>
-<p>Browse to the Moped app on your Mopidy server (e.g. <a href="http://localhost:6680/moped">http://localhost:6680/moped</a>).</p>
-<h1 id="known-issues">Known issues</h1>
+<!DOCTYPE html><html><head><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Responsive HTML5 + Javascript client for the Mopidy music server."><meta name="DCTERMS.issued"><meta name="DCTERMS.modified"><title></title><link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet"><link href="/selfhosted-awesome-unlist/site.css" rel="stylesheet" type="text/css"></head></head><body class="project"><nav class="navigation"><section class="container"><a class="navigation-title" href="/selfhosted-awesome-unlist/">Selfhosted Awesome [Un]list</a></section></nav><header><div class="container"><div class="row"><div class="column"><div class="title"><h1>moped</h1><span class="subheading">Responsive HTML5 + Javascript client for the Mopidy music server.</span><div class="links"><a class="button button-outline" href="https://github.com/martijnboland/moped"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Moped</a></div></div></div></div></div></header><section><div class="container"><div class="row"><div class="column"><div class="info statistics"><span class="stat pushed-at"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg>22 May 2017</span><span class="stat stargazers-count"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>424</span><span class="stat issues"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>13</span></div></div></div><div class="row"><div class="column"><div class="info tags"><a class="tag" href="/selfhosted-awesome-unlist/tags/javascript.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">199</span>javascript</a><a class="tag" href="/selfhosted-awesome-unlist/tags/media-streaming.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">54</span>media streaming</a><a class="tag" href="/selfhosted-awesome-unlist/tags/selfhosted.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span class="count">943</span>selfhosted</a></div></div></div></div></section><article><div class="container"><div class="row"><div class="column">
+<div id="readme" class="rst" data-path="README.rst"><article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-mopidy-moped" class="anchor" aria-hidden="true" href="#mopidy-moped"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mopidy-Moped</h1>
+<p>Moped is a responsive HTML5 + JavaScript client for the <a href="http://www.mopidy.com/" rel="nofollow">Mopidy</a> music server.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/martijnboland/moped/raw/master/screenshots/moped-all-720.png?raw=true"><img alt="https://github.com/martijnboland/moped/raw/master/screenshots/moped-all-720.png?raw=true" src="https://github.com/martijnboland/moped/raw/master/screenshots/moped-all-720.png?raw=true" style="max-width:100%;"></a></p>
+<a name="user-content-installation"></a>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<p>Make sure to have Mopidy 1.0.0 or higher <a href="http://docs.mopidy.com/en/latest/installation/" rel="nofollow">installed</a> on your music server. Also make sure that the <a href="http://docs.mopidy.com/en/latest/ext/http/" rel="nofollow">HTTP extension</a> is enabled.</p>
+<p>Install from PyPI on your music server:</p>
+<pre>sudo pip install Mopidy-Moped
+</pre>
+<p>Alternatively, clone the <a href="https://github.com/martijnboland/moped.git">GitHub repository</a> and copy all files from the /dist/ directory to the webclient directory on your server.</p>
+<a name="user-content-usage"></a>
+<h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>Browse to the Moped app on your Mopidy server (e.g. <a href="http://localhost:6680/moped" rel="nofollow">http://localhost:6680/moped</a>).</p>
+<a name="user-content-known-issues"></a>
+<h2><a id="user-content-known-issues" class="anchor" aria-hidden="true" href="#known-issues"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Known issues</h2>
 <ul>
 <li>The Mopidy HTTP frontend uses Web Sockets. Most modern browsers support this but not the default Android browser (4.3 and older). To use Moped on Android you have to use a different browser like Firefox or Chrome;</li>
 <li>Searching radio streams is still experimental.</li>
 </ul>
-<h1 id="security-warning">Security warning</h1>
+<a name="user-content-security-warning"></a>
+<h2><a id="user-content-security-warning" class="anchor" aria-hidden="true" href="#security-warning"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Security warning</h2>
 <p>(from the Mopidy web site)</p>
 <p>As a simple security measure, the web server is by default only available from localhost. To make it available from other computers, change the http/hostname config value. Before you do so, note that the HTTP extension does not feature any form of user authentication or authorization. Anyone able to access the web server can use the full core API of Mopidy. Thus, you probably only want to make the web server available from your local network or place it behind a web proxy which takes care or user authentication. You have been warned.</p>
-<h1 id="development">Development</h1>
+<a name="user-content-development"></a>
+<h2><a id="user-content-development" class="anchor" aria-hidden="true" href="#development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development</h2>
 <ol>
-<li><p>Install <code>Nodejs &lt;http://nodejs.org/&gt;</code>_</p>
+<li><p>Install <a href="http://nodejs.org/" rel="nofollow">Nodejs</a></p>
 </li>
-<li><p>Install grunt-cli, karma and bower::</p>
-<p> npm install -g grunt-cli karma bower</p>
+<li><p>Install grunt-cli, karma and bower:</p>
+<pre>npm install -g grunt-cli karma bower
+</pre>
 </li>
-<li><p>Clone the repository to your local machine::</p>
-<p> git clone <a href="https://github.com/martijnboland/moped.git">https://github.com/martijnboland/moped.git</a></p>
+<li><p>Clone the repository to your local machine:</p>
+<pre>git clone https://github.com/martijnboland/moped.git
+</pre>
 </li>
-<li><p>Install dependencies::</p>
-<p> npm install
- bower install</p>
+<li><p>Install dependencies:</p>
+<pre>npm install
+bower install
+</pre>
 </li>
-<li><p>Start the build and watch process::</p>
-<p> grunt watch</p>
+<li><p>Start the build and watch process:</p>
+<pre>grunt watch
+</pre>
 </li>
 </ol>
 <p>This will start a local web server on port 3001.</p>
-<p>To build the compiled distribution, just enter::</p>
-<pre><code>grunt</code></pre><p>and to build the Mopidy extension::</p>
-<pre><code>grunt build-mopidy-extension</code></pre><h1 id="project-resources">Project resources</h1>
+<p>To build the compiled distribution, just enter:</p>
+<pre>grunt
+</pre>
+<p>and to build the Mopidy extension:</p>
+<pre>grunt build-mopidy-extension
+</pre>
+<a name="user-content-project-resources"></a>
+<h2><a id="user-content-project-resources" class="anchor" aria-hidden="true" href="#project-resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project resources</h2>
 <ul>
-<li><code>Source code &lt;https://github.com/martijnboland/moped&gt;</code>_</li>
-<li><code>Issue tracker &lt;https://github.com/martijnboland/moped/issues&gt;</code>_</li>
-<li><code>Download development snapshot &lt;https://github.com/martijnboland/moped/tarball/master#egg=Mopidy-Moped-dev&gt;</code>_</li>
+<li><a href="https://github.com/martijnboland/moped">Source code</a></li>
+<li><a href="https://github.com/martijnboland/moped/issues">Issue tracker</a></li>
+<li><a href="https://github.com/martijnboland/moped/tarball/master#egg=Mopidy-Moped-dev">Download development snapshot</a></li>
 </ul>
-<h1 id="changelog">Changelog</h1>
-<h2 id="071-2017-05-21">0.7.1 (2017-05-21)</h2>
+<a name="user-content-changelog"></a>
+<h2><a id="user-content-changelog" class="anchor" aria-hidden="true" href="#changelog"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Changelog</h2>
+<a name="user-content-id1"></a>
+<h3><a id="user-content-071-2017-05-21" class="anchor" aria-hidden="true" href="#071-2017-05-21"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.7.1 (2017-05-21)</h3>
 <ul>
 <li>Fixed search by sending individual arguments as array, except when surrounded with double quotes (#69)</li>
 <li>Fixed issue where mopidy server url was set to undefined in LocalStorage when leaving the field empty (#53)</li>
 </ul>
-<h2 id="070-2016-10-21">0.7.0 (2016-10-21)</h2>
+<a name="user-content-id2"></a>
+<h3><a id="user-content-070-2016-10-21" class="anchor" aria-hidden="true" href="#070-2016-10-21"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.7.0 (2016-10-21)</h3>
 <ul>
 <li>Added stop button in player controls (#45)</li>
 <li>Removed (experimental) radio station search</li>
 </ul>
-<h2 id="064-2015-10-28">0.6.4 (2015-10-28)</h2>
+<a name="user-content-id3"></a>
+<h3><a id="user-content-064-2015-10-28" class="anchor" aria-hidden="true" href="#064-2015-10-28"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.6.4 (2015-10-28)</h3>
 <ul>
 <li>Fixed navigation issue on iOS 9 when running from start screen (using UIWebView)</li>
 </ul>
-<h2 id="063-2015-09-25">0.6.3 (2015-09-25)</h2>
+<a name="user-content-id4"></a>
+<h3><a id="user-content-063-2015-09-25" class="anchor" aria-hidden="true" href="#063-2015-09-25"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.6.3 (2015-09-25)</h3>
 <ul>
 <li>Fixed rescaling issue on iOS 9 when using left menu</li>
 <li>Improved experience on iOS by removing hover effect on the playback buttons.</li>
 </ul>
-<h2 id="062-2015-09-11">0.6.2 (2015-09-11)</h2>
+<a name="user-content-id5"></a>
+<h3><a id="user-content-062-2015-09-11" class="anchor" aria-hidden="true" href="#062-2015-09-11"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.6.2 (2015-09-11)</h3>
 <ul>
 <li>Fixed seek issue with Mopidy (#55)</li>
 <li>Browsing now supports all ref types (#54, #56)</li>
 </ul>
-<h2 id="061-2015-06-10">0.6.1 (2015-06-10)</h2>
+<a name="user-content-id6"></a>
+<h3><a id="user-content-061-2015-06-10" class="anchor" aria-hidden="true" href="#061-2015-06-10"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.6.1 (2015-06-10)</h3>
 <ul>
 <li>Optimized loading of playlists</li>
 </ul>
-<h2 id="060-2015-05-12">0.6.0 (2015-05-12)</h2>
+<a name="user-content-id7"></a>
+<h3><a id="user-content-060-2015-05-12" class="anchor" aria-hidden="true" href="#060-2015-05-12"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.6.0 (2015-05-12)</h3>
 <ul>
 <li>Added list of current tracks to home screen</li>
 <li>Added Moped version to browser title bar</li>
 <li>New icon and support for favicon in windows phone</li>
 <li>Fixed back button behaviour in standalone mode</li>
 </ul>
-<h2 id="050-2015-04-05">0.5.0 (2015-04-05)</h2>
+<a name="user-content-id8"></a>
+<h3><a id="user-content-050-2015-04-05" class="anchor" aria-hidden="true" href="#050-2015-04-05"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.5.0 (2015-04-05)</h3>
 <ul>
 <li>Updated mopidy.js to 0.5.0</li>
 <li>Mopidy 1.0.0 compatibility</li>
-<li>Updated player controls active and hover styles (Sebastian) </li>
+<li>Updated player controls active and hover styles (Sebastian)</li>
 </ul>
-<h2 id="044-2015-03-14">0.4.4 (2015-03-14)</h2>
+<a name="user-content-id9"></a>
+<h3><a id="user-content-044-2015-03-14" class="anchor" aria-hidden="true" href="#044-2015-03-14"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.4.4 (2015-03-14)</h3>
 <p>Fixed search</p>
-<h2 id="043-2015-03-14">0.4.3 (2015-03-14)</h2>
+<a name="user-content-id10"></a>
+<h3><a id="user-content-043-2015-03-14" class="anchor" aria-hidden="true" href="#043-2015-03-14"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.4.3 (2015-03-14)</h3>
 <ul>
 <li>Min. characters for search is now 2 instead of 3</li>
 <li>Use protocol relative urls for fonts (André Gaul)</li>
@@ -97,18 +123,21 @@
 <li>Try to display Mopidy album images before requesting album images from LastFM</li>
 <li>Removed clear_current_track parameter from mopidy.stop() method for Mopidy 0.20 compatibility</li>
 </ul>
-<h2 id="042-2014-11-17">0.4.2 (2014-11-17)</h2>
+<a name="user-content-id11"></a>
+<h3><a id="user-content-042-2014-11-17" class="anchor" aria-hidden="true" href="#042-2014-11-17"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.4.2 (2014-11-17)</h3>
 <ul>
 <li>Fixed accidentally disabled error logger</li>
 </ul>
-<h2 id="041-2014-11-16">0.4.1 (2014-11-16)</h2>
+<a name="user-content-id12"></a>
+<h3><a id="user-content-041-2014-11-16" class="anchor" aria-hidden="true" href="#041-2014-11-16"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.4.1 (2014-11-16)</h3>
 <ul>
 <li>Added random toggle switch</li>
 <li>Fixed browsing of playlists (David Tischler)</li>
 <li>Reverted interpolation of track position due to instability</li>
 <li>Search query is passed to mopidy as an array to support new Spotify backend</li>
 </ul>
-<h2 id="040-2014-10-10">0.4.0 (2014-10-10)</h2>
+<a name="user-content-id13"></a>
+<h3><a id="user-content-040-2014-10-10" class="anchor" aria-hidden="true" href="#040-2014-10-10"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.4.0 (2014-10-10)</h3>
 <ul>
 <li>Support for Mopidy browsing (David Tischler, <a href="https://github.com/tischlda">https://github.com/tischlda</a>)</li>
 <li>Fix for search queries (David Tischler)</li>
@@ -116,29 +145,37 @@
 <li>Allow special characters in search</li>
 <li>Interpolation of track position and checking every 10 seconds</li>
 </ul>
-<h2 id="033-2014-08-03">0.3.3 (2014-08-03)</h2>
+<a name="user-content-id14"></a>
+<h3><a id="user-content-033-2014-08-03" class="anchor" aria-hidden="true" href="#033-2014-08-03"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.3.3 (2014-08-03)</h3>
 <ul>
 <li>Reduced default amount of logging</li>
 </ul>
-<h2 id="032-2014-08-03">0.3.2 (2014-08-03)</h2>
+<a name="user-content-id15"></a>
+<h3><a id="user-content-032-2014-08-03" class="anchor" aria-hidden="true" href="#032-2014-08-03"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.3.2 (2014-08-03)</h3>
 <ul>
 <li>Fixed volume slider</li>
 </ul>
-<h2 id="031-2014-07-23">0.3.1 (2014-07-23)</h2>
+<a name="user-content-id16"></a>
+<h3><a id="user-content-031-2014-07-23" class="anchor" aria-hidden="true" href="#031-2014-07-23"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.3.1 (2014-07-23)</h3>
 <ul>
 <li>Fixed PyPI package manifest</li>
 <li>Support for playlist folders in PyPI package</li>
 </ul>
-<h2 id="030-2014-06-24">0.3.0 (2014-06-24)</h2>
+<a name="user-content-id17"></a>
+<h3><a id="user-content-030-2014-06-24" class="anchor" aria-hidden="true" href="#030-2014-06-24"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.3.0 (2014-06-24)</h3>
 <ul>
 <li>Moped as installable Mopidy extension</li>
 </ul>
-<h2 id="020-2013-12-18">0.2.0 (2013-12-18)</h2>
+<a name="user-content-id18"></a>
+<h3><a id="user-content-020-2013-12-18" class="anchor" aria-hidden="true" href="#020-2013-12-18"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.2.0 (2013-12-18)</h3>
 <ul>
 <li>Angular version added.</li>
 </ul>
-<h2 id="010-2013-12-04">0.1.0 (2013-12-04)</h2>
+<a name="user-content-id19"></a>
+<h3><a id="user-content-010-2013-12-04" class="anchor" aria-hidden="true" href="#010-2013-12-04"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0.1.0 (2013-12-04)</h3>
 <ul>
 <li>Initial Durandal version.</li>
 </ul>
-</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 13 May 2020</div><div class="column">Version: 1.2.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>
+
+</article></div>
+</div></div></div></article><footer><div class="container"><div class="row"><div class="column">Total Projects: 1313</div><div class="column">Built On: 15 May 2020</div><div class="column">Version: 1.3.0</div></div></div></footer><script src="/selfhosted-awesome-unlist/site.js"></script></body></html>
