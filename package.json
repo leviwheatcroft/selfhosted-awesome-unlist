@@ -1,13 +1,13 @@
 {
   "name": "selfhosted-awesome-unlist",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "My webpack project",
   "main": "index.js",
   "author": "Levi Wheatcroft <levi@wheatcroft.com.au>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "buildPublish": "yarn run scrape:awesome && yarn run scrape:github && yarn run buildProduction && yarn run publish",
+    "buildPublish": "NODE_ENV=production yarn run scrape:awesome && NODE_ENV=production yarn run scrape:github && yarn run buildProduction && yarn run publish",
     "buildAssets": "webpack --config webpack.config.js",
     "buildContent": "DEBUG=metalsmith* node buildContent.js",
     "buildProduction": "rimraf build/* && NODE_ENV=production yarn run buildContent && NODE_ENV=production yarn run buildAssets",
