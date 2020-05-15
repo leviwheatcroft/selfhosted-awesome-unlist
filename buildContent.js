@@ -2,7 +2,6 @@
 const Metalsmith = require('metalsmith')
 const debug = require('debug')
 
-const markdown = require('metalsmith-markdown')
 const layouts = require('metalsmith-layouts')
 const tags = require('metalsmith-tags')
 const config = require('config')
@@ -40,8 +39,10 @@ metalsmith.clean(false)
 metalsmith.destination('build')
 metalsmith.metadata({
   ...config.get('meta'),
-  buildDate: Date.now(),
-  version: pkg.version,
+  stats: {
+    buildDate: Date.now(),
+    version: pkg.version
+  },
   marked,
   moment,
   feather,
@@ -52,10 +53,34 @@ metalsmith.metadata({
   }
 })
 metalsmith.use(async (files, ms) => {
-  ms.metadata().projectCount = Object.values(files).length
+  ms.metadata().stats.projectCount = Object.values(files).length
 })
 metalsmith.use(overview())
-metalsmith.use(markdown())
+metalsmith.use((files) => {
+  Object.entries(files).forEach(([name, file]) => {
+    files[name.replace(/\.md/, '.html')] = file
+    delete files[name]
+  })
+})
+// metalsmith.use((files) => {
+//   const markdown = new MarkdownIt()
+//   markdown.set({ html: true })
+//   Object.entries(files).forEach(([name, file]) => {
+//     if (
+//       (!file.owner) ||
+//       (!file.repo)
+//     )
+//       return
+//     let html = ''
+//     if (file.readmeType === 'markdown')
+//       html = markdown.render(file.contents.toString())
+//     else if (file.readmeType === 'restructured')
+//       html = rst2html(file.contents.toString())
+//     else
+//       dbg(`bad readme type: ${name}`)
+//     file.contents = Buffer.from(html)
+//   })
+// })
 metalsmith.use(tags({
   handle: 'tags',
   metadataKey: 'tags',
@@ -127,6 +152,7 @@ metalsmith.use(async (files, ms) => {
   const tagNames = Object.keys(ms.metadata().tags)
   const tagNamesJson = JSON.stringify(tagNames, null, 2)
   await writeFile('debug/tagNames.json', tagNamesJson)
+  dbg(ms.metadata().stats)
   // const fileData = Object.values(files)
   // dbg(fileData[fileData.length - 1].pagination.files)
   // dbg(ms.metadata().languages)

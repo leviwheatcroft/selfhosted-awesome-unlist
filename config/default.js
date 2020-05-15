@@ -7,6 +7,7 @@ module.exports = {
   autoTags: {
     Docker: /docker/i
   },
+  overviewTargetLength: 500,
   awesomeLists: [
     'config/awesome-selfhosted.md',
     'config/awesome-sysadmin.md'
