@@ -2,8 +2,6 @@
 const Metalsmith = require('metalsmith')
 const debug = require('debug')
 
-const rst2html = require('rst2html')
-const MarkdownIt = require('markdown-it')
 const layouts = require('metalsmith-layouts')
 const tags = require('metalsmith-tags')
 const config = require('config')
@@ -64,25 +62,25 @@ metalsmith.use((files) => {
     delete files[name]
   })
 })
-metalsmith.use((files) => {
-  const markdown = new MarkdownIt()
-  markdown.set({ html: true })
-  Object.entries(files).forEach(([name, file]) => {
-    if (
-      (!file.owner) ||
-      (!file.repo)
-    )
-      return
-    let html = ''
-    if (file.readmeType === 'markdown')
-      html = markdown.render(file.contents.toString())
-    else if (file.readmeType === 'restructured')
-      html = rst2html(file.contents.toString())
-    else
-      dbg(`bad readme type: ${name}`)
-    file.contents = Buffer.from(html)
-  })
-})
+// metalsmith.use((files) => {
+//   const markdown = new MarkdownIt()
+//   markdown.set({ html: true })
+//   Object.entries(files).forEach(([name, file]) => {
+//     if (
+//       (!file.owner) ||
+//       (!file.repo)
+//     )
+//       return
+//     let html = ''
+//     if (file.readmeType === 'markdown')
+//       html = markdown.render(file.contents.toString())
+//     else if (file.readmeType === 'restructured')
+//       html = rst2html(file.contents.toString())
+//     else
+//       dbg(`bad readme type: ${name}`)
+//     file.contents = Buffer.from(html)
+//   })
+// })
 metalsmith.use(tags({
   handle: 'tags',
   metadataKey: 'tags',
