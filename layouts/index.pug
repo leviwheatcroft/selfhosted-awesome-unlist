@@ -18,6 +18,7 @@ html
               h3 Tags
               .tagListFiltersButton
                 != feather.icons.filter.toSvg()
+                span.tagListFiltersCount
             ul.tagList
               for tag in tags
                 li(data-category= tag.category)

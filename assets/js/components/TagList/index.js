@@ -54,12 +54,18 @@ class TagList extends HTMLElement {
     const filters = this.getFilters()
     console.log(filters)
     console.log(typeof filters)
-    this.querySelectorAll('.tagList li').forEach((li) => {
+    const tagListLis = this.querySelectorAll('.tagList li')
+    const tagCount = tagListLis.length
+    tagListLis.forEach((li) => {
       if (filters.includes(li.dataset.category))
         li.classList.remove('hide')
       else
         li.classList.add('hide')
     })
+    const hiddenCount = this.querySelectorAll('.tagList li.hide').length
+    const shownCount = tagCount - hiddenCount
+    const countText = `[${shownCount}/${tagCount}]`
+    this.querySelector('.tagListFiltersCount').textContent = countText
     if (filters.length === 0)
       this.querySelector('.shrug').classList.remove('hide')
     else
