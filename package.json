@@ -7,13 +7,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "buildPublish": "NODE_ENV=production yarn run scrape:awesome && NODE_ENV=production yarn run scrape:github && yarn run buildProduction && yarn run publish",
+    "buildPublish": "NODE_ENV=production yarn run scrape:awesome && NODE_ENV=production yarn run scrape:populate && yarn run buildProduction && yarn run publish",
     "buildAssets": "webpack --config webpack.config.js",
     "buildContent": "DEBUG=metalsmith* node buildContent.js",
     "buildProduction": "rimraf build/* && NODE_ENV=production yarn run buildContent && NODE_ENV=production yarn run buildAssets",
     "publish": "gh-pages -d build",
     "scrape:awesome": "DEBUG=sau node lib/scrapeAwesomeSelfhosted.js",
-    "scrape:github": "DEBUG=sau node lib/populateProjects.js",
+    "scrape:populate": "DEBUG=sau node lib/populateProjects.js",
     "dev": "concurrently \"npm-watch\" \"node browsersync\""
   },
   "watch": {
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^17.5.2",
+    "axios": "^0.19.2",
     "bootstrap": "3.4.1",
     "browser-sync": "^2.26.7",
     "cheerio": "^1.0.0-rc.3",
@@ -77,6 +78,7 @@
     "rst2html": "^1.0.4",
     "style-loader": "^1.1.4",
     "tiny-async-pool": "^1.1.0",
+    "turndown": "^6.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
