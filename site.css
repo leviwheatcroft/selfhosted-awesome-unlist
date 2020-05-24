@@ -902,8 +902,6 @@ tag-list .header h3 {
   margin: 0;
 }
 tag-list .header .tagListFiltersButton {
-  display: flex;
-  align-items: center;
   border: 1px solid #f0f0f0;
   background-color: #fff;
   border-radius: 3px;
@@ -912,6 +910,7 @@ tag-list .header .tagListFiltersButton {
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   height: 3rem;
+  width: 3rem;
   padding: 0.2rem;
 }
 tag-list > ul.tagList {
