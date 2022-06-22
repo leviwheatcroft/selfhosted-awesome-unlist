@@ -48,7 +48,7 @@
     "eslint-plugin-import": "^2.20.2",
     "feather-icons": "^4.28.0",
     "gh-pages": "^2.2.0",
-    "got": "^11.0.2",
+    "got": "^11.8.5",
     "gray-matter": "^4.0.2",
     "jquery": "^3.5.0",
     "jstransformer-less": "^2.3.0",
